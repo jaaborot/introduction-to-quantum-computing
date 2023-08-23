@@ -15,9 +15,14 @@ parts:
     numbered: true
     maxdepth: 2
     chapters:
-      - file: book/markdown
-      - file: book/notebooks
+      # - file: book/markdown
+      # - file: book/notebooks
+      - file: book/introduction
       - file: book/chapter_1
+      - file: book/chapter_2
+      - file: book/chapter_3
+      - file: book/chapter_4
+      - file: book/chapter_5
   - caption: Appendices
     chapters:
       - file: book/bibliography
