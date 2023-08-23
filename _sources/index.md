@@ -1,4 +1,5 @@
-# Welcome to your Jupyter Book
+# Introduction to Quantum Computing
+*by the Quantum Circuit Simulation Project Team of the DOST-ASTI.*
 
 This is a small sample book to give you a feel for how book content is
 structured.
