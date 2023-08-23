@@ -23,6 +23,9 @@ parts:
       - file: book/chapter_3
       - file: book/chapter_4
       - file: book/chapter_5
+      - file: book/chapter_6
+      - file: book/chapter_7
+      - file: book/chapter_8
   - caption: Appendices
     chapters:
       - file: book/bibliography
