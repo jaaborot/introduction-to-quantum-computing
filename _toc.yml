@@ -6,6 +6,7 @@ root: index
 chapters:
   - file: book/markdown
   - file: book/notebooks
+  - file: book/chapter_1
   - file: book/bibliography
 
 # Or you organize the TOC by parts
