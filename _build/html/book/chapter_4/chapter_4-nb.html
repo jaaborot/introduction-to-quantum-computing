@@ -1,0 +1,990 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>5. Introduction to Quantum Computing &#8212; Introduction to Quantum Computing</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'book/chapter_4/chapter_4-nb';</script>
+    <link rel="canonical" href="https://jaaborot.github.io/introduction-to-quantum-computing/book/chapter_4/chapter_4-nb.html" />
+    <link rel="shortcut icon" href="../../_static/fav.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Bibliography" href="../bibliography.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="../chapter_2/chapter_2-nb.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/qil-logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/qil-logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Chapters</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../markdown.html">1. Markdown Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks.html">2. Content with notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sample/sample-nb.html">3. Sample Commonmarkdown and MyST directives in Jupyter Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_1/chapter_1-nb.html">4. Introduction to Classical Computing</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">5. Introduction to Quantum Computing</a></li>
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../bibliography.html">Bibliography</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/jaaborot/introduction-to-quantum-computing/master?urlpath=tree/book/chapter_4/chapter_4-nb.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/jaaborot/introduction-to-quantum-computing/blob/master/book/chapter_4/chapter_4-nb.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/jaaborot/introduction-to-quantum-computing" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/jaaborot/introduction-to-quantum-computing/edit/main/book/chapter_4/chapter_4-nb.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/jaaborot/introduction-to-quantum-computing/issues/new?title=Issue%20on%20page%20%2Fbook/chapter_4/chapter_4-nb.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/book/chapter_4/chapter_4-nb.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Introduction to Quantum Computing</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">5. Introduction to Quantum Computing</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-gates">5.1. Quantum Gates</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#properties-of-quantum-gates">5.1.1. Properties of Quantum Gates</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#one-qubit-quantum-gates">5.2. One Qubit Quantum Gates</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identity-gate">5.2.1. Identity Gate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pauli-x-gate">5.2.2. Pauli X Gate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pauli-y-gate">5.2.3. Pauli Y Gate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pauli-z-gate">5.2.4. Pauli Z Gate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hadamard-gate">5.2.5. Hadamard Gate</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-calculation">5.3. Sample calculation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gates-in-series">5.3.1. Gates in <em>series</em></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gates-in-parallel">5.3.2. Gates in <em>parallel</em></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-circuit-model">5.4. Quantum Circuit Model</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circuit-diagram">5.4.1. Circuit diagram</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circuit-diagram-multiple-qubits">5.4.2. Circuit diagram, multiple qubits</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multi-qubit-gates">5.5. Multi-qubit gates</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cnot-gate">5.5.1. CNOT gate</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#application">5.6. Application</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bell-state-entanglement">5.6.1. Bell state entanglement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circuit-form-of-a-bell-state">5.6.2. Circuit form of a Bell state</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#references">6. References</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-quantum-computing">
+<h1><span class="section-number">5. </span>Introduction to Quantum Computing<a class="headerlink" href="#introduction-to-quantum-computing" title="Permalink to this heading">#</a></h1>
+<section id="quantum-gates">
+<h2><span class="section-number">5.1. </span>Quantum Gates<a class="headerlink" href="#quantum-gates" title="Permalink to this heading">#</a></h2>
+<p>Quantum logic gates or quantum gates are the quantum computing equivalents of the classical logic gates in classic computing. Similar to classical logic gates manipulating bits, quantum gates are used to manipulate qubits. These are the components used for creating quantum circuits.</p>
+<p>Mathematically speaking, a quantum gate <em>transforms</em> the quantum state of a qubit into another quantum state. For general quantum gates, we use <span class="math notranslate nohighlight">\(U\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+U|0\rangle = |1\rangle\\
+U|1\rangle = |0\rangle
+\end{split}\]</div>
+<section id="properties-of-quantum-gates">
+<h3><span class="section-number">5.1.1. </span>Properties of Quantum Gates<a class="headerlink" href="#properties-of-quantum-gates" title="Permalink to this heading">#</a></h3>
+<p>Linear property</p>
+<div class="math notranslate nohighlight">
+\[
+U(\alpha|0\rangle + \beta|1\rangle) = \alpha U|0\rangle + \beta U|1\rangle
+\]</div>
+<p>Probability must be equal to 1</p>
+<div class="math notranslate nohighlight">
+\[
+|\alpha|^2 + |\beta|^2 = 1
+\]</div>
+</section>
+</section>
+<section id="one-qubit-quantum-gates">
+<h2><span class="section-number">5.2. </span>One Qubit Quantum Gates<a class="headerlink" href="#one-qubit-quantum-gates" title="Permalink to this heading">#</a></h2>
+<section id="identity-gate">
+<h3><span class="section-number">5.2.1. </span>Identity Gate<a class="headerlink" href="#identity-gate" title="Permalink to this heading">#</a></h3>
+<p>This gate preserves the quantum state</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+I = \begin{bmatrix}
+1 &amp; 0\\
+0 &amp; 1
+\end{bmatrix}\\
+I|0\rangle = |0\rangle\\
+I|1\rangle = |1\rangle
+\end{split}\]</div>
+</section>
+<section id="pauli-x-gate">
+<h3><span class="section-number">5.2.2. </span>Pauli X Gate<a class="headerlink" href="#pauli-x-gate" title="Permalink to this heading">#</a></h3>
+<p>Also known as X, NOT, or <span class="math notranslate nohighlight">\(\sigma_x\)</span>. This performs a bit flip on the quantum state via a 180 degree rotation along the x-axis.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+X=\begin{bmatrix}
+0 &amp; 1\\
+1 &amp; 0
+\end{bmatrix}\\
+X|0\rangle = |1\rangle\\
+X|1\rangle = |0\rangle
+\end{split}\]</div>
+</section>
+<section id="pauli-y-gate">
+<h3><span class="section-number">5.2.3. </span>Pauli Y Gate<a class="headerlink" href="#pauli-y-gate" title="Permalink to this heading">#</a></h3>
+<p>Also known as Y, or <span class="math notranslate nohighlight">\(\sigma_y\)</span>. This performs a bit flip and phase flip on the quantum state via a 180 degree rotation along the y-axis.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+Y=\begin{bmatrix}
+0 &amp; -i\\
+i &amp; 0
+\end{bmatrix}\\
+Y|0\rangle = i|1\rangle\\
+Y|1\rangle = -i|0\rangle
+\end{split}\]</div>
+</section>
+<section id="pauli-z-gate">
+<h3><span class="section-number">5.2.4. </span>Pauli Z Gate<a class="headerlink" href="#pauli-z-gate" title="Permalink to this heading">#</a></h3>
+<p>Also known as Z, or <span class="math notranslate nohighlight">\(\sigma_z\)</span>. This performs a phase flip on the quantum state via a 180 degree rotation along the z-axis.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+Z=\begin{bmatrix}
+1 &amp; 0\\
+0 &amp; -1
+\end{bmatrix}\\
+Z|0\rangle = |0\rangle\\
+Z|1\rangle = -|1\rangle
+\end{split}\]</div>
+</section>
+<section id="hadamard-gate">
+<h3><span class="section-number">5.2.5. </span>Hadamard Gate<a class="headerlink" href="#hadamard-gate" title="Permalink to this heading">#</a></h3>
+<p>Also known as H. This puts the qubit into a superposition.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+H=\frac{1}{\sqrt{2}}\begin{bmatrix}
+1 &amp; 1\\
+1 &amp; -1
+\end{bmatrix}\\
+H|0\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) = |+\rangle\\
+H|1\rangle = \frac{1}{\sqrt{2}}(|0\rangle - |1\rangle) = |-\rangle
+\end{split}\]</div>
+<p>There are other single qubit gates such as 𝑆, 𝑇, 𝑅𝑋, 𝑅𝑌, 𝑅𝑍, 𝑈 etc. which all manipulate the qubit state by rotating.</p>
+<p>In a quantum circuit, gates are usually shown as boxes with their respective labels.</p>
+</section>
+</section>
+<section id="sample-calculation">
+<h2><span class="section-number">5.3. </span>Sample calculation<a class="headerlink" href="#sample-calculation" title="Permalink to this heading">#</a></h2>
+<p>Verify <span class="math notranslate nohighlight">\(H|0\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle)\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+H|0\rangle &amp;= \frac{1}{\sqrt{2}}\begin{bmatrix}
+1 &amp; 1\\
+1 &amp; -1
+\end{bmatrix}\begin{bmatrix}
+1\\
+0
+\end{bmatrix}\\
+&amp;= \frac{1}{\sqrt{2}}\begin{bmatrix}
+1 \cdot 1 + 1 \cdot 0\\
+1 \cdot 1 - 1 \cdot 0
+\end{bmatrix}\\
+&amp;= \frac{1}{\sqrt{2}}\begin{bmatrix}
+1\\
+1
+\end{bmatrix}\\
+&amp;= \frac{1}{\sqrt{2}} \left( \begin{bmatrix}1\\0\end{bmatrix} + \begin{bmatrix}0\\1\end{bmatrix} \right)\\
+&amp;= \frac{1}{\sqrt{2}} \left( |0\rangle + |1\rangle \right)\\
+H|0\rangle &amp;= \frac{1}{\sqrt{2}} \left( |0\rangle + |1\rangle \right) = |+\rangle
+\end{align}
+\end{split}\]</div>
+<section id="gates-in-series">
+<h3><span class="section-number">5.3.1. </span>Gates in <em>series</em><a class="headerlink" href="#gates-in-series" title="Permalink to this heading">#</a></h3>
+<p>Multiple single gates
+Try solving <em>without</em> calculating</p>
+<div class="math notranslate nohighlight">
+\[
+HX|0\rangle = H|1\rangle = \frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)
+\]</div>
+<p>We are expecting to get <span class="math notranslate nohighlight">\(|-\rangle\)</span>. Now try calculating the matrices. We calculate the result of many single qubit gates via matrix multiplication. We call operations of gates in succession <em>gates in series</em>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+HX|0\rangle &amp;= \frac{1}{\sqrt{2}}\begin{bmatrix}
+1 &amp; 1\\
+1 &amp; -1
+\end{bmatrix}\begin{bmatrix}
+0 &amp; 1\\
+1 &amp; 0
+\end{bmatrix}\begin{bmatrix}
+1\\
+0
+\end{bmatrix}\\
+&amp;= \frac{1}{\sqrt{2}}\begin{bmatrix}
+1 &amp; 1\\
+-1 &amp; 1
+\end{bmatrix}\begin{bmatrix}
+1\\
+0
+\end{bmatrix}\\
+&amp;= \frac{1}{\sqrt{2}}\begin{bmatrix}
+1\\
+-1
+\end{bmatrix}\\
+&amp;= \frac{1}{\sqrt{2}}\left( \begin{bmatrix}
+1\\
+0
+\end{bmatrix}-\begin{bmatrix}
+0\\
+1
+\end{bmatrix}\right)\\
+&amp;= \frac{1}{\sqrt{2}}\left( |0\rangle - |1\rangle \right)\\
+HX|0\rangle &amp;= |-\rangle
+\end{align}
+\end{split}\]</div>
+</section>
+<section id="gates-in-parallel">
+<h3><span class="section-number">5.3.2. </span>Gates in <em>parallel</em><a class="headerlink" href="#gates-in-parallel" title="Permalink to this heading">#</a></h3>
+<p>Gates in parallel is seen when calculating gates between multiple qubits. The primary operation is called the <em>tensor product</em>.</p>
+<p>Let us consider two qubits both initially in <span class="math notranslate nohighlight">\(|0\rangle\)</span>. The initial state of the whole system is determined via the tensor product.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+|0\rangle \otimes |0\rangle = |00\rangle\\
+\begin{bmatrix}
+1\\
+0
+\end{bmatrix} \otimes \begin{bmatrix}
+1\\
+0
+\end{bmatrix} = \begin{bmatrix}
+1 \begin{bmatrix}
+1\\
+0
+\end{bmatrix}\\
+0 \begin{bmatrix}
+1\\
+0
+\end{bmatrix}
+\end{bmatrix}=\begin{bmatrix}
+1\\
+0\\
+0\\
+0
+\end{bmatrix}
+\end{split}\]</div>
+</section>
+</section>
+<section id="quantum-circuit-model">
+<h2><span class="section-number">5.4. </span>Quantum Circuit Model<a class="headerlink" href="#quantum-circuit-model" title="Permalink to this heading">#</a></h2>
+<section id="circuit-diagram">
+<h3><span class="section-number">5.4.1. </span>Circuit diagram<a class="headerlink" href="#circuit-diagram" title="Permalink to this heading">#</a></h3>
+<p>Sequence of quantum gates applied to the qubits. This is the quantum equivalent of a classical circuit.</p>
+<p>Suppose a qubit <span class="math notranslate nohighlight">\(q\)</span>, and we want to apply gates <span class="math notranslate nohighlight">\(X\)</span> then <span class="math notranslate nohighlight">\(Z\)</span> then <span class="math notranslate nohighlight">\(H\)</span>, i.e. <span class="math notranslate nohighlight">\(HZX|q\rangle\)</span>. The equivalent quantum circuit is as follows.</p>
+<p><img alt="qc1" src="../../_images/chapter4-qc1.png" /></p>
+<p>Notice that the circuit diagram is “written backwards” compared to its mathematical expression.</p>
+<p>We can see that there are different components of a quantum circuit. First is the input qubit <span class="math notranslate nohighlight">\(q\)</span>, usually initialized as <span class="math notranslate nohighlight">\(|0\rangle\)</span>. This is the qubit in which we perform our calculations on.</p>
+<p>Seconds is the quantum wire, the horizontal line seen in the figure. This dictates the flow of the which goes from left to right.</p>
+<p>Lastly, the quantum gates. As shown are the boxes with their respective labels corresponding to their operation.</p>
+</section>
+<section id="circuit-diagram-multiple-qubits">
+<h3><span class="section-number">5.4.2. </span>Circuit diagram, multiple qubits<a class="headerlink" href="#circuit-diagram-multiple-qubits" title="Permalink to this heading">#</a></h3>
+<p><img alt="qc2" src="../../_images/chapter4-qc2.png" /></p>
+<p>For multiple qubits, we label the qubits as <span class="math notranslate nohighlight">\(q_n\)</span> where <span class="math notranslate nohighlight">\(n\)</span> is the nth qubit.</p>
+<p>We can separate these via its timesteps. We see that <span class="math notranslate nohighlight">\(q_0, q_1\)</span> is the initial state or <span class="math notranslate nohighlight">\(t_0\)</span>. After one timestep, we apply <span class="math notranslate nohighlight">\(X \otimes Z\)</span>. And for the last timestep, we apply <span class="math notranslate nohighlight">\(H\)</span>.
+The equivalent mathematical expression of the circuit above is</p>
+<div class="math notranslate nohighlight">
+\[
+(X \otimes Z)(H)|q_0q_1\rangle
+\]</div>
+<p>However, notice that <span class="math notranslate nohighlight">\(X\otimes Z\)</span> is a <span class="math notranslate nohighlight">\(4 \times 4\)</span> matrix and <span class="math notranslate nohighlight">\(H\)</span> is a <span class="math notranslate nohighlight">\(2 \times 2\)</span> matrix. We cannot multiply such matrices.
+How do we fix this?</p>
+<p>Notice that below the <span class="math notranslate nohighlight">\(H\)</span> gate, there is a blank space. This is actually the representation of the <em>identity</em> gate. Thus, the expression becomes,</p>
+<div class="math notranslate nohighlight">
+\[
+(X \otimes Z)(H \otimes I)|q_0q_1\rangle
+\]</div>
+<p>Now assuming an initial state of <span class="math notranslate nohighlight">\(|00\rangle\)</span>, we get a final state of</p>
+<div class="math notranslate nohighlight">
+\[
+|\psi\rangle = \frac{1}{\sqrt{2}}(|00\rangle - |10\rangle)
+\]</div>
+</section>
+</section>
+<section id="multi-qubit-gates">
+<h2><span class="section-number">5.5. </span>Multi-qubit gates<a class="headerlink" href="#multi-qubit-gates" title="Permalink to this heading">#</a></h2>
+<p>These are quantum gates that act on multiple qubits <em>simultaneously</em>. Here, we introduce two qubit gates.</p>
+<p>An example of this is the Controlled-NOT gate(CNOT, CX). This gate acts on two qubits, named the <em>control qubit</em> and the <em>target qubit</em>.</p>
+<p>This gate performs an <em>if-else</em> like operation. The output of the target qubit is dependent on the control qubit.</p>
+<section id="cnot-gate">
+<h3><span class="section-number">5.5.1. </span>CNOT gate<a class="headerlink" href="#cnot-gate" title="Permalink to this heading">#</a></h3>
+<p>The control qubit is denoted as a small dot, the target qubit is denoted by an <span class="math notranslate nohighlight">\(X\)</span> gate. The line implies the control.</p>
+<p><img alt="cnot" src="../../_images/chapter4-cnot.png" /></p>
+<p>If control is <span class="math notranslate nohighlight">\(|0\rangle\)</span>, do nothing to target.</p>
+<p>If control is <span class="math notranslate nohighlight">\(|1\rangle\)</span>, apply <span class="math notranslate nohighlight">\(X\)</span> gate to target.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+|q_0q_1\rangle &amp;\mapsto |q_0q_1\rangle\\
+|00\rangle &amp;\mapsto |00\rangle\\
+|01\rangle &amp;\mapsto |01\rangle\\
+|10\rangle &amp;\mapsto |11\rangle\\
+|11\rangle &amp;\mapsto |10\rangle
+\end{align}
+\end{split}\]</div>
+<p>CNOT gate in matrix form</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+CNOT = \begin{bmatrix}
+1 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 1 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 1\\
+0 &amp; 0 &amp; 1 &amp; 0
+\end{bmatrix}
+\end{split}\]</div>
+<p>CNOT gate in outer product form</p>
+<div class="math notranslate nohighlight">
+\[
+CNOT = |00\rangle\langle00| + |01\rangle\langle01| + |10\rangle\langle11| + |11\rangle\langle00| 
+\]</div>
+<p>There are numerous other multi-qubits gates such as CY, CZ, Controlled Phase, etc. for 2 qubits.</p>
+<p>Toffoli or CCNOT for 3 qubits</p>
+</section>
+</section>
+<section id="application">
+<h2><span class="section-number">5.6. </span>Application<a class="headerlink" href="#application" title="Permalink to this heading">#</a></h2>
+<section id="bell-state-entanglement">
+<h3><span class="section-number">5.6.1. </span>Bell state entanglement<a class="headerlink" href="#bell-state-entanglement" title="Permalink to this heading">#</a></h3>
+<p>A quantum state
+$<span class="math notranslate nohighlight">\(
+|\psi\rangle = \begin{bmatrix}
+a\\
+b\\
+c\\
+d
+\end{bmatrix}
+\)</span>$</p>
+<p>is separable/not entangled if and only if</p>
+<div class="math notranslate nohighlight">
+\[
+ad=bc
+\]</div>
+<p>This means that we can separate or factor a quantum state into its basis states.
+Consider the quantum state</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+|\psi\rangle = \frac{1}{2}(|00\rangle - |01\rangle + |10\rangle - |11\rangle) = \begin{bmatrix}
+1/2\\
+-1/2\\
+1/2\\
+-1/2
+\end{bmatrix}
+\end{split}\]</div>
+<p>We can see that it satisfies</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+ad &amp;= bc\\
+-\frac{1}{4} &amp;= -\frac{1}{4}
+\end{align}
+\end{split}\]</div>
+<p>Let’s try to separate them</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+|\psi\rangle &amp;= \frac{1}{2}(|00\rangle - |01\rangle + |10\rangle - |11\rangle)\\
+&amp;= \frac{1}{2}(|0\rangle \otimes (|0\rangle-|1\rangle) + |1\rangle \otimes (|0\rangle - |1\rangle))\\
+&amp;= \frac{1}{2}\left( (|0\rangle + |1\rangle) \otimes (|0\rangle - |1\rangle) \right)\\
+&amp;= \frac{1}{\sqrt{2}} (|0\rangle + |1\rangle) \otimes \frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)\\
+|\psi\rangle &amp;= |+\rangle \otimes |-\rangle
+\end{align}
+\end{split}\]</div>
+<p>How about the following state? Can we separate the state?</p>
+<div class="math notranslate nohighlight">
+\[
+|\Phi^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)
+\]</div>
+<p>We find a state that could satisfy</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+|\psi_0\psi_1\rangle &amp;= (\alpha_0|0\rangle + \beta_0|1\rangle)(\alpha_1|0\rangle + \beta_1|1\rangle)\\
+&amp;= \alpha_0\alpha_1|00\rangle + \alpha_0\beta_1|01\rangle + \beta_0\alpha_1|10\rangle + \beta_0\beta_1|11\rangle
+\end{align}
+\end{split}\]</div>
+<p>We can see that</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\alpha_0\alpha_1 = \beta_0\beta_1 = \frac{1}{\sqrt{2}}\\
+\alpha_0\beta_1 = \beta_0\alpha_1 = 0
+\end{split}\]</div>
+<p>If we set at least one coefficient to 0, then we won’t be able to get <span class="math notranslate nohighlight">\(\frac{1}{\sqrt{2}}\)</span>. Thus, the state is entangled. This specific state <span class="math notranslate nohighlight">\(|\Phi^+\rangle\)</span> is called a <strong>Bell state</strong>.</p>
+</section>
+<section id="circuit-form-of-a-bell-state">
+<h3><span class="section-number">5.6.2. </span>Circuit form of a Bell state<a class="headerlink" href="#circuit-form-of-a-bell-state" title="Permalink to this heading">#</a></h3>
+<p>Notice the states in <span class="math notranslate nohighlight">\(|\Phi^+\rangle\)</span>. There are two qubits <span class="math notranslate nohighlight">\((|00\rangle, |11\rangle)\)</span>. Thus, we will need <span class="math notranslate nohighlight">\(q_0, q_1\)</span>.</p>
+<p>Now, notice that we have a superposition of two states. We will use a Hadamard gate.</p>
+<p>Since we know that the state is entangled, we need an operation that entangles the two qubits. This operation will be the CNOT gate.</p>
+<p>The Bell state circuit is then</p>
+<p><img alt="bellstate" src="../../_images/chapter4-bell.png" /></p>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="references">
+<h1><span class="section-number">6. </span>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h1>
+<ol class="arabic simple">
+<li><p>McMahon, D. (2007). Quantum Computing explained. Wiley-IEEE Computer Society Press.</p></li>
+<li><p>Nielsen, M. A., &amp; Chuang, I. L. (2010). Quantum computation and quantum information: 10th Anniversary Edition. Cambridge University Press.</p></li>
+<li><p>Wong, T. (2022). Introduction to classical and quantum computing.</p></li>
+</ol>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "julia-1.6"
+        },
+        kernelOptions: {
+            name: "julia-1.6",
+            path: "./book/chapter_4"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'julia-1.6'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../chapter_2/chapter_2-nb.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">&lt;no title&gt;</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../bibliography.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Bibliography</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">5. Introduction to Quantum Computing</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-gates">5.1. Quantum Gates</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#properties-of-quantum-gates">5.1.1. Properties of Quantum Gates</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#one-qubit-quantum-gates">5.2. One Qubit Quantum Gates</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identity-gate">5.2.1. Identity Gate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pauli-x-gate">5.2.2. Pauli X Gate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pauli-y-gate">5.2.3. Pauli Y Gate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pauli-z-gate">5.2.4. Pauli Z Gate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hadamard-gate">5.2.5. Hadamard Gate</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-calculation">5.3. Sample calculation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gates-in-series">5.3.1. Gates in <em>series</em></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gates-in-parallel">5.3.2. Gates in <em>parallel</em></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-circuit-model">5.4. Quantum Circuit Model</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circuit-diagram">5.4.1. Circuit diagram</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circuit-diagram-multiple-qubits">5.4.2. Circuit diagram, multiple qubits</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multi-qubit-gates">5.5. Multi-qubit gates</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cnot-gate">5.5.1. CNOT gate</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#application">5.6. Application</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bell-state-entanglement">5.6.1. Bell state entanglement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circuit-form-of-a-bell-state">5.6.2. Circuit form of a Bell state</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#references">6. References</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By QCS Project Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
