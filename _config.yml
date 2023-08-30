@@ -66,6 +66,7 @@ sphinx:
           colab_url: "https://colab.research.google.com",
         }
     bibtex_reference_style: author_year
+    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 
 # Define the name of the latex output file for PDF builds
@@ -77,3 +78,10 @@ sphinx:
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:
   - book/references.bib
+
+parse:
+  myst_enable_extensions:
+    # don't forget to list any other extensions you want enabled,
+    # including those that are enabled by default!
+    - amsmath
+    - dollarmath

@@ -13,12 +13,3 @@ Students will be able to discuss the basic principles of classical computing, wi
 :width: 200px
 :align: center
 ```
-
-```{note}
-This is a sample note using MyST directive
-```
-
-```python
-# This is sample Python code using MyST directive
-import matplotlib as mp
-```
