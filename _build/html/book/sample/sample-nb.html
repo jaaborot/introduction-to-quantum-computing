@@ -7,8 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3. Sample Commonmarkdown and MyST directives in Jupyter Notebook &#8212; Introduction to Quantum Computing</title>
   
   
@@ -158,13 +157,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../notebooks.html">2. Content with notebooks</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Sample Commonmarkdown and MyST directives in Jupyter Notebook</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapter_1/chapter_1-nb.html">4. Introduction to Classical Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_2.html">5. Mathematical Foundation of Quantum Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_3.html">6. Quantum Mechanics Foundation for Quantum Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_4.html">7. Introduction to Quantum Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_5.html">8. Quantum Algorithms and Their Advantages Over Classical Counterparts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_6.html">9. Software Programming for Quantum Computation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_7.html">10. COARE and ASTI’s Quantum Circuit Simulation Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_8.html">11. Current Use Cases for Quantum Computing in the Noisy Intermediate-Scale Quantum Era</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_2/chapter_2.html">5. Mathematical Foundation of Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_3/chapter_3.html">6. Quantum Mechanics Foundation for Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_4/chapter_4.html">7. Introduction to Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_5/chapter_5.html">8. Quantum Algorithms and Their Advantages Over Classical Counterparts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_6/chapter_6.html">9. Software Programming for Quantum Computation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_7/chapter_7.html">10. COARE and ASTI’s Quantum Circuit Simulation Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_8/chapter_8.html">11. Current Use Cases for Quantum Computing in the Noisy Intermediate-Scale Quantum Era</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
 <ul class="nav bd-sidenav">
@@ -442,16 +441,16 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="sample-commonmarkdown-and-myst-directives-in-jupyter-notebook">
+  <div class="tex2jax_ignore mathjax_ignore section" id="sample-commonmarkdown-and-myst-directives-in-jupyter-notebook">
 <h1><span class="section-number">3. </span>Sample Commonmarkdown and MyST directives in Jupyter Notebook<a class="headerlink" href="#sample-commonmarkdown-and-myst-directives-in-jupyter-notebook" title="Permalink to this heading">#</a></h1>
-<section id="images">
+<div class="section" id="images">
 <h2><span class="section-number">3.1. </span>Images<a class="headerlink" href="#images" title="Permalink to this heading">#</a></h2>
 <p>This is a sample image using the default standard <em>inline</em> image embedding method in markdown. Note that you cannot set the dimensions of the image using this method.</p>
 <p><img alt="Sample image" src="../../_images/logo.png" /></p>
 <p>Now this is a sample image using MyST directive {image} for block-level images. You can specify the dimensions of the image using this method.</p>
 <a class="reference internal image-reference" href="../../_images/logo.png"><img alt="Sample image" class="align-center" src="../../_images/logo.png" style="width: 200px;" /></a>
-</section>
-<section id="math">
+</div>
+<div class="section" id="math">
 <h2><span class="section-number">3.2. </span>Math<a class="headerlink" href="#math" title="Permalink to this heading">#</a></h2>
 <p>Here is an example of an inline TeX script using single dollar: <span class="math notranslate nohighlight">\(\vert\lambda\rangle = \sum_{i=0}^{N-1} \alpha_{i}\vert i \rangle\)</span>.</p>
 <p>Here is an example of a block of the same TeX script using double dollar:</p>
@@ -460,15 +459,15 @@ document.write(`
     \vert\lambda\rangle = \sum_{i=0}^{N-1} \alpha_{i}\vert i \rangle
 \]</div>
 <p>Here is an example of a block of the same TeX script using \begin{align}\end{align} in amsmath:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a4ff7ccf-baec-4e9e-96dd-8e63773c244f">
-<span class="eqno">(3.1)<a class="headerlink" href="#equation-a4ff7ccf-baec-4e9e-96dd-8e63773c244f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ce153ba2-474e-4e0e-a496-58c7add1eff2">
+<span class="eqno">(3.1)<a class="headerlink" href="#equation-ce153ba2-474e-4e0e-a496-58c7add1eff2" title="Permalink to this equation">#</a></span>\[\begin{align}
     \vert\lambda\rangle = \sum_{i=0}^{N-1} \alpha_{i}\vert i \rangle
 \end{align}\]</div>
 <p>And here is the same equation using MyST math directive {math}.</p>
 <div class="math notranslate nohighlight">
 \[    \vert\lambda\rangle = \sum_{i=0}^{N-1} \alpha_{i}\vert i \rangle\]</div>
-</section>
-<section id="other-myst-directives">
+</div>
+<div class="section" id="other-myst-directives">
 <h2><span class="section-number">3.3. </span>Other MyST Directives<a class="headerlink" href="#other-myst-directives" title="Permalink to this heading">#</a></h2>
 <p>This is an example of an <em>admonition</em> in MyST. One example is the {note} admonition.</p>
 <div class="admonition note">
@@ -487,8 +486,8 @@ document.write(`
 </div>
 <p>There are more types of admonitions in MyST that you can use in writing your material.</p>
 <p>For more detailed instructions, please refer to the <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/index.html">official MyST online documentation</a>.</p>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -574,7 +573,7 @@ document.write(`
   <div class="footer-item">
     
 <p class="component-author">
-By QCS Project Team
+By QCS Project Team. Inspired by the Womanium Global Quantum Project.
 </p>
 
   </div>

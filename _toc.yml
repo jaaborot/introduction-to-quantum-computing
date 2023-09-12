@@ -19,13 +19,13 @@ parts:
       - file: book/notebooks
       - file: book/sample/sample-nb
       - file: book/chapter_1/chapter_1-nb
-      - file: book/chapter_2
-      - file: book/chapter_3
-      - file: book/chapter_4
-      - file: book/chapter_5
-      - file: book/chapter_6
-      - file: book/chapter_7
-      - file: book/chapter_8
+      - file: book/chapter_2/chapter_2.md
+      - file: book/chapter_3/chapter_3.md
+      - file: book/chapter_4/chapter_4.md
+      - file: book/chapter_5/chapter_5.md
+      - file: book/chapter_6/chapter_6.md
+      - file: book/chapter_7/chapter_7.md
+      - file: book/chapter_8/chapter_8.md
   - caption: Appendices
     chapters:
       - file: book/bibliography

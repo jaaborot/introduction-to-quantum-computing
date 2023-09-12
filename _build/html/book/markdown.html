@@ -7,8 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>1. Markdown Files &#8212; Introduction to Quantum Computing</title>
   
   
@@ -156,13 +155,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">2. Content with notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sample/sample-nb.html">3. Sample Commonmarkdown and MyST directives in Jupyter Notebook</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter_1/chapter_1-nb.html">4. Introduction to Classical Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter_2.html">5. Mathematical Foundation of Quantum Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter_3.html">6. Quantum Mechanics Foundation for Quantum Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter_4.html">7. Introduction to Quantum Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter_5.html">8. Quantum Algorithms and Their Advantages Over Classical Counterparts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter_6.html">9. Software Programming for Quantum Computation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter_7.html">10. COARE and ASTI’s Quantum Circuit Simulation Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter_8.html">11. Current Use Cases for Quantum Computing in the Noisy Intermediate-Scale Quantum Era</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter_2/chapter_2.html">5. Mathematical Foundation of Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter_3/chapter_3.html">6. Quantum Mechanics Foundation for Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter_4/chapter_4.html">7. Introduction to Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter_5/chapter_5.html">8. Quantum Algorithms and Their Advantages Over Classical Counterparts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter_6/chapter_6.html">9. Software Programming for Quantum Computation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter_7/chapter_7.html">10. COARE and ASTI’s Quantum Circuit Simulation Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter_8/chapter_8.html">11. Current Use Cases for Quantum Computing in the Noisy Intermediate-Scale Quantum Era</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
 <ul class="nav bd-sidenav">
@@ -462,19 +461,19 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="markdown-files">
+  <div class="tex2jax_ignore mathjax_ignore section" id="markdown-files">
 <h1><span class="section-number">1. </span>Markdown Files<a class="headerlink" href="#markdown-files" title="Permalink to this heading">#</a></h1>
 <p>Whether you write your book’s content in Jupyter Notebooks (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) or
 in regular markdown files (<code class="docutils literal notranslate"><span class="pre">.md</span></code>), you’ll write in the same flavor of markdown
 called <strong>MyST Markdown</strong>.</p>
-<section id="what-is-myst">
+<div class="section" id="what-is-myst">
 <h2><span class="section-number">1.1. </span>What is MyST?<a class="headerlink" href="#what-is-myst" title="Permalink to this heading">#</a></h2>
 <p>MyST stands for “Markedly Structured Text”. It
 is a slight variation on a flavor of markdown called “CommonMark” markdown,
 with small syntax extensions to allow you to write <strong>roles</strong> and <strong>directives</strong>
 in the Sphinx ecosystem.</p>
-</section>
-<section id="what-are-roles-and-directives">
+</div>
+<div class="section" id="what-are-roles-and-directives">
 <h2><span class="section-number">1.2. </span>What are roles and directives?<a class="headerlink" href="#what-are-roles-and-directives" title="Permalink to this heading">#</a></h2>
 <p>Roles and directives are two of the most powerful tools in Jupyter Book. They
 are kind of like functions, but written in a markup language. They both
@@ -482,7 +481,7 @@ serve a similar purpose, but <strong>roles are written in one line</strong>, whe
 <strong>directives span many lines</strong>. They both accept different kinds of inputs,
 and what they do with those inputs depends on the specific role or directive
 that is being called.</p>
-<section id="using-a-directive">
+<div class="section" id="using-a-directive">
 <h3><span class="section-number">1.2.1. </span>Using a directive<a class="headerlink" href="#using-a-directive" title="Permalink to this heading">#</a></h3>
 <p>At its simplest, you can insert a directive into your book’s content like so:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{mydirectivename}
@@ -507,8 +506,8 @@ Here is a note
 <p>In your built book.</p>
 <p>For more information on writing directives, see the
 <a class="reference external" href="https://myst-parser.readthedocs.io/">MyST documentation</a>.</p>
-</section>
-<section id="using-a-role">
+</div>
+<div class="section" id="using-a-role">
 <h3><span class="section-number">1.2.2. </span>Using a role<a class="headerlink" href="#using-a-role" title="Permalink to this heading">#</a></h3>
 <p>Roles are very similar to directives, but they are less-complex and written
 entirely on one line. You can insert a role into your book’s content with
@@ -522,8 +521,8 @@ refer directly to another page by its relative path. For example, the
 role syntax <code class="docutils literal notranslate"><span class="pre">{doc}`index`</span></code> will result in: <span class="xref std std-doc">index</span>.</p>
 <p>For more information on writing roles, see the
 <a class="reference external" href="https://myst-parser.readthedocs.io/">MyST documentation</a>.</p>
-</section>
-<section id="adding-a-citation">
+</div>
+<div class="section" id="adding-a-citation">
 <h3><span class="section-number">1.2.3. </span>Adding a citation<a class="headerlink" href="#adding-a-citation" title="Permalink to this heading">#</a></h3>
 <p>You can also cite references that are stored in a <code class="docutils literal notranslate"><span class="pre">bibtex</span></code> file. For example,
 the following syntax: <code class="docutils literal notranslate"><span class="pre">{cite}`holdgraf_evidence_2014`</span></code> will render like
@@ -543,8 +542,8 @@ then the bibliography is inserted with:</p>
 <!-- ```{bibliography}
 
 ``` -->
-</section>
-<section id="executing-code-in-your-markdown-files">
+</div>
+<div class="section" id="executing-code-in-your-markdown-files">
 <h3><span class="section-number">1.2.4. </span>Executing code in your markdown files<a class="headerlink" href="#executing-code-in-your-markdown-files" title="Permalink to this heading">#</a></h3>
 <p>If you’d like to include computational content inside these markdown files,
 you can use MyST Markdown to define cells that will be executed when your
@@ -566,9 +565,9 @@ executed with your default Jupyter kernel, and their outputs will be displayed
 in-line with the rest of your content.</p>
 <p>For more information about executing computational content with Jupyter Book,
 see <a class="reference external" href="https://myst-nb.readthedocs.io/">The MyST-NB documentation</a>.</p>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -659,7 +658,7 @@ see <a class="reference external" href="https://myst-nb.readthedocs.io/">The MyS
   <div class="footer-item">
     
 <p class="component-author">
-By QCS Project Team
+By QCS Project Team. Inspired by the Womanium Global Quantum Project.
 </p>
 
   </div>
