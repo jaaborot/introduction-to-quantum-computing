@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>6. Quantum Mechanics Foundation for Quantum Computing &#8212; Introduction to Quantum Computing</title>
+    <title>10. COARE and ASTI’s Quantum Circuit Simulation Project &#8212; Introduction to Quantum Computing</title>
   
   
   
@@ -60,13 +60,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'book/chapter_3/chapter_3';</script>
-    <link rel="canonical" href="https://jaaborot.github.io/introduction-to-quantum-computing/book/chapter_3/chapter_3.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'book/chapter_7/chapter_7-nb';</script>
+    <link rel="canonical" href="https://jaaborot.github.io/introduction-to-quantum-computing/book/chapter_7/chapter_7-nb.html" />
     <link rel="shortcut icon" href="../../_static/fav.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="7. Introduction to Quantum Computing" href="../chapter_4/chapter_4.html" />
-    <link rel="prev" title="5. Mathematical Foundation of Quantum Computing" href="../chapter_2/chapter_2.html" />
+    <link rel="next" title="11. Current Use Cases for Quantum Computing in the Noisy Intermediate-Scale Quantum Era" href="../chapter_8/chapter_8-nb.html" />
+    <link rel="prev" title="9. Software Programming for Quantum Computation" href="../chapter_6/chapter_6-nb.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -155,13 +155,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../notebooks.html">2. Content with notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sample/sample-nb.html">3. Sample Commonmarkdown and MyST directives in Jupyter Notebook</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapter_1/chapter_1-nb.html">4. Introduction to Classical Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_2/chapter_2.html">5. Mathematical Foundation of Quantum Computing</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">6. Quantum Mechanics Foundation for Quantum Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_4/chapter_4.html">7. Introduction to Quantum Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_5/chapter_5.html">8. Quantum Algorithms and Their Advantages Over Classical Counterparts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_6/chapter_6.html">9. Software Programming for Quantum Computation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_7/chapter_7.html">10. COARE and ASTI’s Quantum Circuit Simulation Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_8/chapter_8.html">11. Current Use Cases for Quantum Computing in the Noisy Intermediate-Scale Quantum Era</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_2/chapter_2-nb.html">5. Mathematical Foundation of Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_3/chapter_3-nb.html">6. Quantum Mechanics Foundation for Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_4/chapter_4-nb.html">7. Introduction to Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_5/chapter_5-nb.html">8. Quantum Algorithms and Their Advantages Over Classical Counterparts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_6/chapter_6-nb.html">9. Software Programming for Quantum Computation</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">10. COARE and ASTI’s Quantum Circuit Simulation Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_8/chapter_8-nb.html">11. Current Use Cases for Quantum Computing in the Noisy Intermediate-Scale Quantum Era</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
 <ul class="nav bd-sidenav">
@@ -212,6 +212,55 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/jaaborot/introduction-to-quantum-computing/master?urlpath=tree/book/chapter_7/chapter_7-nb.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/jaaborot/introduction-to-quantum-computing/blob/master/book/chapter_7/chapter_7-nb.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
 <div class="dropdown dropdown-source-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
     <i class="fab fa-github"></i>
@@ -237,7 +286,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/jaaborot/introduction-to-quantum-computing/edit/main/book/chapter_3/chapter_3.md" target="_blank"
+      <li><a href="https://github.com/jaaborot/introduction-to-quantum-computing/edit/main/book/chapter_7/chapter_7-nb.ipynb" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -254,7 +303,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/jaaborot/introduction-to-quantum-computing/issues/new?title=Issue%20on%20page%20%2Fbook/chapter_3/chapter_3.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/jaaborot/introduction-to-quantum-computing/issues/new?title=Issue%20on%20page%20%2Fbook/chapter_7/chapter_7-nb.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -284,7 +333,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/book/chapter_3/chapter_3.md" target="_blank"
+      <li><a href="../../_sources/book/chapter_7/chapter_7-nb.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -294,7 +343,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.md</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
 </li>
       
@@ -364,7 +413,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Quantum Mechanics Foundation for Quantum Computing</h1>
+    <h1>COARE and ASTI’s Quantum Circuit Simulation Project</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -378,9 +427,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="quantum-mechanics-foundation-for-quantum-computing">
-<h1><span class="section-number">6. </span>Quantum Mechanics Foundation for Quantum Computing<a class="headerlink" href="#quantum-mechanics-foundation-for-quantum-computing" title="Permalink to this heading">#</a></h1>
-<p><em>by Ren Tristan A. de la Cruz</em></p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="coare-and-astis-quantum-circuit-simulation-project">
+<h1><span class="section-number">10. </span>COARE and ASTI’s Quantum Circuit Simulation Project<a class="headerlink" href="#coare-and-astis-quantum-circuit-simulation-project" title="Permalink to this heading">#</a></h1>
+<p><em>by [yet to be determined]</em></p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -396,7 +445,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./book\chapter_3"
+            path: "./book\chapter_7"
         },
         predefinedOutput: true
     }
@@ -415,20 +464,20 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../chapter_2/chapter_2.html"
+       href="../chapter_6/chapter_6-nb.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">5. </span>Mathematical Foundation of Quantum Computing</p>
+        <p class="prev-next-title"><span class="section-number">9. </span>Software Programming for Quantum Computation</p>
       </div>
     </a>
     <a class="right-next"
-       href="../chapter_4/chapter_4.html"
+       href="../chapter_8/chapter_8-nb.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">7. </span>Introduction to Quantum Computing</p>
+        <p class="prev-next-title"><span class="section-number">11. </span>Current Use Cases for Quantum Computing in the Noisy Intermediate-Scale Quantum Era</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
