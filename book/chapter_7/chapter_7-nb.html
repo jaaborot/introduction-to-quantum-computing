@@ -438,6 +438,16 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#high-performance-computing-hpc">10.1. High-Performance Computing (HPC)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">10.1.1. Table of Contents</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">10.1.2. Introduction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-first-supercomputer">10.1.3. The First Supercomputer</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#image-source-https-commons-wikimedia-org-wiki-file-cdc-6600-jc-jpg">10.1.3.1. <em>Image source: https://commons.wikimedia.org/wiki/File:CDC_6600.jc.jpg</em></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#image-source-https-commons-wikimedia-org-wiki-file-cray-1-deutsches-museum-jpg">10.1.3.2. <em>Image source: https://commons.wikimedia.org/wiki/File:Cray-1-deutsches-museum.jpg</em></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">10.1.3.3. <em>Image source: https://commons.wikimedia.org/wiki/File:Cray-1-deutsches-museum.jpg</em></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coare-services">10.1.4. COARE services:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-ssh-key-pairs">10.1.5. Generate SSH Key Pairs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#references">10.1.6. <em>References</em></a></li>
 </ul>
 </li>
 </ul>
@@ -453,7 +463,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="coare-and-astis-quantum-circuit-simulation-project">
 <h1><span class="section-number">10. </span>COARE and ASTI’s Quantum Circuit Simulation Project<a class="headerlink" href="#coare-and-astis-quantum-circuit-simulation-project" title="Permalink to this heading">#</a></h1>
-<p><em>by [yet to be determined]</em></p>
+<p><em>by [Cyrel Jon Fontelo]</em></p>
 <section id="high-performance-computing-hpc">
 <h2><span class="section-number">10.1. </span>High-Performance Computing (HPC)<a class="headerlink" href="#high-performance-computing-hpc" title="Permalink to this heading">#</a></h2>
 <p><em>The topic will cover about the High-Performance Computing (HPC)</em></p>
@@ -462,6 +472,11 @@ document.write(`
 <ul class="simple">
 <li><p><span class="xref myst">Intoduction</span></p></li>
 <li><p><span class="xref myst">History</span></p></li>
+<li><p><span class="xref myst">DOST ASTI COARE</span></p>
+<ul>
+<li><p><span class="xref myst">Services</span></p></li>
+</ul>
+</li>
 <li><p><span class="xref myst">Connect to a High-Performance Computing using CLI (command-line interface)</span></p>
 <ul>
 <li><p><span class="xref myst">Using terminal for Linux and macOS</span></p></li>
@@ -469,6 +484,250 @@ document.write(`
 </ul>
 </li>
 </ul>
+<h3 id="introduction"></h3>
+</section>
+<section id="introduction">
+<h3><span class="section-number">10.1.2. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h3>
+<hr class="docutils" />
+<p>High-Performance Computing (HPC) is the use of  multiple supercomputers to solve complex and high-speed computation problems that cannot be perform by the average computer.</p>
+<p>Supercomputer development were originally driven to be use in applications related to national security, including nuclear weapons design and cryptography. Later on this technology employed by the aerospace, automotive industries, scientific research, quantum mechanics, weather forecasting, engineering and more.</p>
+<h3 id="history"></h3>
+</section>
+<section id="the-first-supercomputer">
+<h3><span class="section-number">10.1.3. </span>The First Supercomputer<a class="headerlink" href="#the-first-supercomputer" title="Permalink to this heading">#</a></h3>
+<hr class="docutils" />
+<p>CDC 6600 by <a class="reference external" href="https://en.wikipedia.org/wiki/Seymour_Cray">Seymour Cray</a>, 1964</p>
+<p>In year 1964, The Control Data Corporation (CDC) 6600 was the first world’s fastest computer to make an apperance. It was designed by Seymour Cray, with the peak performance of up to three million floating-point(FLOPS) or 3 Mega-FLOPS(MFLOPS), and the term <em>supercomputer</em> cast to describe it.</p>
+<center>
+<p><img alt="CDC 6600" src="../../_images/640px-CDC_6600.jc.jpg" /></p>
+<section id="image-source-https-commons-wikimedia-org-wiki-file-cdc-6600-jc-jpg">
+<h4><span class="section-number">10.1.3.1. </span><em>Image source: https://commons.wikimedia.org/wiki/File:CDC_6600.jc.jpg</em><a class="headerlink" href="#image-source-https-commons-wikimedia-org-wiki-file-cdc-6600-jc-jpg" title="Permalink to this heading">#</a></h4>
+</center>
+<p>Cray-1 Seymour Cray, 1976</p>
+<hr class="docutils" />
+<p>Seymour Cray, the architect of the CDC 6600 started his own company, Cray Research In., in 1972. The company first product released on 1976 was <strong>Cray-1</strong>. It was also the first supercomputer to successfully implement the <em>vector processor</em> design (also known as array processor), it is a central processing unit(CPU) that implements a set of instruction in large one-dimensional arrays. With a peak performance up to 160 million floating-point (FLOPS) or 160 Mega-FLOPS(MFLOPS)</p>
+<center>
+<p><img alt="Cray-1" src="../../_images/Cray-1-deutsches-museum.jpg" /></p>
+</section>
+<section id="image-source-https-commons-wikimedia-org-wiki-file-cray-1-deutsches-museum-jpg">
+<h4><span class="section-number">10.1.3.2. </span><em>Image source: https://commons.wikimedia.org/wiki/File:Cray-1-deutsches-museum.jpg</em><a class="headerlink" href="#image-source-https-commons-wikimedia-org-wiki-file-cray-1-deutsches-museum-jpg" title="Permalink to this heading">#</a></h4>
+</center><p>Cray-1 Seymour Cray, 1976</p>
+<hr class="docutils" />
+<p>Seymour Cray, the architect of the CDC 6600 started his own company, Cray Research In., in 1972. The company first product released on 1976 was <strong>Cray-1</strong>. It was also the first supercomputer to successfully implement the <em>vector processor</em> design (also known as array processor), it is a central processing unit(CPU) that implements a set of instruction in large one-dimensional arrays. With a peak performance up to 160 million floating-point (FLOPS) or 160 Mega-FLOPS(MFLOPS)</p>
+<center>
+<p><img alt="Cray-1" src="../../_images/Cray-1-deutsches-museum.jpg" /></p>
+</section>
+<section id="id1">
+<h4><span class="section-number">10.1.3.3. </span><em>Image source: https://commons.wikimedia.org/wiki/File:Cray-1-deutsches-museum.jpg</em><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h4>
+</center><h3 id="coare-services"></h3>
+</section>
+</section>
+<section id="coare-services">
+<h3><span class="section-number">10.1.4. </span>COARE services:<a class="headerlink" href="#coare-services" title="Permalink to this heading">#</a></h3>
+<p><em>DOST ASTI COARE has 3 services available:</em></p>
+<ol class="arabic">
+<li><p><strong>High-Performance Computing (HPC)</strong></p>
+<p> The High Performance Computing service is designed to support researchers in their computational tasks, including data analysis and simulations. </p>
+<ul>
+<li><p>Compute node capacity</p>
+<ul class="simple">
+<li><p>CPU nodes x 36. Each has:</p>
+<ul>
+<li><p>88 logical CPUs, with a total of 3168 Cores(CPU)</p></li>
+<li><p>500 GB RAM, with a total of 18 Terabytes of RAM</p></li>
+</ul>
+</li>
+<li><p>The current capacity is 30 TFLOPS or 30 Trillion Floating point operations per second</p></li>
+</ul>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>GPU nodes</p>
+<ul>
+<li><p>P40 nodes x 6. Each has:</p>
+<ul>
+<li><p>24 CPUs</p></li>
+<li><p>1 TB RAM</p></li>
+<li><p>NVIDIA Tesla P40 GPU x 1</p></li>
+</ul>
+</li>
+<li><p>A100 nodes  x 2. Each has:</p>
+<ul>
+<li><p>128 CPUs</p></li>
+<li><p>1 TB RAM</p></li>
+<li><p>NVIDIA Tesla A100 GPU x 8</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>The current capacity is 75 TFLOPS or 75 Trillion Floating point operations per second</p></li>
+</ul>
+</li>
+<hr class="docutils" />
+<li><p>Storage capacity</p>
+<ul class="simple">
+<li><p>1015 TB of storage capacity</p></li>
+</ul>
+</li>
+<hr class="docutils" />
+<li><p>Network capacity</p>
+<ul class="simple">
+<li><p>10 gigabits/second</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<ol class="arabic" start="2">
+<li><p><strong>Science Cloud</strong></p>
+<p>Another service of COARE is <em>Science Cloud</em> which is a Paas (Platform as a Service), this service is ready-to-use, cloud-based for developing, running, maintaining and managing applications. This service is implemented through OpenStack.</p>
+</li>
+</ol>
+<ul>
+<li><p>Compute and Storage capacity</p>
+<ul class="simple">
+<li><p>3360 Virtual Cores</p></li>
+<li><p>12.5 TB RAM</p></li>
+<li><p>2790 TB of storage capacity</p></li>
+</ul>
+</li>
+<hr class="docutils" />
+<li><p>Default allocation per user of Science Cloud service.</p>
+<ul class="simple">
+<li><p>4 logical core (CPU)</p></li>
+<li><p>8 GB RAM (Memory)</p></li>
+<li><p>100 GB (Storage)</p></li>
+<li><p>4 max number of instances (Instance are the virtual server can be created)</p></li>
+</ul>
+</li>
+</ul>
+<ol class="arabic" start="3">
+<li><p><strong>Data Archiving</strong></p>
+<p>Another services of COARE is Data Archiving which provide a repository that will accommodate various storage requirements, multiple store options and a large storage capacity for COARE users. This service is implemted through the Data Catalog, which is a web-based research repository. This repository is accessible to public and the datasets stored could be integral for academics, data analysts, scienctist and other scholars in the scientific community.</p>
+</li>
+</ol>
+<ul class="simple">
+<li><p>1 Petabyte (PB) of storage capacity</p></li>
+</ul>
+<hr class="docutils" />
+<p>COARE services are available for:</p>
+<ol class="arabic simple">
+<li><p>Meteorologists</p></li>
+<li><p>Researchers</p></li>
+<li><p>Weather Forecasters</p></li>
+<li><p>Scientists</p></li>
+<li><p>Students</p></li>
+</ol>
+<p align="center">
+  <img width ="70" height="80" src="src/meteorologist.png"> &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img width ="70" height="80" src="src/researchers.png"> &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img width ="70" height="80" src="src/weather-forecaster.png"> &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img width ="70" height="80" src="src/scientists.png"> &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img width ="70" height="80" src="src/students.png">
+</p>
+<h3 id="connecttohpc"> Connect to a High-Performance Computing (HPC) </h3>
+<hr class="docutils" />
+<p>To connect to an HPC, you will need to use an SSH client. Some popular SSH clients include:</p>
+<ul class="simple">
+<li><p>PuTTY (Windows)</p></li>
+<li><p>mRemoteNG (Windows)</p></li>
+<li><p>OpenSSH (Linux and macOS)</p></li>
+<li><p>Termius (macOS)</p></li>
+</ul>
+<p>Once you have installed an SSH client, you will need to know the hostname or IP address of the HPC, as well as your username and password. This information should be provided to you by the HPC administrator.</p>
+<h3 id="linux-terminal"> To connect to an HPC from Windows 10, Linux or macOS: </h3>
+<hr class="docutils" />
+<ol class="arabic simple">
+<li><p>Open a terminal window.</p></li>
+<li><p>Type the following command, replacing <hostname> with the hostname or IP address of the HPC:</p></li>
+</ol>
+<ul class="simple">
+<li><p><em><code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">your_username&#64;&lt;hostname</span> <span class="pre">or</span> <span class="pre">ip</span> <span class="pre">address&gt;</span></code></em></p></li>
+</ul>
+<ol class="arabic" start="3">
+<li><p>If you are asked for a password, enter your password.</p>
+<blockquote>
+<div><p><em><strong>Note:</strong></em>  <em>You can also use SSH keys instead of passwords by generating them on your local machine and copying them over to the remote server.</em></p>
+</div></blockquote>
+</li>
+<li><p>You should now be connected to the HPC and can execute commands as if you were on the HPC itself.</p></li>
+<li><p>When done, type <code class="docutils literal notranslate"><span class="pre">exit</span></code>. This will close the connection back to your local machine.</p>
+<blockquote>
+<div><p><em><strong>Note:</strong></em> <em>Some may encounter an error while using the passwordless access (SSH keys) to access the HPC. Here are some common error:</em></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>“Permission denied (publickey).”</em> This means that you have not added the public key on the remote server side yet.</p></li>
+<li><p><em>Permission denied (publickey)</em> : You need to add the public key in the authorized keys file on the remote server.</p></li>
+<li><p><em>Bad Permissions (Unprotected private key file!)</em> : This means that the permission file of your private key is too open, or it has a permission to be used by others. The best practice for this is to change the permission type of your private key file to 600 (Read and Write for User only).</p></li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+</li>
+</ol>
+<p><br> </br></p>
+<p><em>Example image of a wsl (windows subsystem for linux)</em></p>
+<p><img alt="Linux-MacOS" src="../../_images/linux-terminal.png" /></p>
+<h3 id="putty"> To connect to an HPC from Windows using PuTTY: </h3>
+<hr class="docutils" />
+<ol class="arabic simple">
+<li><p>Open PuTTY.</p></li>
+<li><p>In the “<em>Host Name (or IP address)</em>” field, enter the hostname or IP address of the HPC.</p></li>
+<li><p>In the “<em>Port</em>” field, enter 22 (the default SSH port).</p></li>
+<li><p>Click the “<em>Open</em>” button.</p></li>
+<li><p>When prompted, enter your username and password.</p></li>
+<li><p>Once you have connected to the HPC, you will be able to access your files and run jobs.</p></li>
+</ol>
+<p align="center">
+  <img src="src/putty.png">
+</p>
+<p><br> </br></p>
+<blockquote>
+<div><p><em>An example being prompted for username and password after proceeding with “Open” button.</em></p>
+</div></blockquote>
+<p align="center">
+  <img width ="800" height="200" src="src/putty-terminal.png">
+</p>
+</section>
+<section id="generate-ssh-key-pairs">
+<h3><span class="section-number">10.1.5. </span>Generate SSH Key Pairs<a class="headerlink" href="#generate-ssh-key-pairs" title="Permalink to this heading">#</a></h3>
+<p>The SSH key pair consists of private key and public key. The public key should be given to COARE and the private key will be kept on personal(this can be store on your personal computer or on cloud) for this will be use every time user logs in to the HPC.</p>
+<p>Generate using Linux / Unix / MacOS / Windows Powershell / WSL</p>
+<ol class="arabic simple">
+<li><p>$ ssh-keygen [<args>]</p></li>
+</ol>
+<p align="center">
+  <img width ="50%" height="50%" src="src/ssh-keygen-1.png">
+</p>
+</section>
+<section id="references">
+<h3><span class="section-number">10.1.6. </span><em>References</em><a class="headerlink" href="#references" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Syntax</p></th>
+<th class="head text-right"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">https://www.geeksforgeeks.org/an-overview-of-cluster-computing/</span></code></p></td>
+<td class="text-right"><p>An Overview of Cluster Computing</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">https://www.britannica.com/technology/supercomputer#ref1070668</span></code></p></td>
+<td class="text-right"><p>Supercomputer <br> CDC 6600 <br> Cray-1</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">https://www.convert-measurement-units.com/conversion-calculator.php</span></code></p></td>
+<td class="text-right"><p>Conversion Calculator</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">https://www.extremetech.com/extreme/125271-the-history-of-supercomputers</span></code></p></td>
+<td class="text-right"><p>History of Supercomputers</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">https://en.wikipedia.org/wiki/Supercomputer#</span></code></p></td>
+<td class="text-right"><p>Supercomputer</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 </section>
 </section>
@@ -538,6 +797,16 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#high-performance-computing-hpc">10.1. High-Performance Computing (HPC)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">10.1.1. Table of Contents</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">10.1.2. Introduction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-first-supercomputer">10.1.3. The First Supercomputer</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#image-source-https-commons-wikimedia-org-wiki-file-cdc-6600-jc-jpg">10.1.3.1. <em>Image source: https://commons.wikimedia.org/wiki/File:CDC_6600.jc.jpg</em></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#image-source-https-commons-wikimedia-org-wiki-file-cray-1-deutsches-museum-jpg">10.1.3.2. <em>Image source: https://commons.wikimedia.org/wiki/File:Cray-1-deutsches-museum.jpg</em></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">10.1.3.3. <em>Image source: https://commons.wikimedia.org/wiki/File:Cray-1-deutsches-museum.jpg</em></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coare-services">10.1.4. COARE services:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-ssh-key-pairs">10.1.5. Generate SSH Key Pairs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#references">10.1.6. <em>References</em></a></li>
 </ul>
 </li>
 </ul>
