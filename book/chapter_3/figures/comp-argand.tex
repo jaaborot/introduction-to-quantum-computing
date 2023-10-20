@@ -1,0 +1,44 @@
+\documentclass[crop,tikz]{standalone}                 
+\usepackage{physics}
+\makeatletter                                                                                        
+
+\begin{document}
+
+\begin{tikzpicture}[scale=1.5]                                                                          
+\draw [dotted] (-3.00,-3.00) grid ( 3.00, 3.00);
+
+% axes labels
+\node [fill=white]   (nodeA) at ( 3.00,  0.00) {$\Re(z)$} ;
+\node [fill=white]   (nodeB) at ( 0.00,  3.00) {$\Im(z)$} ;
+
+%axes
+\draw [->] ( 0.00,  0.00) -- ( 0.00,  2.85);
+\draw [->] ( 0.00,  0.00) -- ( 2.65,  0.00);
+\draw [->] ( 0.00,  0.00) -- (-3.00,  0.00);
+\draw [->] ( 0.00,  0.00) -- ( 0.00, -3.00);
+
+% z components
+\draw [-, red,  densely dashed]   (1.50, 2.50) -- ( 1.50, 0.00);                                          
+\draw [-, blue, densely dashed]   (1.50, 2.50) -- ( 0.00, 2.50);                                          
+\node [red] (nodea) at ( 1.50, -0.15) {$a$} ;
+\node [blue] (nodeb) at (-0.15,  2.50) {$b$} ;
+
+% z dot
+\draw [fill=black] (1.50, 2.50) circle [radius=0.05];
+\node [fill=white] (nodeL) at ( 2.2,  2.50) {$z=a+bi$} ;
+\node [fill=white] (nodeL) at ( 1.5,  2.80) {$(a,b)$} ;
+
+% ticks
+\node [fill=white] (nodeB) at ( 0.00,  2.00) {$2$} ;
+\node [fill=white] (nodeB) at ( 0.00, -2.00) {$-2$} ;
+\node [fill=white] (nodeB) at ( 0.00,  1.00) {$1$} ;
+\node [fill=white] (nodeB) at ( 0.00, -1.00) {$-1$} ;
+\node [fill=white] (nodeB) at ( 2.00,  0.00) {$2$} ;
+\node [fill=white] (nodeB) at (-2.00,  0.00) {$-2$} ;
+\node [fill=white] (nodeB) at ( 1.00,  0.00) {$1$} ;
+\node [fill=white] (nodeB) at (-1.00,  0.00) {$-1$} ;
+\node [fill=white] (nodeB) at ( 0.00,  0.00) {$0$} ;
+
+\end{tikzpicture}                                                                                    
+
+\end{document}
