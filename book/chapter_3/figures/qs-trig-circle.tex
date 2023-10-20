@@ -1,0 +1,39 @@
+\documentclass[crop,tikz]{standalone}                 
+\usepackage{physics}
+\makeatletter                                                                                        
+
+\newcommand{\sq}[1]{\frac{1}{\sqrt{#1}}}
+
+\begin{document}
+
+\begin{tikzpicture}[scale=5, cap=round, >=latex]
+    
+\draw[thick] (0cm,0cm) circle(0.75cm);
+    
+\foreach \x in {0,45,90,135,180,225,270,315} 
+{
+  \draw[->] (0cm,0cm) -- (\x:0.75cm); % lines from center to point
+  \filldraw[black] (\x:0.75cm) circle(0.2pt); % dots at each point
+}
+
+\foreach \adeg/\radtext/\xc/\yc in 
+{
+  0   /              0 /                   1 /                   0 , 
+  45  / \frac{ \pi}{4} / \frac{1}{\sqrt{2}}  /  \frac{1}{\sqrt{2}} ,
+  90  / \frac{\pi}{2}  /                   0 /                   1 ,
+  135 / \frac{3\pi}{4} / -\frac{1}{\sqrt{2}} / \frac{1}{\sqrt{2}}  ,
+  180 /            \pi /                  -1 /                   0 ,
+  225 / \frac{5\pi}{4} / -\frac{1}{\sqrt{2}} / -\frac{1}{\sqrt{2}} ,
+  270 / \frac{3\pi}{2} /                   0 /                  -1 ,
+  315 / \frac{7\pi}{4} / \frac{1}{\sqrt{2}}  / -\frac{1}{\sqrt{2}} 
+}
+{
+  \draw (\adeg:0.40cm) node[fill=white] {$\radtext$}              ; % <-- rotate around key used
+  \draw (\adeg:0.90cm) node[fill=white] {$\left(\xc,\yc\right)$}  ; % <-- rotate around key used, radius changed, anchor key used
+  \draw (\adeg:1.15cm) node[fill=white] {$\ket{\psi_{\radtext}}$} ; % <-- rotate around key used, radius changed, anchor key used
+}
+  
+\end{tikzpicture}
+
+
+\end{document}

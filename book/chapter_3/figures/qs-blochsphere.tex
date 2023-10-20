@@ -1,0 +1,59 @@
+\documentclass[crop,tikz]{standalone}                 
+\usepackage{physics}
+\makeatletter                                                                                        
+
+\newcommand{\sq}[1]{\frac{1}{\sqrt{#1}}}
+
+\begin{document}
+
+\begin{tikzpicture}[scale=1.5]                                                                          
+% tikz code here
+%\draw [densely dashed] ( -3.00, -3.00) grid  (3.00,3.00);
+[line cap=round, line join=round, >=Triangle]
+  
+  %\clip(-2.19,-2.49) rectangle (2.66,2.58);
+  \draw [shift={(0,0)}, lightgray, fill, fill opacity=0.1] (0,0) -- (56.7:0.4) arc (56.7:90.:0.4) -- cycle;
+  \draw [shift={(0,0)}, lightgray, fill, fill opacity=0.1] (0,0) -- (-135.7:0.4) arc (-135.7:-33.2:0.4) -- cycle;
+
+  % main circle
+  \draw(0,0) circle (2cm);
+
+  % ellipse 
+  \draw [rotate around={0.:(0.,0.)},dash pattern=on 3pt off 3pt] (0,0) ellipse (2cm and 0.9cm);
+
+
+  % angle label
+  \draw (-0.08, -0.35) node[anchor=north west] {$\varphi$};
+  \draw ( 0.01,  0.70) node[anchor=north west] {$\theta$};
+
+  \node [fill=white] (xhat)  at ( -0.90, -0.90) {$ \mathbf{\hat{x}}$};
+  \node [fill=white] (xhat2) at (  0.90,  0.90) {$-\mathbf{\hat{x}}$};
+  \node [fill=white] (yhat)  at (  2.20,  0.00) {$ \mathbf{\hat{y}}$};
+  \node [fill=white] (yhat2) at ( -2.25,  0.00) {$-\mathbf{\hat{y}}$};
+  \node [fill=white] (zhat)  at (  0.00,  2.20) {$ \mathbf{\hat{z}}$};
+  \node [fill=white] (zhat)  at (  0.00, -2.20) {$-\mathbf{\hat{z}}$};
+  \node []
+
+  %\draw ( -1.01, -0.72) node[anchor=north west] {$\mathbf {\hat{x}}$};
+  %\draw (  2.07,  0.30) node[anchor=north west] {$\mathbf {\hat{y}}$};
+  %\draw ( -0.50,  2.60) node[anchor=north west] {$\mathbf {\hat{z}}$};
+  %\draw ( -0.40, -2.00) node[anchor=north west] {$\mathbf{-{\hat{z}}}$};
+  \draw (  0.40,  1.65) node[anchor=north west] {$|\psi\rangle$};
+  
+  % vectors
+  \draw [-]      ( 0.00, 0.00) -- ( 0.70, 1.07); %  psi
+  \draw [->]     ( 0.00, 0.00) -- ( 0.00, 2.00); %  zhat
+  \draw [->]     ( 0.00, 0.00) -- ( 0.00,-2.00); % -zhat
+  \draw [->]     ( 0.00, 0.00) -- (-0.81,-0.79); %  xhat
+  \draw [->]     ( 0.00, 0.00) -- ( 0.81, 0.79); % -xhat
+  \draw [->]     ( 0.00, 0.00) -- ( 2.00, 0.00); %  yhat
+  \draw [->]     ( 0.00, 0.00) -- (-2.00, 0.00); % -yhat
+  \draw [dotted] ( 0.70, 1.00) -- ( 0.70,-0.46);
+  \draw [dotted] ( 0.00, 0.00) -- ( 0.70,-0.46);
+
+  \scriptsize
+  \draw [fill] (0,0) circle (1.5pt);
+  \draw [fill] (0.7,1.1) circle (0.5pt);
+\end{tikzpicture}                                                                                    
+
+\end{document}
