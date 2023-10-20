@@ -7,7 +7,8 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>3. Sample Commonmarkdown and MyST directives in Jupyter Notebook &#8212; Introduction to Quantum Computing</title>
   
   
@@ -18,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -37,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -79,6 +81,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -389,10 +400,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -400,7 +411,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -441,16 +452,16 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="sample-commonmarkdown-and-myst-directives-in-jupyter-notebook">
+  <section class="tex2jax_ignore mathjax_ignore" id="sample-commonmarkdown-and-myst-directives-in-jupyter-notebook">
 <h1><span class="section-number">3. </span>Sample Commonmarkdown and MyST directives in Jupyter Notebook<a class="headerlink" href="#sample-commonmarkdown-and-myst-directives-in-jupyter-notebook" title="Permalink to this heading">#</a></h1>
-<div class="section" id="images">
+<section id="images">
 <h2><span class="section-number">3.1. </span>Images<a class="headerlink" href="#images" title="Permalink to this heading">#</a></h2>
 <p>This is a sample image using the default standard <em>inline</em> image embedding method in markdown. Note that you cannot set the dimensions of the image using this method.</p>
 <p><img alt="Sample image" src="../../_images/logo.png" /></p>
 <p>Now this is a sample image using MyST directive {image} for block-level images. You can specify the dimensions of the image using this method.</p>
 <a class="reference internal image-reference" href="../../_images/logo.png"><img alt="Sample image" class="align-center" src="../../_images/logo.png" style="width: 200px;" /></a>
-</div>
-<div class="section" id="math">
+</section>
+<section id="math">
 <h2><span class="section-number">3.2. </span>Math<a class="headerlink" href="#math" title="Permalink to this heading">#</a></h2>
 <p>Here is an example of an inline TeX script using single dollar: <span class="math notranslate nohighlight">\(\vert\lambda\rangle = \sum_{i=0}^{N-1} \alpha_{i}\vert i \rangle\)</span>.</p>
 <p>Here is an example of a block of the same TeX script using double dollar:</p>
@@ -459,15 +470,15 @@ document.write(`
     \vert\lambda\rangle = \sum_{i=0}^{N-1} \alpha_{i}\vert i \rangle
 \]</div>
 <p>Here is an example of a block of the same TeX script using \begin{align}\end{align} in amsmath:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-02e93265-2765-4868-b65d-004d8a346da8">
-<span class="eqno">(3.1)<a class="headerlink" href="#equation-02e93265-2765-4868-b65d-004d8a346da8" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-422fb4ee-c5b0-41e5-8f28-de149b05dc98">
+<span class="eqno">(3.1)<a class="headerlink" href="#equation-422fb4ee-c5b0-41e5-8f28-de149b05dc98" title="Permalink to this equation">#</a></span>\[\begin{align}
     \vert\lambda\rangle = \sum_{i=0}^{N-1} \alpha_{i}\vert i \rangle
 \end{align}\]</div>
 <p>And here is the same equation using MyST math directive {math}.</p>
 <div class="math notranslate nohighlight">
 \[    \vert\lambda\rangle = \sum_{i=0}^{N-1} \alpha_{i}\vert i \rangle\]</div>
-</div>
-<div class="section" id="other-myst-directives">
+</section>
+<section id="other-myst-directives">
 <h2><span class="section-number">3.3. </span>Other MyST Directives<a class="headerlink" href="#other-myst-directives" title="Permalink to this heading">#</a></h2>
 <p>This is an example of an <em>admonition</em> in MyST. One example is the {note} admonition.</p>
 <div class="admonition note">
@@ -486,8 +497,8 @@ document.write(`
 </div>
 <p>There are more types of admonitions in MyST that you can use in writing your material.</p>
 <p>For more detailed instructions, please refer to the <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/index.html">official MyST online documentation</a>.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -502,7 +513,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./book\sample"
+            path: "./book/sample"
         },
         predefinedOutput: true
     }
@@ -514,11 +525,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="../notebooks.html"
@@ -538,10 +548,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -606,8 +613,8 @@ By QCS Project Team. Inspired by the Womanium Global Quantum Project.
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>
