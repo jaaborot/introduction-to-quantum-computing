@@ -1,0 +1,52 @@
+\documentclass[crop,tikz]{standalone}                 
+\usepackage{physics}
+\makeatletter                                                                                        
+
+\begin{document}
+
+\begin{tikzpicture}[scale=1.5]                                                                          
+%\draw [dotted] (-2.70,-2.70) grid (2.70, 2.70);
+
+% axes labels
+\node []   (nodeA) at ( 2.65,  0.00) {$\alpha$} ;
+\node []   (nodeB) at ( 0.00,  2.65) {$\beta$} ;
+
+%axes
+\draw [->] ( 0.00,  0.00) -- ( 0.00,  2.50);
+\draw [->] ( 0.00,  0.00) -- ( 2.50,  0.00);
+\draw [->] ( 0.00,  0.00) -- (-2.50,  0.00);
+\draw [->] ( 0.00,  0.00) -- ( 0.00, -2.50);
+
+% circle
+\draw (0,0) circle [radius=2.00];
+
+% ticks
+\node [fill=white] (nodeB) at ( 0.00,  2.00) {$1$} ;
+\node [fill=white] (nodeB) at ( 0.00, -2.00) {$-1$} ;
+\node [fill=white] (nodeB) at ( 0.00,  1.00) {$\frac{1}{2}$} ;
+\node [fill=white] (nodeB) at ( 0.00, -1.00) {$-\frac{1}{2}$} ;
+\node [fill=white] (nodeB) at ( 2.00,  0.00) {$1$} ;
+\node [fill=white] (nodeB) at (-2.00,  0.00) {$-1$} ;
+\node [fill=white] (nodeB) at ( 1.00,  0.00) {$\frac{1}{2}$} ;
+\node [fill=white] (nodeB) at (-1.00,  0.00) {$-\frac{1}{2}$} ;
+
+% state
+\draw [->]   (0,0) -- ( 1.41421, 1.41421);                                          
+\draw [-, red,  densely dashed]   (0, 1.41421) -- ( 1.41421, 1.41421);                                          
+\draw [-, blue, densely dashed]   (1.41421, 0) -- ( 1.41421, 1.41421);                                          
+
+% quantum state label
+\node [] (nodeQ) at ( 1.91421,  1.51421) {$(\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}} )$} ;
+
+% angle
+\node [fill=white]   (nodeT) at ( 0.50,  0.20) {$\theta$} ;
+\draw ( 0.40,  0.00) arc ( 0.00: 45.00: 0.40);
+
+% origin
+\node [fill=white]   (node0) at ( 0.00,  0.00) {$0$} ;
+
+
+
+\end{tikzpicture}                                                                                    
+
+\end{document}
