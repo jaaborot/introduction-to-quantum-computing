@@ -1,0 +1,47 @@
+\documentclass[crop,tikz]{standalone}                 
+\usepackage{physics}
+\makeatletter                                                                                        
+
+\begin{document}
+
+\begin{tikzpicture}[scale=1.5]                                                                          
+%\draw [dotted] (-2.70,-2.70) grid (2.70, 2.70);
+
+% axes labels
+\node []   (nodeA) at ( 2.65,  0.00) {$+\alpha$} ;
+\node []   (nodea) at (-2.65,  0.00) {$-\alpha$} ;
+\node []   (nodeB) at ( 0.00,  2.65) {$+\beta$} ;
+\node []   (nodeb) at ( 0.00, -2.65) {$-\beta$} ;
+
+%axes
+\draw [->] ( 0.00,  0.00) -- (nodeA);
+\draw [->] ( 0.00,  0.00) -- (nodea);
+\draw [->] ( 0.00,  0.00) -- (nodeB);
+\draw [->] ( 0.00,  0.00) -- (nodeb);
+
+% circle
+\draw (0,0) circle [radius=2.00];
+
+% components of a vector
+\draw [->]   (0,0) -- ( 1.732050808, 1.0) node[midway, above, sloped] {$r=1$};                                          
+\draw [|-, red, densely dashed]   (0.01,1.0) -- ( 1.732050808, 1.0);                                          
+\draw [|-, blue, densely dashed]  (1.732050808, 0.01) -- ( 1.732050808, 1.00);                                          
+
+% quantum state label
+\node [] (nodeQ) at ( 2.1,  1.05) {$(\alpha, \beta)$} ;
+\node [] (nodeq) at ( 2.9,  1.05) { or $(\theta, 1)$} ;
+\node [red] (nodeC)  at ( 0.8,  1.2) {$\alpha = cos(\theta)$} ;
+\node [blue] (nodeS) at ( 2.32,  0.40) {$\beta = sin(\theta)$} ;
+
+% angle
+\node []   (nodeT) at ( 0.50,  0.15) {$\theta$} ;
+\draw ( 0.40,  0.00) arc ( 0.00: 30.00: 0.40);
+
+% origin
+%\node [fill=white]   (node0) at ( 0.00,  0.00) {$0$} ;
+
+
+
+\end{tikzpicture}                                                                                    
+
+\end{document}

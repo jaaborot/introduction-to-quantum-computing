@@ -1,0 +1,49 @@
+\documentclass[crop,tikz]{standalone}                 
+\usepackage{physics}
+\makeatletter                                                                                        
+
+\begin{document}
+
+\begin{tikzpicture}[scale=1.5]                                                                          
+%\draw [dotted] (-3.00,-3.00) grid (3.00, 3.00);
+
+% axes labels
+\node []   (nodeA) at ( 3.00,  0.00) {$+a$} ;
+\node []   (nodea) at (-3.00,  0.00) {$-a$} ;
+\node []   (nodeB) at ( 0.00,  3.00) {$+b$} ;
+\node []   (nodeb) at ( 0.00, -3.00) {$-b$} ;
+
+%axes
+\draw [->] ( 0.00,  0.00) -- (nodeA);
+\draw [->] ( 0.00,  0.00) -- (nodea);
+\draw [->] ( 0.00,  0.00) -- (nodeB);
+\draw [->] ( 0.00,  0.00) -- (nodeb);
+
+% circle
+%\draw (0,0) circle [radius=2.00];
+
+% components of a vector
+\draw [->]   (0,0) -- ( 2.00, 2.00) node[midway, above, sloped] {$r$};
+\draw [-, red,  densely dashed]  ( 2.00, 2.00) -- ( 2.00, 0.00);                                          
+\draw [-, blue, densely dashed]  ( 2.00, 2.00) -- ( 0.00, 2.00);                                          
+
+% point labels
+\node [] (ab)    at ( 2.10,  2.25) {$(a, b)$} ;
+\node [] (polar) at ( 2.85,  2.25) { or $(r, \theta)$} ;
+
+% components
+\node [red]  (cos) at ( 2.25, -0.20) {$a = r \cdot cos(\theta)$};
+\node [blue] (sin) at (-0.70,  2.00) {$b =  r \cdot sin(\theta)$} ;
+
+% angle
+\draw ( 0.45,  0.00) arc ( 0.00: 45.00: 0.45);
+\node []   (nodeT) at ( 0.53,  0.22) {$\theta$} ;
+
+% origin
+%\node [fill=white]   (node0) at ( 0.00,  0.00) {$0$} ;
+
+
+
+\end{tikzpicture}                                                                                    
+
+\end{document}
