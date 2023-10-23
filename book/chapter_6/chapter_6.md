@@ -1,2 +1,6 @@
 # Software Programming for Quantum Computation 
-*by [yet to be determined]*
+*by Ross Mariano*
+
+```{contents}
+
+```
