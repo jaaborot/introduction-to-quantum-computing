@@ -20,12 +20,21 @@ parts:
       - file: book/sample/sample-nb
       - file: book/chapter_1/chapter_1-nb
       - file: book/chapter_2/chapter_2-nb
+<<<<<<< HEAD
       # - file: book/chapter_3/chapter_3-nb
       - file: book/chapter_4/chapter_4-nb
       # - file: book/chapter_5/chapter_5-nb
       # - file: book/chapter_6/chapter_6-nb
       # - file: book/chapter_7/chapter_7-nb
       # - file: book/chapter_8/chapter_8-nb
+=======
+      - file: book/chapter_3/chapter_3-nb
+      - file: book/chapter_4/chapter_4-nb
+      - file: book/chapter_5/chapter_5-nb
+      - file: book/chapter_6/chapter_6-nb
+      - file: book/chapter_7/chapter_7-nb
+      - file: book/chapter_8/chapter_8-nb
+>>>>>>> before-ch4
   - caption: Appendices
     chapters:
       - file: book/bibliography
