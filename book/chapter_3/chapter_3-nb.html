@@ -69,7 +69,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/fav.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="7. Introduction to Quantum Computing" href="../chapter_4/chapter_4-nb.html" />
+    <link rel="next" title="8. Introduction to Quantum Computing" href="../chapter_4/chapter_4-nb.html" />
     <link rel="prev" title="5. Mathematical Foundation of Quantum Computing" href="../chapter_2/chapter_2-nb.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -170,11 +170,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../chapter_1/chapter_1-nb.html">4. Introduction to Classical Computing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapter_2/chapter_2-nb.html">5. Mathematical Foundation of Quantum Computing</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">6. Quantum Mechanics for Quantum Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_4/chapter_4-nb.html">7. Introduction to Quantum Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_5/chapter_5-nb.html">8. Quantum Algorithms and Their Advantages Over Classical Counterparts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_6/chapter_6-nb.html">9. Software Programming for Quantum Computation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_7/chapter_7-nb.html">10. COARE and ASTI’s Quantum Circuit Simulation Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_8/chapter_8-nb.html">11. Current Use Cases for Quantum Computing in the Noisy Intermediate-Scale Quantum Era</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../chapter_4/chapter_4-nb.html">8. Introduction to Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_5/chapter_5-nb.html">9. Quantum Algorithms and Their Advantages Over Classical Counterparts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_6/chapter_6-nb.html">10. Software Programming for Quantum Computation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_7/chapter_7-nb.html">11. COARE and ASTI’s Quantum Circuit Simulation Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_8/chapter_8-nb.html">12. Current Use Cases for Quantum Computing in the Noisy Intermediate-Scale Quantum Era</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
 <ul class="nav bd-sidenav">
@@ -438,6 +439,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">6. Quantum Mechanics for Quantum Computing</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">6.1. Introduction</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-bit">6.2. Classical Bit</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bit-strings">6.2.1. Bit Strings</a></li>
@@ -450,13 +452,22 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#born-rule">6.3.4. Born Rule</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-points-on-a-2d-plane-or-as-points-on-a-circle">6.3.5. Qubits as Points on a 2D Plane (or as Points on a Circle)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operations-on-a-qubit">6.3.6. Operations on a Qubit</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-points-in-3d-space-or-as-points-on-a-sphere">6.3.7. Qubits as Points in 3D Space (or as Points on a Sphere)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-vectors">6.3.8. Qubits as Vectors</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-binary-trees">6.3.9. Qubits as Binary Trees</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complex-amplitudes">6.3.7. Complex Amplitudes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-points-in-space-or-as-points-on-a-sphere">6.3.8. Qubits as Points in $$ Space (or as Points on a Sphere)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-vectors">6.3.9. Qubits as Vectors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-binary-trees">6.3.10. Qubits as Binary Trees</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-states">6.4. Quantum States</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entanglement-of-qubits">6.5. Entanglement of Qubits</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#appendix">7. Appendix</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complex-numbers">7.1. Complex Numbers</a></li>
+</ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -499,9 +510,9 @@ fair coin toss is revealed to you. The classical bit specifies which one of the 
 occurred or was selected. 
 </p>
 <p>
-The term <i> bit </i> is the contraction of "binary digit". Digits $ \texttt{0} $ and 
-$ \texttt{1} $ are often used as the values of the classical bit. Digit $ \texttt{0} $ 
-represents one of the two possible options while the digit $ \texttt{1} $ represents the other 
+The term <i> bit </i> is the contraction of "binary digit". Digits  $  \texttt{0}  $  and 
+ $  \texttt{1}  $  are often used as the values of the classical bit. Digit  $  \texttt{0}  $  
+represents one of the two possible options while the digit  $  \texttt{1}  $  represents the other 
 option. Alternative pairs of values like <i>false/true</i>, <i>off/on</i>, <i>low/high</i> and
 <i>-/+</i> are also used as values for the classical bit.
 </p>
@@ -519,11 +530,11 @@ many of these two-state 'systems' and thus stores multiple bits of information.
 <p>
 To represent multiple bits of information, bits can be stringed together to form a <i>bit string</i>
 (also called <i>binary strings</i>). Bit strings are needed to represent states of a system with
-more than two states. For example, for a system that can be in one of four possible states $ A, B,
-C, D $,  2-bit strings are needed in order to represent the four states. i.e Bit string $00$ can 
-represent state $A$,  $01$ can represent state $B$, $10$ can represent state $C$, and 
-$11$ can represent state $D$. In general, if a system has $X$ possible states, then you need
-around $log_2(X)$ bits to represent the states of the system. More precisely:
+more than two states. For example, for a system that can be in one of four possible states  $  A, B,
+C, D  $ ,  2-bit strings are needed in order to represent the four states. i.e Bit string  $ 00 $  can 
+represent state  $ A $ ,   $ 01 $  can represent state  $ B $ ,  $ 10 $  can represent state  $ C $ , and 
+ $ 11 $  can represent state  $ D $ . In general, if a system has  $ X $  possible states, then you need
+around  $ log_2(X) $  bits to represent the states of the system. More precisely:
 </p>
 <div class="math notranslate nohighlight">
 \[
@@ -531,26 +542,26 @@ around $log_2(X)$ bits to represent the states of the system. More precisely:
 \]</div>
 <p>
 For example, after rolling a six-sided, it will be in one of the following six states: 
-$1,2,3,4,5,6$. Since $ log_2(6) \approx 2.58496 $, you need $3 = \lceil log_2(6) \rceil $ bits
-to represent the six possible states of the die. i.e. String $000$ represents state $1$, $001$ 
-represents state $2$, $010$ represents state $3$, $011$ represents state $4$, $100$
-represents state $5$, $101$ represents state $6$, while strings $110$ and $111$ do not
-represent any possible die states. $3$-bit strings can represent 8 states while $2$-bit strings
+ $ 1,2,3,4,5,6 $ . Since  $  log_2(6) \approx 2.58496  $ , you need  $ 3 = \lceil log_2(6) \rceil  $  bits
+to represent the six possible states of the die. i.e. String  $ 000 $  represents state  $ 1 $ ,  $ 001 $  
+represents state  $ 2 $ ,  $ 010 $  represents state  $ 3 $ ,  $ 011 $  represents state  $ 4 $ ,  $ 100 $ 
+represents state  $ 5 $ ,  $ 101 $  represents state  $ 6 $ , while strings  $ 110 $  and  $ 111 $  do not
+represent any possible die states.  $ 3 $ -bit strings can represent 8 states while  $ 2 $ -bit strings
 can only represent 4 states and so we need 3 bits to represent that states of the die.  
 </p>
 <p>
-<b>Some Formalism:</b> The set $\Sigma = \{0, 1\}$ is the <i>alphabet</i> of the bit strings. The
-concatenation operation $|$ can take two bits $b_1, b_2 \in \Sigma$ and form the 2-bit string
-$b_1|b_2$ or simply $b_1b_2$. e.g If $b_1=0$ and $b_2=1$, then $b_1|b_2 = b_1b_2 = 01$.
-If $b_1=1$ and $b_2=1$, the $b_1|b_2 = b_1b_2 = 11$. The concatenation operation can also 
-string together bit strings (not only bits). e.g. If $B_1 = 101$  and $B_2 = 111$, then 
-$B_1 | B_2 = B_1B_2 = 101111$. The <i>length</i> of a bit string is the number of bits is has. The 
-symbol $\lambda$, or sometimes $\varepsilon$, denotes the <i>empty string</i>, the string with 
-no symbols (bits). The set $\Sigma^* = \{\lambda, 0,1,00,01,10,11,...\}$, pronounced as 
+<b>Some Formalism:</b> The set  $ \Sigma = \{0, 1\} $  is the <i>alphabet</i> of the bit strings. The
+concatenation operation  $ | $  can take two bits  $ b_1, b_2 \in \Sigma $  and form the 2-bit string
+ $ b_1|b_2 $  or simply  $ b_1b_2 $ . e.g If  $ b_1=0 $  and  $ b_2=1 $ , then  $ b_1|b_2 = b_1b_2 = 01 $ .
+If  $ b_1=1 $  and  $ b_2=1 $ , the  $ b_1|b_2 = b_1b_2 = 11 $ . The concatenation operation can also 
+string together bit strings (not only bits). e.g. If  $ B_1 = 101 $   and  $ B_2 = 111 $ , then 
+ $ B_1 | B_2 = B_1B_2 = 101111 $ . The <i>length</i> of a bit string is the number of bits is has. The 
+symbol  $ \lambda $ , or sometimes  $ \varepsilon $ , denotes the <i>empty string</i>, the string with 
+no symbols (bits). The set  $ \Sigma^* = \{\lambda, 0,1,00,01,10,11,...\} $ , pronounced as 
 `sigma star`, is the set of all bit string of any length which includes the empty string. The 
-set $\Sigma^+ =\{0,1,00,01,10,11,...\}$, pronounced as `sigma plus`, is the set of all strings of
-any length excluding the empty string. The set $\Sigma^n$ is the set of all bit strings of length
-$n$. i.e. $\Sigma^2 = \{00,01,10,11\} $.
+set  $ \Sigma^+ =\{0,1,00,01,10,11,...\} $ , pronounced as `sigma plus`, is the set of all strings of
+any length excluding the empty string. The set  $ \Sigma^n $  is the set of all bit strings of length
+ $ n $ . i.e.  $ \Sigma^2 = \{00,01,10,11\}  $ .
 </p>
 <!------------------------------------------------------------------------------------------------->
 <br>
@@ -563,10 +574,10 @@ $n$. i.e. $\Sigma^2 = \{00,01,10,11\} $.
 If the classical bit is the information stored in a two-state classical system, then the 
 <i> quantum bit (or qubit) </i> is the information stored in a <i>two-state quantum</i> system. In
 a two-state quantum system, there is also a set with two states called the <i>basis</i>. Let the set
-$\{\ket{A}, \ket{B}\}$ be basis of the two-state quantum system. This means that if we observe the
-quantum system to determine its state, we will either observe the system in state $\ket{A}$ or 
-observe the system in state $\ket{B}$. The state $\ket{A}$ is pronounced as `ket A` while state
-$\ket{B}$ is pronounced as `ket B`. This way of writing states is part of the 
+ $ \{\ket{A}, \ket{B}\} $  be basis of the two-state quantum system. This means that if we observe the
+quantum system to determine its state, we will either observe the system in state  $ \ket{A} $  or 
+observe the system in state  $ \ket{B} $ . The state  $ \ket{A} $  is pronounced as `ket A` while state
+ $ \ket{B} $  is pronounced as `ket B`. This way of writing states is part of the 
 <a href="https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation"><i>bra-ket notation</i></a> created
 by the physicist <a href="https://en.wikipedia.org/wiki/Paul_Dirac"><i>Paul Dirac</i></a>. When you see
 these <i>ket</i> notations, you know you will be dealing with quantum states and not classical 
@@ -577,8 +588,8 @@ states.
 <h3><span class="section-number">6.3.1. </span>Quantum Indeterminacy<a class="headerlink" href="#quantum-indeterminacy" title="Permalink to this heading">#</a></h3>
 <p>
 Similar to a two-state classical system, when a two-state quantum system is observed/measured it will
-either be in state $\ket{A}$ or in state $\ket{B}$, given the system basis is $\{\ket{A}, 
-\ket{B}\}$. The quantum system has definite state when observed. But unlike a classical system, 
+either be in state  $ \ket{A} $  or in state  $ \ket{B} $ , given the system basis is  $ \{\ket{A}, 
+\ket{B}\} $ . The quantum system has definite state when observed. But unlike a classical system, 
 prior to any measurement/observation the state of a two-level quantum system can actually be 
 "indefinite". This notion is known as <a href="https://en.wikipedia.org/wiki/Quantum_indeterminacy">
 <b><i>quantum indeterminacy</i></b></a>. 
@@ -603,18 +614,18 @@ the preparation procedure to be the only factors that affect the (prepared) stat
 </p>
 <p>
 The figure below shows an abstract example of such experiments. There are eight two-level quantum
-systems with basis $\{\ket{A}, \ket{B}\}$. All eight systems are measured to be in state 
-$\ket{A}$ initially. The same preparation procedure is performed on all eight systems. Let the 
-label of the first system's state be $\ket{\psi_1}$, the label of the second system's state be 
-$\ket{\psi_2}$, and in general the label of the $i$-th system's state is $\ket{\psi_{i}}$. 
-After observing the quantum systems, some of systems are observed to be in state $\ket{A}$ while 
-other are observed to be in state $\ket{B}$. The implication of this experiment is that prior to 
+systems with basis  $ \{\ket{A}, \ket{B}\} $ . All eight systems are measured to be in state 
+ $ \ket{A} $  initially. The same preparation procedure is performed on all eight systems. Let the 
+label of the first system's state be  $ \ket{\psi_1} $ , the label of the second system's state be 
+ $ \ket{\psi_2} $ , and in general the label of the  $ i $ -th system's state is  $ \ket{\psi_{i}} $ . 
+After observing the quantum systems, some of systems are observed to be in state  $ \ket{A} $  while 
+other are observed to be in state  $ \ket{B} $ . The implication of this experiment is that prior to 
 observation (after the preparation procedure) the quantum systems' states are <i>indeterminate</i> 
 (meaning "having no definite value"). It is only after measurement is performed will you get a 
 definite observed state.
 <br>
 <div align="center">
-  <img   src="figures/quantum-indeterminacy.svg" 
+  <img   src="./figures/quantum-indeterminacy.svg" 
          alt="Quantum Indeterminacy"
        align="center"
        width="700"/>
@@ -632,80 +643,80 @@ Knowing that a quantum system's state can be indeterminate, we can ask the follo
 </ul>
 </p>
 <p>
-First, as a convention we will usually use the basis $\{ \ket{0}, \ket{1} \}$ for two-state
-quantum systems. State $\ket{0}$ represents one possible observable state of the system while 
-$\ket{1}$ represents the other possible observable state. The basis states $\ket{0}$ and 
-$\ket{1}$ are usually the ones used for two-state quantum systems because they are the analogues 
-of the classical bits $0$ and $1$.
+First, as a convention we will usually use the basis  $ \{ \ket{0}, \ket{1} \} $  for two-state
+quantum systems. State  $ \ket{0} $  represents one possible observable state of the system while 
+ $ \ket{1} $  represents the other possible observable state. The basis states  $ \ket{0} $  and 
+ $ \ket{1} $  are usually the ones used for two-state quantum systems because they are the analogues 
+of the classical bits  $ 0 $  and  $ 1 $ .
 </p>
 <p>
-Let $\ket{\psi}$ be the qubit for a two-state quantum system. For the case where the quantum state
-is definite since the system was measured/observed, either $\ket{\psi} = \ket{0}$ or 
-$\ket{\psi}=\ket{1}$. The challenge now is encoding the information in the qubit when the system is
+Let  $ \ket{\psi} $  be the qubit for a two-state quantum system. For the case where the quantum state
+is definite since the system was measured/observed, either  $ \ket{\psi} = \ket{0} $  or 
+ $ \ket{\psi}=\ket{1} $ . The challenge now is encoding the information in the qubit when the system is
 in an indeterminate state.
 </p>
 <p>
-Let's rename the basis states from the experiment above. Let $\ket{0} = \ket{A}$  and 
-$\ket{1} =\ket{B}$. In the experiment above, we have a set of identically prepared two-state 
-quantum systems and after observations some of the systems are observed to be in state $\ket{0}$ 
-while other systems are observed to be in state $\ket{1}$. To be more precise, in the experiment
-there are 8 identically prepared systems, 4 systems were observed to be in state $\ket{0}$ and the
-other 4 systems are observed to be in state $\ket{1}$. The information encoded in a qubit is the
+Let's rename the basis states from the experiment above. Let  $ \ket{0} = \ket{A} $   and 
+ $ \ket{1} =\ket{B} $ . In the experiment above, we have a set of identically prepared two-state 
+quantum systems and after observations some of the systems are observed to be in state  $ \ket{0} $  
+while other systems are observed to be in state  $ \ket{1} $ . To be more precise, in the experiment
+there are 8 identically prepared systems, 4 systems were observed to be in state  $ \ket{0} $  and the
+other 4 systems are observed to be in state  $ \ket{1} $ . The information encoded in a qubit is the
 information related to the distribution of the observed states. 
 </p>
 <p>
-Let us specify the parameters of the experiment. Let $n$ be the number of the two-state quantum 
-systems, $\ket{\psi_0}$ be the chosen initial state of the systems (which is either $\ket{0}$ or
-$\ket{1}$), and $X$ be the label for the preparation procedure. Let $n_0$ be the number of
-systems observed to be in state $\ket{0}$ while $n_1$ be the number of systems observed to be in
-state $\ket{1}$. The output of the experiment is the pair of numbers $p_0$ and $p_1$ where
-$p_0 = \frac{n_0}{n}$ is the fraction of the systems observed to be in state $\ket{0}$ while 
-$p_1 = \frac{n_1}{n}$ is the fraction of the systems observed to be in state $\ket{1}$.
+Let us specify the parameters of the experiment. Let  $ n $  be the number of the two-state quantum 
+systems,  $ \ket{\psi_0} $  be the chosen initial state of the systems (which is either  $ \ket{0} $  or
+ $ \ket{1} $ ), and  $ X $  be the label for the preparation procedure. Let  $ n_0 $  be the number of
+systems observed to be in state  $ \ket{0} $  while  $ n_1 $  be the number of systems observed to be in
+state  $ \ket{1} $ . The output of the experiment is the pair of numbers  $ p_0 $  and  $ p_1 $  where
+ $ p_0 = \frac{n_0}{n} $  is the fraction of the systems observed to be in state  $ \ket{0} $  while 
+ $ p_1 = \frac{n_1}{n} $  is the fraction of the systems observed to be in state  $ \ket{1} $ .
 </p>
 <p>
 You can repeat the experiment and for every iteration of the experiment you record the output 
-$p_0$ and $p_1$ then you can get the average of values of $p_0$ and $p_1$ for all iterations.
-You might notice that the average values of $p_0$ and $p_1$ are approaching some specific values
+ $ p_0 $  and  $ p_1 $  then you can get the average of values of  $ p_0 $  and  $ p_1 $  for all iterations.
+You might notice that the average values of  $ p_0 $  and  $ p_1 $  are approaching some specific values
 the more interations you perform. You can also perform 'bigger' experiments by making the number of
-systems $n$ larger. You might also notice that when you increase $n$ the output $p_0$ and 
-$p_1$ are approaching some specific values. Let $\overline{p_0}$ be the value $p_0$ approaches
-as $n$ gets larger and let $\overline{p_1}$ be the value $p_1$ approaches as $n$ gets larger.
-For a given initial state $\ket{\psi_0}$ and preparation procedure $X$, there is associated 
-value for $\overline{p_0}$ which is the probability of observing the system in state $\ket{0}$.
-Note that the probability of observing the system in state $\ket{1}$ is $\overline{p_1} = (1 -
-\overline{p_0})$ so knowing the value of $\overline{p_0}$ it is sufficient information to know
-the value of $\overline{p_1}$.
+systems  $ n $  larger. You might also notice that when you increase  $ n $  the output  $ p_0 $  and 
+ $ p_1 $  are approaching some specific values. Let  $ \overline{p_0} $  be the value  $ p_0 $  approaches
+as  $ n $  gets larger and let  $ \overline{p_1} $  be the value  $ p_1 $  approaches as  $ n $  gets larger.
+For a given initial state  $ \ket{\psi_0} $  and preparation procedure  $ X $ , there is associated 
+value for  $ \overline{p_0} $  which is the probability of observing the system in state  $ \ket{0} $ .
+Note that the probability of observing the system in state  $ \ket{1} $  is  $ \overline{p_1} = (1 -
+\overline{p_0}) $  so knowing the value of  $ \overline{p_0} $  it is sufficient information to know
+the value of  $ \overline{p_1} $ .
 </p>
 <p>
 We can now partially answer the second question <i> "What exactly are the information that the qubit
 encodes?"</i>. One piece of information that a qubit encodes is the probability of observing state 
-$\ket{0}$ (and by implication the probability of observing state $\ket{1}$). When the quantum 
-system is observed and is in the definite state $\ket{\psi}$ (which is either $\ket{0}$ or
-$\ket{1}$), then the qubit encodes the information "$ \ket{\psi} $ with probability 1".
-e.g. If state $\ket{0}$ is observed, then the qubit encodes the information "$\ket{0}$ with 
-probability 1" and if state $\ket{1}$ is observed, then the qubit encodes the information
-"$\ket{1}$ with probability 1". If the system is not observed and is in one of those states that
-is indeterminate, then a qubit may encode the information "$\ket{0}$ with probability 
-$\overline{p_0}$ and $\ket{1}$ with probability $\overline{p_1}$". e.g. A qubit may encode the
-information "$\ket{0}$ with probability $\frac{1}{3}$ and $\ket{1}$ with probability 
-$\frac{2}{3}$".
+ $ \ket{0} $  (and by implication the probability of observing state  $ \ket{1} $ ). When the quantum 
+system is observed and is in the definite state  $ \ket{\psi} $  (which is either  $ \ket{0} $  or
+ $ \ket{1} $ ), then the qubit encodes the information " $  \ket{\psi}  $  with probability 1".
+e.g. If state  $ \ket{0} $  is observed, then the qubit encodes the information " $ \ket{0} $  with 
+probability 1" and if state  $ \ket{1} $  is observed, then the qubit encodes the information
+" $ \ket{1} $  with probability 1". If the system is not observed and is in one of those states that
+is indeterminate, then a qubit may encode the information " $ \ket{0} $  with probability 
+ $ \overline{p_0} $  and  $ \ket{1} $  with probability  $ \overline{p_1} $ ". e.g. A qubit may encode the
+information " $ \ket{0} $  with probability  $ \frac{1}{3} $  and  $ \ket{1} $  with probability 
+ $ \frac{2}{3} $ ".
 </p>
 <p>
 The probability of observing a specific basis state is not directly encoded by the qubit. The qubit 
-instead encodes values called <i>amplitudes</i>, one amplitude for the basis state $\ket{0}$ and
-one amplitude for the basis state $\ket{1}$. The <i>square</i> of the amplitude of the basis state
-is the probability of observing the state. If $\alpha$ is the amplitude of state $\ket{0}$ and 
-$\beta$ is the amplitude of state $\ket{1}$, then $|\alpha|^2$ is the probability of observing
-the state $\ket{0}$ and $|\beta|^2$ is the probability of observing the state $\ket{1}$. A
-qubit $\ket{\psi}$ encodes the amplitudes of the basis states in the following manner: 
+instead encodes values called <i>amplitudes</i>, one amplitude for the basis state  $ \ket{0} $  and
+one amplitude for the basis state  $ \ket{1} $ . The <i>square</i> of the amplitude of the basis state
+is the probability of observing the state. If  $ \alpha $  is the amplitude of state  $ \ket{0} $  and 
+ $ \beta $  is the amplitude of state  $ \ket{1} $ , then  $ |\alpha|^2 $  is the probability of observing
+the state  $ \ket{0} $  and  $ |\beta|^2 $  is the probability of observing the state  $ \ket{1} $ . A
+qubit  $ \ket{\psi} $  encodes the amplitudes of the basis states in the following manner: 
 </p>
 <div class="math notranslate nohighlight">
 \[
 \ket{\psi} = \alpha \ket{0} + \beta \ket{1}
 \]</div>
 <p>
-The state $\ket{\psi}$ is said to be a <a href="https://en.wikipedia.org/wiki/Quantum_superposition">
-<i><b>superposition</b></i></a> of basis states $\ket{0}$ and $\ket{1}$. The two-state quantum
+The state  $ \ket{\psi} $  is said to be a <a href="https://en.wikipedia.org/wiki/Quantum_superposition">
+<i><b>superposition</b></i></a> of basis states  $ \ket{0} $  and  $ \ket{1} $ . The two-state quantum
 system is said to be in superposition if it is in one of those indeterminate state before the system
 is observed. 
 </p>
@@ -729,45 +740,45 @@ table, th, td {
     <th colspan="2">Probability of Observing the Basis:</th>
   </tr>
   <tr>
-    <td> $ \ket{0}$ </td>
-    <td> $ \ket{1}$ </td>
-    <td> $ \ket{0}$ </td>
-    <td> $ \ket{1}$ </td>
+    <td>  $  \ket{0} $  </td>
+    <td>  $  \ket{1} $  </td>
+    <td>  $  \ket{0} $  </td>
+    <td>  $  \ket{1} $  </td>
   </tr>
   <tr>
-    <td> $ \ket{\psi_1}  = 1 \ket{0} + 0 \ket{1} = \ket{0} $ </td>
+    <td>  $  \ket{\psi_1}  = 1 \ket{0} + 0 \ket{1} = \ket{0}  $  </td>
     <td> 1 </td>
     <td> 0 </td>
-    <td> $ \left| 1 \right|^2 = 1$ </td>
-    <td> $ \left| 0 \right|^2 = 0$ </td>
+    <td>  $  \left| 1 \right|^2 = 1 $  </td>
+    <td>  $  \left| 0 \right|^2 = 0 $  </td>
   </tr>
   <tr>
-    <td> $ \ket{\psi_2}  = 0 \ket{0} + 1 \ket{1} = \ket{1} $ </td>
+    <td>  $  \ket{\psi_2}  = 0 \ket{0} + 1 \ket{1} = \ket{1}  $  </td>
     <td> 0 </td>
     <td> 1 </td>
-    <td> $ \left| 0 \right|^2 = 0$ </td>
-    <td> $ \left| 1 \right|^2 = 1$ </td>
+    <td>  $  \left| 0 \right|^2 = 0 $  </td>
+    <td>  $  \left| 1 \right|^2 = 1 $  </td>
   </tr>
   <tr>
-    <td> $ \ket{\psi_3}  = \frac{1}{\sqrt{2}} \ket{0} + \frac{1}{\sqrt{2}}  \ket{1} $ </td>
-    <td> $ \frac{1}{\sqrt{2}} $ </td>
-    <td> $ \frac{1}{\sqrt{2}} $ </td>
-    <td> $ \left|\frac{1}{\sqrt{2}}\right|^2 =  \frac{1}{2} $ </td>
-    <td> $ \left|\frac{1}{\sqrt{2}}\right|^2 =  \frac{1}{2} $ </td>
+    <td>  $  \ket{\psi_3}  = \frac{1}{\sqrt{2}} \ket{0} + \frac{1}{\sqrt{2}}  \ket{1}  $  </td>
+    <td>  $  \frac{1}{\sqrt{2}}  $  </td>
+    <td>  $  \frac{1}{\sqrt{2}}  $  </td>
+    <td>  $  \left|\frac{1}{\sqrt{2}}\right|^2 =  \frac{1}{2}  $  </td>
+    <td>  $  \left|\frac{1}{\sqrt{2}}\right|^2 =  \frac{1}{2}  $  </td>
   </tr>
   <tr>
-    <td> $ \ket{\psi_4}  = \frac{1}{\sqrt{4}} \ket{0} + \frac{\sqrt{3}}{\sqrt{4}}  \ket{1} $ </td>
-    <td> $ \frac{1}{\sqrt{4}} $ </td>
-    <td> $ \frac{\sqrt{3}}{\sqrt{4}} $ </td>
-    <td> $ \left|\frac{1}{\sqrt{4}}\right|^2 =  \frac{1}{4} $ </td>
-    <td> $ \left|\frac{\sqrt{3}}{\sqrt{4}}\right|^2 =  \frac{3}{4} $ </td>
+    <td>  $  \ket{\psi_4}  = \frac{1}{\sqrt{4}} \ket{0} + \frac{\sqrt{3}}{\sqrt{4}}  \ket{1}  $  </td>
+    <td>  $  \frac{1}{\sqrt{4}}  $  </td>
+    <td>  $  \frac{\sqrt{3}}{\sqrt{4}}  $  </td>
+    <td>  $  \left|\frac{1}{\sqrt{4}}\right|^2 =  \frac{1}{4}  $  </td>
+    <td>  $  \left|\frac{\sqrt{3}}{\sqrt{4}}\right|^2 =  \frac{3}{4}  $  </td>
   </tr>
   <tr>
-    <td> $ \ket{\psi_5}  = \frac{\sqrt{5}}{\sqrt{8}} \ket{0} + \frac{\sqrt{3}}{\sqrt{8}}  \ket{1} $ </td>
-    <td> $ \frac{\sqrt{5}}{\sqrt{8}} $ </td>
-    <td> $ \frac{\sqrt{3}}{\sqrt{8}} $ </td>
-    <td> $ \left|\frac{\sqrt{5}}{\sqrt{8}}\right|^2 =  \frac{5}{8} $ </td>
-    <td> $ \left|\frac{\sqrt{3}}{\sqrt{8}}\right|^2 =  \frac{3}{8} $ </td>
+    <td>  $  \ket{\psi_5}  = \frac{\sqrt{5}}{\sqrt{8}} \ket{0} + \frac{\sqrt{3}}{\sqrt{8}}  \ket{1}  $  </td>
+    <td>  $  \frac{\sqrt{5}}{\sqrt{8}}  $  </td>
+    <td>  $  \frac{\sqrt{3}}{\sqrt{8}}  $  </td>
+    <td>  $  \left|\frac{\sqrt{5}}{\sqrt{8}}\right|^2 =  \frac{5}{8}  $  </td>
+    <td>  $  \left|\frac{\sqrt{3}}{\sqrt{8}}\right|^2 =  \frac{3}{8}  $  </td>
   </tr>
 </table>
 </center>
@@ -776,7 +787,7 @@ table, th, td {
 <section id="born-rule">
 <h3><span class="section-number">6.3.4. </span>Born Rule<a class="headerlink" href="#born-rule" title="Permalink to this heading">#</a></h3>
 <p>
-For now, let us assume that the amplitudes, $\alpha$ and $\beta$, used in a qubit are real
+For now, let us assume that the amplitudes,  $ \alpha $  and  $ \beta $ , used in a qubit are real
 numbers. The amplitudes can not be just any real numbers. The qubit amplitudes have to observe the 
 following rule known as the <a href="https://en.wikipedia.org/wiki/Born_rule"><b><i>Born Rule
 </i></b></a>:
@@ -786,123 +797,123 @@ following rule known as the <a href="https://en.wikipedia.org/wiki/Born_rule"><b
 \]</div>
 </p>
 <p>
-Let $\overline{p_0} = a^2$ be the probability observing the state $\ket{0}$ and 
-$\overline{p_1} = b^2$ be the probability of observing the state $\ket{1}$. Recall that
-$\overline{p_0}$ and $\overline{p_1}$ are complementary values. i.e. 
-$\overline{p_0} = (1 - \overline{p_1})$ and $\overline{p_1} =(1 - \overline{p_0})$, or 
-alternately, $\overline{p_0} + \overline{p_1} = 1$. If you increase the probability 
-$\overline{p_0}$ of observing $\ket{0}$, you have to decrease the probability $\overline{p_1}$
-of observing $\ket{1}$ and vice versa. The probabilitiy of observing $\ket{0}$ and the 
-probability of observing $\ket{1}$ sum up to $1$. The Born rule $a^2 + b^2 =1$ is exactly the
-probability rule $p_0 + p_1 = 1$ but written in terms of amplitutes.
+Let  $ \overline{p_0} = a^2 $  be the probability observing the state  $ \ket{0} $  and 
+ $ \overline{p_1} = b^2 $  be the probability of observing the state  $ \ket{1} $ . Recall that
+ $ \overline{p_0} $  and  $ \overline{p_1} $  are complementary values. i.e. 
+ $ \overline{p_0} = (1 - \overline{p_1}) $  and  $ \overline{p_1} =(1 - \overline{p_0}) $ , or 
+alternately,  $ \overline{p_0} + \overline{p_1} = 1 $ . If you increase the probability 
+ $ \overline{p_0} $  of observing  $ \ket{0} $ , you have to decrease the probability  $ \overline{p_1} $ 
+of observing  $ \ket{1} $  and vice versa. The probabilitiy of observing  $ \ket{0} $  and the 
+probability of observing  $ \ket{1} $  sum up to  $ 1 $ . The Born rule  $ a^2 + b^2 =1 $  is exactly the
+probability rule  $ p_0 + p_1 = 1 $  but written in terms of amplitutes.
 </p>
 <!------------------------------------------------------------------------------------------------->
 </section>
 <section id="qubits-as-points-on-a-2d-plane-or-as-points-on-a-circle">
 <h3><span class="section-number">6.3.5. </span>Qubits as Points on a 2D Plane (or as Points on a Circle)<a class="headerlink" href="#qubits-as-points-on-a-2d-plane-or-as-points-on-a-circle" title="Permalink to this heading">#</a></h3>
 <p>
-A valid qubit $\ket{\psi} = \alpha\ket{0} + \beta\ket{1}$ can be represented by the point 
-$(\alpha, \beta)$ on the two-dimensional $\alpha\beta$-plane. If you plot all points $(\alpha, 
-\beta)$ that represent valid qubits that follow the Born rule, then the points will form a circle 
-of radius 1 centered at $(0,0)$ since the Born rule equation $a^2+b^2=1$ is an equation for a
-circle of radius 1 centered at $(0,0)$. Note that we are only assuming that the amplitudes are 
+A valid qubit  $ \ket{\psi} = \alpha\ket{0} + \beta\ket{1} $  can be represented by the point 
+ $ (\alpha, \beta) $  on the two-dimensional  $ \alpha\beta $ -plane. If you plot all points  $ (\alpha, 
+\beta) $  that represent valid qubits that follow the Born rule, then the points will form a circle 
+of radius 1 centered at  $ (0,0) $  since the Born rule equation  $ a^2+b^2=1 $  is an equation for a
+circle of radius 1 centered at  $ (0,0) $ . Note that we are only assuming that the amplitudes are 
 real numbers and not that they are necessarily non-negative. This means we allow the amplitudes to
 be negative as long as they follow the Born rule. This is why points representing valid qubits form
-a circle and not just part of the circle on the $(+\alpha, +\beta)$ quadrant.
+a circle and not just part of the circle on the  $ (+\alpha, +\beta) $  quadrant.
 </p>
 <!---
 <div align="center">
-  <img   src="figures/qs-amplitudes.svg" 
+  <img   src="./figures/qs-amplitudes.svg" 
          alt="Representation of the Born Rule"
        align="center"
        width="550"/>
 </div>
 --->
 <div align="center">
-  <img   src="figures/qs-circle.svg" 
+  <img   src="./figures/qs-circle.svg" 
          alt="Using a Single Angle to Define Amplitudes"
        align="center"
        width="550"/>
 </div>
 <p>
-Any point $(\alpha,\beta)$ on the plane can alternately be specified by its polar coordinate
-$(r,\theta)$ where $\theta$ is the direction (the angle from the $+\alpha$ axis) and 
-$r$ is the radial distance from the origin $(0,0)$. Since the points $(\alpha,\beta)$ follow
-the Born rule and they all lie on the circle of radius 1 centered at $(0,0)$, their polar 
-coordinates follow the form $(r, \theta) = (1, \theta)$. Any point on that circle can be specified
-by one parameter which is the angle $\theta$. Given an angle $\theta$, you will have the 
-corresponding point $(1,\theta)$ and its corresponding qubit is:
+Any point  $ (\alpha,\beta) $  on the plane can alternately be specified by its polar coordinate
+ $ (r,\theta) $  where  $ \theta $  is the direction (the angle from the  $ +\alpha $  axis) and 
+ $ r $  is the radial distance from the origin  $ (0,0) $ . Since the points  $ (\alpha,\beta) $  follow
+the Born rule and they all lie on the circle of radius 1 centered at  $ (0,0) $ , their polar 
+coordinates follow the form  $ (r, \theta) = (1, \theta) $ . Any point on that circle can be specified
+by one parameter which is the angle  $ \theta $ . Given an angle  $ \theta $ , you will have the 
+corresponding point  $ (1,\theta) $  and its corresponding qubit is:
 <div class="math notranslate nohighlight">
 \[
 \ket{\psi_\theta} = \alpha\ket{0} + \beta\ket{1} = cos(\theta)\ket{0} + sin(\theta)\ket{1}
 \]</div>
-<p>where <span class="math notranslate nohighlight">\(\alpha = cos(\theta)\)</span> and <span class="math notranslate nohighlight">\(\beta = sin(\theta)\)</span>.</p>
+<p>where  <span class="math notranslate nohighlight">\( \alpha = cos(\theta) \)</span>  and  <span class="math notranslate nohighlight">\( \beta = sin(\theta) \)</span> .</p>
 </p>
 <p>
-The table below shows some examples of qubits/states specified by some angle $\theta$.
+The table below shows some examples of qubits/states specified by some angle  $ \theta $ .
 </p>
 <center>
 <table style="width:75%">
   <tr>
-    <th>$\theta$</th>
-    <th>$ \alpha = cos(\theta) $</th>
-    <th>$  \beta = sin(\theta) $</th>
-    <th>$ \ket{\psi_\theta} = \alpha\ket{0} +\beta\ket{1} $</th>
+    <th> $ \theta $ </th>
+    <th> $  \alpha = cos(\theta)  $ </th>
+    <th> $   \beta = sin(\theta)  $ </th>
+    <th> $  \ket{\psi_\theta} = \alpha\ket{0} +\beta\ket{1}  $ </th>
   </tr>
   <tr>
-    <td> $ 0 $ </td>
-    <td> $ 1$ </td>
-    <td> $ 0$ </td>
-    <td> $ \ket{\psi_0} = 1\ket{0} + 0\ket{1} = \ket{0}$ </td>
+    <td>  $  0  $  </td>
+    <td>  $  1 $  </td>
+    <td>  $  0 $  </td>
+    <td>  $  \ket{\psi_0} = 1\ket{0} + 0\ket{1} = \ket{0} $  </td>
   </tr>
   <tr>
-    <td> $ \frac{\pi}{4} $ </td>
-    <td> $ \frac{1}{\sqrt{2}}$ </td>
-    <td> $ \frac{1}{\sqrt{2}}$ </td>
-    <td> $ \ket{\psi_{\frac{\pi}{4}}} = \frac{1}{\sqrt{2}} \ket{0} + 
-                                         \frac{1}{\sqrt{2}} \ket{1}$ </td>
+    <td>  $  \frac{\pi}{4}  $  </td>
+    <td>  $  \frac{1}{\sqrt{2}} $  </td>
+    <td>  $  \frac{1}{\sqrt{2}} $  </td>
+    <td>  $  \ket{\psi_{\frac{\pi}{4}}} = \frac{1}{\sqrt{2}} \ket{0} + 
+                                         \frac{1}{\sqrt{2}} \ket{1} $  </td>
   </tr>
   <tr>
-    <td> $ \frac{\pi}{2} $ </td>
-    <td> $ 0 $ </td>
-    <td> $ 1 $ </td>
-    <td> $ \ket{\psi_{\frac{\pi}{2}}} = 0 \ket{0} + 
-                                         1 \ket{1} = \ket{1}$ </td>
+    <td>  $  \frac{\pi}{2}  $  </td>
+    <td>  $  0  $  </td>
+    <td>  $  1  $  </td>
+    <td>  $  \ket{\psi_{\frac{\pi}{2}}} = 0 \ket{0} + 
+                                         1 \ket{1} = \ket{1} $  </td>
   </tr>
   <tr>
-    <td> $ \frac{3\pi}{4} $ </td>
-    <td> $ -\frac{1}{\sqrt{2}} $ </td>
-    <td> $ \frac{1}{\sqrt{2}} $ </td>
-    <td> $ \ket{\psi_{\frac{3\pi}{4}}} = -\frac{1}{\sqrt{2}}  \ket{0} + 
-                                          \frac{1}{\sqrt{2}} \ket{1} $</td>
+    <td>  $  \frac{3\pi}{4}  $  </td>
+    <td>  $  -\frac{1}{\sqrt{2}}  $  </td>
+    <td>  $  \frac{1}{\sqrt{2}}  $  </td>
+    <td>  $  \ket{\psi_{\frac{3\pi}{4}}} = -\frac{1}{\sqrt{2}}  \ket{0} + 
+                                          \frac{1}{\sqrt{2}} \ket{1}  $ </td>
   </tr>
   <tr>
-    <td> $ \pi $ </td>
-    <td> $ -1 $ </td>
-    <td> $  0 $ </td>
-    <td> $ \ket{\psi_{\pi}} = -1 \ket{0} + 
-                                0 \ket{1}  = -\ket{0}$</td>
+    <td>  $  \pi  $  </td>
+    <td>  $  -1  $  </td>
+    <td>  $   0  $  </td>
+    <td>  $  \ket{\psi_{\pi}} = -1 \ket{0} + 
+                                0 \ket{1}  = -\ket{0} $ </td>
   </tr>
   <tr>
-    <td> $ \frac{5\pi}{4} $ </td>
-    <td> $ -\frac{1}{\sqrt{2}} $ </td>
-    <td> $ -\frac{1}{\sqrt{2}} $ </td>
-    <td> $ \ket{\psi_{\frac{5\pi}{4}}} = -\frac{1}{\sqrt{2}}  \ket{0} -
-                                          \frac{1}{\sqrt{2}} \ket{1} $</td>
+    <td>  $  \frac{5\pi}{4}  $  </td>
+    <td>  $  -\frac{1}{\sqrt{2}}  $  </td>
+    <td>  $  -\frac{1}{\sqrt{2}}  $  </td>
+    <td>  $  \ket{\psi_{\frac{5\pi}{4}}} = -\frac{1}{\sqrt{2}}  \ket{0} -
+                                          \frac{1}{\sqrt{2}} \ket{1}  $ </td>
   </tr>
   <tr>
-    <td> $ \frac{3\pi}{2} $ </td>
-    <td> $ 0 $ </td>
-    <td> $ -1 $ </td>
-    <td> $ \ket{\psi_{\frac{3\pi}{2}}} = 0 \ket{0} -
-                                          1 \ket{1} = -\ket{1} $</td>
+    <td>  $  \frac{3\pi}{2}  $  </td>
+    <td>  $  0  $  </td>
+    <td>  $  -1  $  </td>
+    <td>  $  \ket{\psi_{\frac{3\pi}{2}}} = 0 \ket{0} -
+                                          1 \ket{1} = -\ket{1}  $ </td>
   </tr>
   <tr>
-    <td> $ \frac{7\pi}{4} $ </td>
-    <td> $  \frac{1}{\sqrt{2}} $ </td>
-    <td> $ -\frac{1}{\sqrt{2}} $ </td>
-    <td> $ \ket{\psi_{\frac{7\pi}{4}}} = \frac{1}{\sqrt{2}}  \ket{0} -
-                                          \frac{1}{\sqrt{2}} \ket{1} $</td>
+    <td>  $  \frac{7\pi}{4}  $  </td>
+    <td>  $   \frac{1}{\sqrt{2}}  $  </td>
+    <td>  $  -\frac{1}{\sqrt{2}}  $  </td>
+    <td>  $  \ket{\psi_{\frac{7\pi}{4}}} = \frac{1}{\sqrt{2}}  \ket{0} -
+                                          \frac{1}{\sqrt{2}} \ket{1}  $ </td>
   </tr>
 </table>
 </center>
@@ -910,45 +921,45 @@ The table below shows some examples of qubits/states specified by some angle $\t
 The figure below shows the qubits as points (or as arrows).
 <br>
 <div align="center">
-  <img   src="figures/qs-trig-circle.svg" 
+  <img   src="./figures/qs-trig-circle.svg" 
          alt="Trigonometric Circle"
        align="center"
        width="700"/>
 </div>
 <p>
-Look at the qubit $\ket{\psi_0} = \ket{0}$ when $\theta=0$ and the qubit $\ket{\psi_{\pi}}= 
--\ket{0}$ when $\theta=\pi$. For both qubits, you can observe their corresponding quantum
-systems as being in state $\ket{0}$ since for both of them the probability $\alpha^2$ of 
-observing the system in $\ket{0}$ is 1 while the probability $\beta^2$ of observing the system
-in $\ket{1}$ is 0. Note that for both $\ket{\psi_0}$ and $\ket{\psi_\pi}$, they specify the
-same probabilities but they have different amplitudes. For $\ket{\psi_0}$, $\alpha = 1$ while
-for $\ket{\psi_\pi}$, $\alpha = -1$. When two qubits have the same probabilities but have 
+Look at the qubit  $ \ket{\psi_0} = \ket{0} $  when  $ \theta=0 $  and the qubit  $ \ket{\psi_{\pi}}= 
+-\ket{0} $  when  $ \theta=\pi $ . For both qubits, you can observe their corresponding quantum
+systems as being in state  $ \ket{0} $  since for both of them the probability  $ \alpha^2 $  of 
+observing the system in  $ \ket{0} $  is 1 while the probability  $ \beta^2 $  of observing the system
+in  $ \ket{1} $  is 0. Note that for both  $ \ket{\psi_0} $  and  $ \ket{\psi_\pi} $ , they specify the
+same probabilities but they have different amplitudes. For  $ \ket{\psi_0} $ ,  $ \alpha = 1 $  while
+for  $ \ket{\psi_\pi} $ ,  $ \alpha = -1 $ . When two qubits have the same probabilities but have 
 different amplitudes we say that they have <b><i>different phases</i></b> or they are <b><i>out
 of phase</i></b>. Informally, the <b><i>phase</i></b> of a qubit is related to its direction (or 
-the angle $\theta$). The direction $\theta=0$ is the opposite of the direction $\theta=\pi$.
-For easier visualization, instead of representing a qubit as a single point at $(\alpha,\beta)$ or
-$(1,\theta)$, you can draw an arrow from the origin to that point and this arrow will represent 
-the qubit. Now it is easier to see that the arrow representing qubit $\ket{\psi_0}$ points in the
-opposite direction of the arrow representing qubit $\ket{\psi_\pi}$.
+the angle  $ \theta $ ). The direction  $ \theta=0 $  is the opposite of the direction  $ \theta=\pi $ .
+For easier visualization, instead of representing a qubit as a single point at  $ (\alpha,\beta) $  or
+ $ (1,\theta) $ , you can draw an arrow from the origin to that point and this arrow will represent 
+the qubit. Now it is easier to see that the arrow representing qubit  $ \ket{\psi_0} $  points in the
+opposite direction of the arrow representing qubit  $ \ket{\psi_\pi} $ .
 </p>
 <p>
-For another example, you can look at the pair of qubits $\ket{\psi_{\frac{\pi}{2}}}$ and 
-$\ket{\psi_{\frac{3\pi}{2}}}$. They both encode the probability 1 of observing $\ket{1}$ and
-probability 0 of observing $\ket{0}$ but the arrows representing them point on opposite
-directions. $\ket{\psi_\frac{\pi}{2}}$'s arrow points directly upward while 
-$\ket{\psi_{\frac{3\pi}{2}}}$'s arrow points directly downward. A more interesting example is the
-set of qubits $ \ket{\psi_{\frac{\pi}{4}}},  \ket{\psi_{\frac{3\pi}{4}}}, 
-\ket{\psi_{\frac{5\pi}{4}}}, \ket{\psi_{\frac{7\pi}{4}}}$ where they all encode the same
-probabilities: $\frac{1}{2}$ probability of observing $\ket{0}$ and $\frac{1}{2}$ probability
-of observing $\ket{1}$ but their arrows point to different directions (due to the different
+For another example, you can look at the pair of qubits  $ \ket{\psi_{\frac{\pi}{2}}} $  and 
+ $ \ket{\psi_{\frac{3\pi}{2}}} $ . They both encode the probability 1 of observing  $ \ket{1} $  and
+probability 0 of observing  $ \ket{0} $  but the arrows representing them point on opposite
+directions.  $ \ket{\psi_\frac{\pi}{2}} $ 's arrow points directly upward while 
+ $ \ket{\psi_{\frac{3\pi}{2}}} $ 's arrow points directly downward. A more interesting example is the
+set of qubits  $  \ket{\psi_{\frac{\pi}{4}}},  \ket{\psi_{\frac{3\pi}{4}}}, 
+\ket{\psi_{\frac{5\pi}{4}}}, \ket{\psi_{\frac{7\pi}{4}}} $  where they all encode the same
+probabilities:  $ \frac{1}{2} $  probability of observing  $ \ket{0} $  and  $ \frac{1}{2} $  probability
+of observing  $ \ket{1} $  but their arrows point to different directions (due to the different
 signs of the amplitudes).
 </p>
 <p>
 We can now fully answer the question <i> "What exactly are the information that the qubit encodes?"
-</i>. Aside from the information about the probability of observing the state $\ket{0}$ and the 
-probability of observing the state $\ket{1}$, the qubit also encodes the phase defined by the 
-amplitudes (sort of the 'direction' of the state). Using a previous example, $\ket{\psi_0} = 
-\ket{0}$ and $\ket{\psi_\pi} = -1\ket{0}$ encode the sample probabilities but they have different
+</i>. Aside from the information about the probability of observing the state  $ \ket{0} $  and the 
+probability of observing the state  $ \ket{1} $ , the qubit also encodes the phase defined by the 
+amplitudes (sort of the 'direction' of the state). Using a previous example,  $ \ket{\psi_0} = 
+\ket{0} $  and  $ \ket{\psi_\pi} = -1\ket{0} $  encode the sample probabilities but they have different
 phases ('directions'). 
 </p>
 <!------------------------------------------------------------------------------------------------->
@@ -957,15 +968,15 @@ phases ('directions').
 <h3><span class="section-number">6.3.6. </span>Operations on a Qubit<a class="headerlink" href="#operations-on-a-qubit" title="Permalink to this heading">#</a></h3>
 <p>
 In classical computing, when you are computing with bits, there are only two operations you can do 
-with some bit $b$, you either let it keep its value or flip the bit (change 0 to 1 or change 1 
-to 0). In quantum computing, an operation on a qubit $\ket{\psi} = \alpha\ket{0} + \beta\ket{1}$ 
+with some bit  $ b $ , you either let it keep its value or flip the bit (change 0 to 1 or change 1 
+to 0). In quantum computing, an operation on a qubit  $ \ket{\psi} = \alpha\ket{0} + \beta\ket{1} $  
 involves changing its amplitudes which means an operation can change the probabilities and phases
 encoded in a qubit. Unlike operations on bits, there are an infinite number of possible operations
 on a qubit.  
 </p>
 <p>
-Let $U$ be a 1-qubit operator. The operator $U$ will take a qubit $\ket{\psi} = \alpha\ket{0}
-+\beta\ket{1}$ and transform it to a new qubit $\ket{\psi'} = \alpha'\ket{0} + \beta'\ket{1}$
+Let  $ U $  be a 1-qubit operator. The operator  $ U $  will take a qubit  $ \ket{\psi} = \alpha\ket{0}
++\beta\ket{1} $  and transform it to a new qubit  $ \ket{\psi'} = \alpha'\ket{0} + \beta'\ket{1} $ 
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
@@ -974,16 +985,16 @@ U(\ket{\psi}) &amp;= U(\alpha\ket{0} + \beta\ket{1})  \\
               &amp;= \ket{\psi'}.
 \end{align*}
 \end{split}\]</div>
-<p>where <span class="math notranslate nohighlight">\(\alpha'\)</span> is the new amplitude associated with state <span class="math notranslate nohighlight">\(\ket{0}\)</span> and <span class="math notranslate nohighlight">\(\beta'\)</span> is the new
-amplitude associated with the state <span class="math notranslate nohighlight">\(\ket{1}\)</span>. The transformed qubit <span class="math notranslate nohighlight">\(\ket{\psi'}\)</span> should still
-follow the Born rule. i.e. <span class="math notranslate nohighlight">\( {(a')}^2 + {(b')}^2 = 1\)</span>.</p>
+<p>where  <span class="math notranslate nohighlight">\( \alpha' \)</span>  is the new amplitude associated with state  <span class="math notranslate nohighlight">\( \ket{0} \)</span>  and  <span class="math notranslate nohighlight">\( \beta' \)</span>  is the new
+amplitude associated with the state  <span class="math notranslate nohighlight">\( \ket{1} \)</span> . The transformed qubit  <span class="math notranslate nohighlight">\( \ket{\psi'} \)</span>  should still
+follow the Born rule. i.e.  <span class="math notranslate nohighlight">\(  {(a')}^2 + {(b')}^2 = 1 \)</span> .</p>
 </p>
-<p> We can look an operator $U$ as being composed of two functions, function $f$ and function 
-$g$. Function $f$ takes the amplitudes $\alpha, \beta$ as input and return a new amplitude
-$\alpha'$ associated with state $\ket{0}$. Function $g$ takes the same amplitudes 
-$\alpha,\beta$ as input and return a new amplitude $\beta'$ associated with state $\ket{1}$.
+<p> We can look an operator  $ U $  as being composed of two functions, function  $ f $  and function 
+ $ g $ . Function  $ f $  takes the amplitudes  $ \alpha, \beta $  as input and return a new amplitude
+ $ \alpha' $  associated with state  $ \ket{0} $ . Function  $ g $  takes the same amplitudes 
+ $ \alpha,\beta $  as input and return a new amplitude  $ \beta' $  associated with state  $ \ket{1} $ .
 <div align="center">
-  <img   src="figures/quantum-ops-generic.svg" 
+  <img   src="././figures/quantum-ops-generic.svg" 
          alt="Generic 1-Qubit Operator"
        align="center"
        width="500"/>
@@ -996,15 +1007,15 @@ $\alpha,\beta$ as input and return a new amplitude $\beta'$ associated with stat
 U(\alpha\ket{0} + \beta\ket{1}) &amp;= f(\alpha,\beta)\ket{0} + g(\alpha,\beta)\ket{1} \\
 \end{align*}
 \end{split}\]</div>
-<p>The choice of functions <span class="math notranslate nohighlight">\(f, g\)</span> should also follow the Born rule. i.e. <span class="math notranslate nohighlight">\( {[f(\alpha,\beta)]}^2 + 
-{[g(\alpha, \beta)]}^2 = 1.\)</span></p>
+<p>The choice of functions  <span class="math notranslate nohighlight">\( f, g \)</span>  should also follow the Born rule. i.e.  <span class="math notranslate nohighlight">\(  {[f(\alpha,\beta)]}^2 + 
+{[g(\alpha, \beta)]}^2 = 1. \)</span></p>
 </p>
 <p>
 For our first example of an operator on a qubit, we can look at the quantum analogue of the bit flip.
-Let $X$ be the <i>quantum bit flip</i> (aka <i>quantum NOT</i>) operator. $X$ takes a qubit 
-$\ket{\psi} = \alpha\ket{0} + \beta\ket{1}$ and returns a new qubit $\ket{\psi'} = \alpha'\ket{0}
-+\beta'\ket{1}$ where $\alpha' = f(\alpha,\beta)$ and $\beta' =  g(\alpha,\beta) $. Functions 
-$f$ and $g$ and operator $X$ are defined as follows:
+Let  $ X $  be the <i>quantum bit flip</i> (aka <i>quantum NOT</i>) operator.  $ X $  takes a qubit 
+ $ \ket{\psi} = \alpha\ket{0} + \beta\ket{1} $  and returns a new qubit  $ \ket{\psi'} = \alpha'\ket{0}
++\beta'\ket{1} $  where  $ \alpha' = f(\alpha,\beta) $  and  $ \beta' =  g(\alpha,\beta)  $ . Functions 
+ $ f $  and  $ g $  and operator  $ X $  are defined as follows:
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
@@ -1015,22 +1026,22 @@ $f$ and $g$ and operator $X$ are defined as follows:
                                      &amp;= \beta\ket{0} + \alpha\ket{1}
 \end{align*}
 \end{split}\]</div>
-<p><span class="math notranslate nohighlight">\(X\)</span> swaps the amplitudes (and hence the probabilities) of states <span class="math notranslate nohighlight">\(\ket{0}\)</span> and <span class="math notranslate nohighlight">\(\ket{1}\)</span>.
-This is why function <span class="math notranslate nohighlight">\(f\)</span> returns <span class="math notranslate nohighlight">\(\beta\)</span> as the new amplitude <span class="math notranslate nohighlight">\(\alpha'\)</span> of state <span class="math notranslate nohighlight">\(\ket{0}\)</span>
-and why function <span class="math notranslate nohighlight">\(g\)</span> returns <span class="math notranslate nohighlight">\(\alpha\)</span> as the new amplitude <span class="math notranslate nohighlight">\(\beta'\)</span> of state <span class="math notranslate nohighlight">\(\ket{1}\)</span>. If
-the original qubit is either <span class="math notranslate nohighlight">\(\ket{\psi}=\ket{0}\)</span> where <span class="math notranslate nohighlight">\( \alpha=1,\beta=0 \)</span> or <span class="math notranslate nohighlight">\( \ket{\psi}
-= \ket{1} \)</span> where <span class="math notranslate nohighlight">\(\alpha=0, \beta=1\)</span>, then quantum NOT operator behaves exactly like a classical
+<p><span class="math notranslate nohighlight">\( X \)</span>  swaps the amplitudes (and hence the probabilities) of states  <span class="math notranslate nohighlight">\( \ket{0} \)</span>  and  <span class="math notranslate nohighlight">\( \ket{1} \)</span> .
+This is why function  <span class="math notranslate nohighlight">\( f \)</span>  returns  <span class="math notranslate nohighlight">\( \beta \)</span>  as the new amplitude  <span class="math notranslate nohighlight">\( \alpha' \)</span>  of state  <span class="math notranslate nohighlight">\( \ket{0} \)</span>
+and why function  <span class="math notranslate nohighlight">\( g \)</span>  returns  <span class="math notranslate nohighlight">\( \alpha \)</span>  as the new amplitude  <span class="math notranslate nohighlight">\( \beta' \)</span>  of state  <span class="math notranslate nohighlight">\( \ket{1} \)</span> . If
+the original qubit is either  <span class="math notranslate nohighlight">\( \ket{\psi}=\ket{0} \)</span>  where  <span class="math notranslate nohighlight">\(  \alpha=1,\beta=0  \)</span>  or  <span class="math notranslate nohighlight">\(  \ket{\psi}
+= \ket{1}  \)</span>  where  <span class="math notranslate nohighlight">\( \alpha=0, \beta=1 \)</span> , then quantum NOT operator behaves exactly like a classical
 NOT (bit flip) operator.</p>
 <div align="center">
-  <img   src="figures/quantum-ops-not.svg" 
+  <img   src="./figures/quantum-ops-not.svg" 
          alt="Quantum NOT Operator as Reflection"
        align="center"
        width="600"/>
 </div>
 </p>
 <p>
-The second example is the $HADAMARD$ operator (or $H$ operator for short). The $H$ operator 
-and its $f$ and $g$ functions are defined as follows:
+The second example is the  $ HADAMARD $  operator (or  $ H $  operator for short). The  $ H $  operator 
+and its  $ f $  and  $ g $  functions are defined as follows:
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
@@ -1042,8 +1053,8 @@ and its $f$ and $g$ functions are defined as follows:
                                      \left(\frac{\alpha-\beta}{\sqrt{2}}\right)\ket{1}  \\
 \end{align*}
 \end{split}\]</div>
-<p>The <span class="math notranslate nohighlight">\(H\)</span> operator will often be use to put basis states <span class="math notranslate nohighlight">\(\ket{0}\)</span> and <span class="math notranslate nohighlight">\(\ket{1}\)</span> in superposition.
-e.g. If <span class="math notranslate nohighlight">\(\ket{\psi} = \ket{0} = 1\ket{0} + 0\ket{1}\)</span> where <span class="math notranslate nohighlight">\(\alpha=1, \beta=0\)</span>, then:</p>
+<p>The  <span class="math notranslate nohighlight">\( H \)</span>  operator will often be use to put basis states  <span class="math notranslate nohighlight">\( \ket{0} \)</span>  and  <span class="math notranslate nohighlight">\( \ket{1} \)</span>  in superposition.
+e.g. If  <span class="math notranslate nohighlight">\( \ket{\psi} = \ket{0} = 1\ket{0} + 0\ket{1} \)</span>  where  <span class="math notranslate nohighlight">\( \alpha=1, \beta=0 \)</span> , then:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
@@ -1053,43 +1064,49 @@ H(\ket{0})  &amp;= \left(\frac{\alpha+\beta}{\sqrt{2}}\right)\ket{0} +\left(\fra
            &amp;= \frac{1}{\sqrt{2}} \left( \ket{0} + \ket{1} \right)
 \end{align*}
 \end{split}\]</div>
-<p>If <span class="math notranslate nohighlight">\(\ket{\psi} = \ket{1} = 0\ket{0} + 1\ket{1}\)</span> where <span class="math notranslate nohighlight">\(\alpha=0, \beta=1\)</span>, then:
-$$</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
+<p>If  <span class="math notranslate nohighlight">\( \ket{\psi} = \ket{1} = 0\ket{0} + 1\ket{1} \)</span>  where  <span class="math notranslate nohighlight">\( \alpha=0, \beta=1 \)</span> , then:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
 H(\ket{1})  &amp;= \left(\frac{\alpha+\beta}{\sqrt{2}}\right)\ket{0} +\left(\frac{\alpha-\beta}{\sqrt{2}}\right)\ket{1}\\
             &amp;= \left(\frac{0+1}{\sqrt{2}}\right)\ket{0} +\left(\frac{0-1}{\sqrt{2}}\right)\ket{1}\\
             &amp;=  \frac{1}{\sqrt{2}}\ket{0} - \frac{1}{\sqrt{2}}\ket{1} \\
             &amp;= \frac{1}{\sqrt{2}} \left( \ket{0} - \ket{1} \right)
-\end{align*}\]</div>
-<div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}The $H$ operator transforms the basis state $\ket{0}$ to the state 
-$ \ket{+} = \left(\frac{1}{\sqrt{2}}\ket{0} + \frac{1}{\sqrt{2}}\ket{1}\right)$ and the basis 
-state  $\ket{1}$ to the state $\ket{-} = \left(\frac{1}{\sqrt{2}}\ket{0} - 
-\frac{1}{\sqrt{2}}\ket{1}\right) $.\\&lt;div align=&quot;center&quot;&gt;
-  &lt;img   src=&quot;figures/quantum-ops-hadamard.svg&quot; 
-         alt=&quot;Hadamard Operator as Reflections&quot;
-       align=&quot;center&quot;
-       width=&quot;600&quot;/&gt;
-&lt;/div&gt;\\&lt;/p&gt;\\
-&lt;p&gt;
-&lt;div align=&quot;center&quot;&gt;
-  &lt;img   src=&quot;figures/quantum-ops-rotate.svg&quot; 
-         alt=&quot;Rotation Operator&quot;
-       align=&quot;center&quot;
-       width=&quot;600&quot;/&gt;
-&lt;/div&gt;\\&lt;/p&gt;\\
-&lt;!-------------------------------------------------------------------------------------------------&gt;
-###  Complex Amplitudes   
-\end{aligned}\end{align} \]</div>
-<p>\ket{\psi} = cos(\frac{\theta}{2})\ket{0} + e^{i\phi} sin(\frac{\theta}{2}) i \ket{1}
-$$</p>
+\end{align*}
+\end{split}\]</div>
+<p>The  <span class="math notranslate nohighlight">\( H \)</span>  operator transforms the basis state  <span class="math notranslate nohighlight">\( \ket{0} \)</span>  to the state
+<span class="math notranslate nohighlight">\(  \ket{+} = \left(\frac{1}{\sqrt{2}}\ket{0} + \frac{1}{\sqrt{2}}\ket{1}\right) \)</span>  and the basis
+state   <span class="math notranslate nohighlight">\( \ket{1} \)</span>  to the state  <span class="math notranslate nohighlight">\( \ket{-} = \left(\frac{1}{\sqrt{2}}\ket{0} - 
+\frac{1}{\sqrt{2}}\ket{1}\right)  \)</span> .</p>
+<div align="center">
+  <img   src="./figures/quantum-ops-hadamard.svg" 
+         alt="Hadamard Operator as Reflections"
+       align="center"
+       width="600"/>
+</div>
+</p>
+<p>
+<div align="center">
+  <img   src="./figures/quantum-ops-rotate.svg" 
+         alt="Rotation Operator"
+       align="center"
+       width="600"/>
+</div>
+</p>
 <!------------------------------------------------------------------------------------------------->
 </section>
-<section id="qubits-as-points-in-3d-space-or-as-points-on-a-sphere">
-<h3><span class="section-number">6.3.7. </span>Qubits as Points in 3D Space (or as Points on a Sphere)<a class="headerlink" href="#qubits-as-points-in-3d-space-or-as-points-on-a-sphere" title="Permalink to this heading">#</a></h3>
+<section id="complex-amplitudes">
+<h3><span class="section-number">6.3.7. </span>Complex Amplitudes<a class="headerlink" href="#complex-amplitudes" title="Permalink to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[
+\ket{\psi} = cos(\frac{\theta}{2})\ket{0} + e^{i\phi} sin(\frac{\theta}{2}) i \ket{1}
+\]</div>
+<!------------------------------------------------------------------------------------------------->
+</section>
+<section id="qubits-as-points-in-space-or-as-points-on-a-sphere">
+<h3><span class="section-number">6.3.8. </span>Qubits as Points in $$ Space (or as Points on a Sphere)<a class="headerlink" href="#qubits-as-points-in-space-or-as-points-on-a-sphere" title="Permalink to this heading">#</a></h3>
 <div align="center">
-  <img   src="figures/qs-blochsphere.svg" 
+  <img   src="./figures/qs-blochsphere.svg" 
          alt="Bloch Sphere"
        align="center"
        width="550"/>
@@ -1097,8 +1114,8 @@ $$</p>
 <!------------------------------------------------------------------------------------------------->
 </section>
 <section id="qubits-as-vectors">
-<h3><span class="section-number">6.3.8. </span>Qubits as Vectors<a class="headerlink" href="#qubits-as-vectors" title="Permalink to this heading">#</a></h3>
-<p>The qubit <span class="math notranslate nohighlight">\( \ket{0} \)</span> can be represented by the column vector:</p>
+<h3><span class="section-number">6.3.9. </span>Qubits as Vectors<a class="headerlink" href="#qubits-as-vectors" title="Permalink to this heading">#</a></h3>
+<p>The qubit  <span class="math notranslate nohighlight">\(  \ket{0}  \)</span>  can be represented by the column vector:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \ket{0} 
@@ -1108,7 +1125,7 @@ $$</p>
   0
 \end{bmatrix}
 \end{split}\]</div>
-<p>The qubit <span class="math notranslate nohighlight">\( \ket{1} \)</span> can be represented by the column vector:</p>
+<p>The qubit  <span class="math notranslate nohighlight">\(  \ket{1}  \)</span>  can be represented by the column vector:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \ket{1}
@@ -1118,7 +1135,7 @@ $$</p>
   1
 \end{bmatrix}
 \end{split}\]</div>
-<p>The generic qubit <span class="math notranslate nohighlight">\( \ket{\psi} =  \alpha\ket{0} + \beta\ket{1} \)</span> can be represented by column
+<p>The generic qubit  <span class="math notranslate nohighlight">\(  \ket{\psi} =  \alpha\ket{0} + \beta\ket{1}  \)</span>  can be represented by column
 vector:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1144,17 +1161,17 @@ vector:</p>
 <!------------------------------------------------------------------------------------------------->
 </section>
 <section id="qubits-as-binary-trees">
-<h3><span class="section-number">6.3.9. </span>Qubits as Binary Trees<a class="headerlink" href="#qubits-as-binary-trees" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">6.3.10. </span>Qubits as Binary Trees<a class="headerlink" href="#qubits-as-binary-trees" title="Permalink to this heading">#</a></h3>
 <p>Horizontal tree</p>
 <div align="center">
-  <img   src="figures/qs-1qubit-htree.svg" 
+  <img   src="./figures/qs-1qubit-htree.svg" 
          alt="Qubit as Horizontal Binary Tree"
        align="center"
        width="250 "/>
 </div>
 <p>Vertical Tree</p>
 <div align="center">
-  <img   src="figures/qs-1qubit-vtree.svg" 
+  <img   src="./figures/qs-1qubit-vtree.svg" 
          alt="Qubit as a Vertical Binary Tree"
        align="center"
        width="300 "/>
@@ -1168,20 +1185,20 @@ vector:</p>
 <hr>
 <p>Horizontal Tree</p>
 <div align="center">
-  <img   src="figures/qs-2qubit-htree.svg" 
+  <img   src="./figures/qs-2qubit-htree.svg" 
          alt="2-qubit State as a Horizontal Binary Tree"
        align="center"
        width="400 "/>
 </div>
 <p>Vertical Binary Tree</p>
 <div align="center">
-  <img   src="figures/qs-2qubit-vtree.svg" 
+  <img   src="./figures/qs-2qubit-vtree.svg" 
          alt="2-qubit State as a Vertical Binary Tree"
        align="center"
        width="450 "/>
 </div>
 <br>
-<p>Let the first qubit be <span class="math notranslate nohighlight">\(\ket{q_1}\)</span>:</p>
+<p>Let the first qubit be  <span class="math notranslate nohighlight">\( \ket{q_1} \)</span> :</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \ket{q_1} = \alpha \ket{0} + \beta \ket{1} 
@@ -1190,7 +1207,7 @@ vector:</p>
               \beta
             \end{bmatrix}
 \end{split}\]</div>
-<p>Let the second qubit be <span class="math notranslate nohighlight">\(\ket{q_2}\)</span>:</p>
+<p>Let the second qubit be  <span class="math notranslate nohighlight">\( \ket{q_2} \)</span> :</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \ket{q_2} = \gamma \ket{0} + \delta \ket{1}
@@ -1199,11 +1216,11 @@ vector:</p>
               \delta
             \end{bmatrix}
 \end{split}\]</div>
-<p>The tensor product of <span class="math notranslate nohighlight">\(\ket{q_1}\)</span> and <span class="math notranslate nohighlight">\(\ket{q_2}\)</span>, denoted by <span class="math notranslate nohighlight">\(\ket{q_1} \otimes \ket{q_2}\)</span>
-(or simply <span class="math notranslate nohighlight">\(\ket{q_1q_2}\)</span> ), is computed as follows:
-$$</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
+<p>The tensor product of  <span class="math notranslate nohighlight">\( \ket{q_1} \)</span>  and  <span class="math notranslate nohighlight">\( \ket{q_2} \)</span> , denoted by  <span class="math notranslate nohighlight">\( \ket{q_1} \otimes \ket{q_2} \)</span><br />
+(or simply  <span class="math notranslate nohighlight">\( \ket{q_1q_2} \)</span>  ), is computed as follows:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
 \ket{q_1} \otimes \ket{q_2} &amp;= \ket{q_1q_2}  \\
                             &amp;= (\alpha \ket{0} + \beta \ket{1})  \otimes 
                                (\gamma \ket{0} + \delta\ket{1}) \\
@@ -1213,11 +1230,12 @@ $$</p>
                                [\beta  \gamma \ket{10} + \beta  \delta \ket{11}] \\ 
                             &amp;= \alpha \gamma \ket{00} + \alpha \delta \ket{01} + 
                                \beta  \gamma \ket{10} + \beta  \delta \ket{11} \\ 
-\end{align*}\]</div>
+\end{align*}
+\end{split}\]</div>
+<p>As column vectors:</p>
 <div class="math notranslate nohighlight">
-\[As column vectors:\]</div>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
+\[\begin{split}
+\begin{align*}
 \ket{q_1q_2} &amp;= \ket{q_1} \otimes \ket{q_2} \\
              &amp;= \begin{bmatrix}
                 \alpha \\
@@ -1250,88 +1268,105 @@ $$</p>
                 \beta  \gamma \\
                 \beta  \delta
                 \end{bmatrix}
-\end{align*}\]</div>
+\end{align*}
+\end{split}\]</div>
+<!------------------------------------------------------------------------------------------------->
+<br>
+</section>
+<section id="entanglement-of-qubits">
+<h2><span class="section-number">6.5. </span>Entanglement of Qubits<a class="headerlink" href="#entanglement-of-qubits" title="Permalink to this heading">#</a></h2>
+<hr>
+<p>Non-entangled 3-qubit state:</p>
+<div align="center">
+  <img   src="./figures/qs-3qubit-non-entangled.svg" 
+         alt="Non-entangled 3-qubit State"
+       align="center"
+       width="700"/>
+</div>
+<br>
+<p>Entanglement  <span class="math notranslate nohighlight">\( q_1 = q_3 \)</span> :</p>
+<div align="center">
+  <img   src="./figures/qs-3qubit-q1-eq-q3.svg" 
+         alt="3-qubit State with Entanglement q1=q3"
+       align="center"
+       width="700"/>
+</div>
+<br>
+<p>Entanglement  <span class="math notranslate nohighlight">\( q_1 \neq q_2 \)</span> :</p>
+<div align="center">
+  <img   src="./figures/qs-3qubit-q1-neq-q2.svg" 
+         alt="3-qubit State with Entanglement q1 =\= q2"
+       align="center"
+       width="700"/>
+</div>
+<br>
+<p>Entanglement  <span class="math notranslate nohighlight">\( q_1 = q_2 = q_3 \)</span> :</p>
+<div align="center">
+  <img   src="./figures/qs-3qubit-eq-q123.svg" 
+         alt="3-qubit State with Entanglement q1 = q2 = q3"
+       align="center"
+       width="700"/>
+</div>
+<br>
+<!------------------------------------------------------------------------------------------------->
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="appendix">
+<h1><span class="section-number">7. </span>Appendix<a class="headerlink" href="#appendix" title="Permalink to this heading">#</a></h1>
+<hr>
+<!------------------------------------------------------------------------------------------------->
+<section id="complex-numbers">
+<h2><span class="section-number">7.1. </span>Complex Numbers<a class="headerlink" href="#complex-numbers" title="Permalink to this heading">#</a></h2>
+<p>
+The set  $ \mathbb{C} $  of <i>complex numbers</i> is an extension of the set  $ \mathbb{R} $  of 
+<i>real</i> numbers. A complex number  $ z $  has the form:
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}&lt;!-------------------------------------------------------------------------------------------------&gt;
-&lt;br&gt;\\## Entanglement of Qubits
-  
-&lt;hr&gt;\\
-Non-entangled 3-qubit state:\\&lt;div align=&quot;center&quot;&gt;
-  &lt;img   src=&quot;figures/qs-3qubit-non-entangled.svg&quot; 
-         alt=&quot;Non-entangled 3-qubit State&quot;
-       align=&quot;center&quot;
-       width=&quot;700&quot;/&gt;
-&lt;/div&gt;
-&lt;br&gt;\\Entanglement $q_1 = q_3$:\\&lt;div align=&quot;center&quot;&gt;
-  &lt;img   src=&quot;figures/qs-3qubit-q1-eq-q3.svg&quot; 
-         alt=&quot;3-qubit State with Entanglement q1=q3&quot;
-       align=&quot;center&quot;
-       width=&quot;700&quot;/&gt;
-&lt;/div&gt;
-&lt;br&gt;\\Entanglement $q_1 \neq q_2$:\\&lt;div align=&quot;center&quot;&gt;
-  &lt;img   src=&quot;figures/qs-3qubit-q1-neq-q2.svg&quot; 
-         alt=&quot;3-qubit State with Entanglement q1 =\= q2&quot;
-       align=&quot;center&quot;
-       width=&quot;700&quot;/&gt;
-&lt;/div&gt;
-&lt;br&gt;\\Entanglement $q_1 = q_2 = q_3$:\\&lt;div align=&quot;center&quot;&gt;
-  &lt;img   src=&quot;figures/qs-3qubit-eq-q123.svg&quot; 
-         alt=&quot;3-qubit State with Entanglement q1 = q2 = q3&quot;
-       align=&quot;center&quot;
-       width=&quot;700&quot;/&gt;
-&lt;/div&gt;
-&lt;br&gt;\\
-&lt;!-------------------------------------------------------------------------------------------------&gt;
-#  Appendix
- 
-&lt;hr&gt;\\&lt;!-------------------------------------------------------------------------------------------------&gt;\\## Complex Numbers
-  \\&lt;p&gt;
-The set $\mathbb{C}$ of &lt;i&gt;complex numbers&lt;/i&gt; is an extension of the set $\mathbb{R}$ of 
-&lt;i&gt;real&lt;/i&gt; numbers. A complex number $z$ has the form:\end{aligned}\end{align} \]</div>
-<p>z = a + bi
-$$</p>
-<p>where <span class="math notranslate nohighlight">\(a,b \in \mathbb{R}\)</span> are real numbers and <span class="math notranslate nohighlight">\(i = \sqrt{-1}\)</span> is the <i>imaginary unit</i>. We
-denote the real component of the complex number <span class="math notranslate nohighlight">\(z\)</span> as <span class="math notranslate nohighlight">\(Re(z)\)</span> while the imaginary component is
-denoted as <span class="math notranslate nohighlight">\(Im(z)\)</span>. i.e. Given <span class="math notranslate nohighlight">\(z=a+bi\)</span>, <span class="math notranslate nohighlight">\(Re(z) = a\)</span> and <span class="math notranslate nohighlight">\(Im(z)=b\)</span>.</p>
+\[
+z = a + bi
+\]</div>
+<p>where  <span class="math notranslate nohighlight">\( a,b \in \mathbb{R} \)</span>  are real numbers and  <span class="math notranslate nohighlight">\( i = \sqrt{-1} \)</span>  is the <i>imaginary unit</i>. We
+denote the real component of the complex number  <span class="math notranslate nohighlight">\( z \)</span>  as  <span class="math notranslate nohighlight">\( Re(z) \)</span>  while the imaginary component is
+denoted as  <span class="math notranslate nohighlight">\( Im(z) \)</span> . i.e. Given  <span class="math notranslate nohighlight">\( z=a+bi \)</span> ,  <span class="math notranslate nohighlight">\( Re(z) = a \)</span>  and  <span class="math notranslate nohighlight">\( Im(z)=b \)</span> .</p>
 </p>
 <p>
 A complex number can be represented as a point in a two-dimensional plane called the 
 <i>Argand plane</i>. Conventionally, the horizontal axis of the plane represents the real component
 of the complex number while the vertical component represents the imaginary component of the 
-complex number. The complex number $z = a+bi $ is represented as the point $(a,b)$ on  the 
+complex number. The complex number  $ z = a+bi  $  is represented as the point  $ (a,b) $  on  the 
 plane.
 <div align="center">
-  <img   src="figures/comp-argand.svg" 
+  <img   src="./figures/comp-argand.svg" 
          alt="Argand Plane"
        align="center"
        width="450"/>
 </div>
 </p>
 <p>
-The <i>modulus</i> (or <i>absolute value</i>) of the complex number $z = a + bi$ is the real 
+The <i>modulus</i> (or <i>absolute value</i>) of the complex number  $ z = a + bi $  is the real 
 number is:
 <div class="math notranslate nohighlight">
 \[
 |z| = \sqrt{Re(z)^2 + Im(z)^2} = \sqrt{a^2+b^2}
 \]</div>
-<p>The modulus is the distance from the origin <span class="math notranslate nohighlight">\((0,0)\)</span> to the point <span class="math notranslate nohighlight">\((a,b)\)</span> that represents <span class="math notranslate nohighlight">\(z\)</span>.</p>
+<p>The modulus is the distance from the origin  <span class="math notranslate nohighlight">\( (0,0) \)</span>  to the point  <span class="math notranslate nohighlight">\( (a,b) \)</span>  that represents  <span class="math notranslate nohighlight">\( z \)</span> .</p>
 </p>
 <p>
-The <i>complex conjugate</i> of the complex number $z = a + bi$, denoted as $z^*$ (or 
-sometimes $\overline{z}$), is the complex number:
-$$
+The <i>complex conjugate</i> of the complex number  $ z = a + bi $ , denoted as  $ z^* $  (or 
+sometimes  $ \overline{z} $ ), is the complex number:
+<div class="math notranslate nohighlight">
+\[
 z^* = a - bi
-$$
+\]</div>
 </p>
 <p>
-The <i>square modulus</i> of the complex number $z=a+bi$, denoted as $|z|^2$, is simply the 
+The <i>square modulus</i> of the complex number  $ z=a+bi $ , denoted as  $ |z|^2 $ , is simply the 
 square of its modulus.
 <div class="math notranslate nohighlight">
 \[
 |z|^2 = Re(z)^2 + Im(z)^2 = a^2+b^2
 \]</div>
-<p>Another way of computing the square modulus is by multiplying <span class="math notranslate nohighlight">\(z\)</span> with its complex conjugate
-<span class="math notranslate nohighlight">\(z^*\)</span>.</p>
+<p>Another way of computing the square modulus is by multiplying  <span class="math notranslate nohighlight">\( z \)</span>  with its complex conjugate
+<span class="math notranslate nohighlight">\( z^* \)</span> .</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
@@ -1344,15 +1379,15 @@ square of its modulus.
 \end{split}\]</div>
 </p>
 <p>
-The point $(a,b)$ on the Argand plane representing the complex number $z=a+bi$ can be rewritten
+The point  $ (a,b) $  on the Argand plane representing the complex number  $ z=a+bi $  can be rewritten
 using a polar coordinate system. A point in a two-dimensional plane can be specified using a
-radial distance $r$ from a fix point (the origin) and an angle $\theta$ between a fix axis and
-the radius, line segment connecting the origin to the point. Given the point $(r,\theta$) in
-polar coordinate, its coordinate in the Argand plane is $ (a,b) = (r\cdot cos(\theta), 
-r\cdot sin(\theta)) $.
+radial distance  $ r $  from a fix point (the origin) and an angle  $ \theta $  between a fix axis and
+the radius, line segment connecting the origin to the point. Given the point  $ (r,\theta $ ) in
+polar coordinate, its coordinate in the Argand plane is  $  (a,b) = (r\cdot cos(\theta), 
+r\cdot sin(\theta))  $ .
 </p>
 <div align="center">
-  <img   src="figures/comp-polar.svg" 
+  <img   src="./figures/comp-polar.svg" 
          alt="Polar Coordinates"
        align="center"
        width="550"/>
@@ -1366,18 +1401,18 @@ formula is:
 e^{ix} = cos(x) + sin(x) \cdot i
 \]</div>
 </p>
-<p>We can modify Euler’s formula by letting <span class="math notranslate nohighlight">\(x=\theta\)</span> (the angle) and multiplying both sides of the
-equation by <span class="math notranslate nohighlight">\(r\)</span> (the radial distance). We will have the more general formula:</p>
+<p>We can modify Euler’s formula by letting  <span class="math notranslate nohighlight">\( x=\theta \)</span>  (the angle) and multiplying both sides of the
+equation by  <span class="math notranslate nohighlight">\( r \)</span>  (the radial distance). We will have the more general formula:</p>
 <div class="math notranslate nohighlight">
 \[
 re^{i\theta}  = r\cdot cos(\theta) + r \cdot sin(\theta) \cdot i 
 \]</div>
-<p>Any complex numbeer <span class="math notranslate nohighlight">\(z = a+bi\)</span> can be written as the complex exponential <span class="math notranslate nohighlight">\(re^{i\theta}\)</span> where
-<span class="math notranslate nohighlight">\((r,\theta)\)</span> is polar coordinate equivalent of the point <span class="math notranslate nohighlight">\((a,b)\)</span> on the Argand plane
-representing the complex number <span class="math notranslate nohighlight">\(z\)</span>. You can see this by starting with some point <span class="math notranslate nohighlight">\((r,\theta)\)</span>,
-in polar coordinate, representing some complex number <span class="math notranslate nohighlight">\(z\)</span>. The Argand plane coordinate of
-<span class="math notranslate nohighlight">\((r,\theta)\)</span> is <span class="math notranslate nohighlight">\((a,b) = (r\cdot cos(\theta), r\cdot sin(\theta))\)</span> and complex number
-represented by the point <span class="math notranslate nohighlight">\((a,b)\)</span> on the Argand plane is:</p>
+<p>Any complex numbeer  <span class="math notranslate nohighlight">\( z = a+bi \)</span>  can be written as the complex exponential  <span class="math notranslate nohighlight">\( re^{i\theta} \)</span>  where
+<span class="math notranslate nohighlight">\( (r,\theta) \)</span>  is polar coordinate equivalent of the point  <span class="math notranslate nohighlight">\( (a,b) \)</span>  on the Argand plane
+representing the complex number  <span class="math notranslate nohighlight">\( z \)</span> . You can see this by starting with some point  <span class="math notranslate nohighlight">\( (r,\theta) \)</span> ,
+in polar coordinate, representing some complex number  <span class="math notranslate nohighlight">\( z \)</span> . The Argand plane coordinate of
+<span class="math notranslate nohighlight">\( (r,\theta) \)</span>  is  <span class="math notranslate nohighlight">\( (a,b) = (r\cdot cos(\theta), r\cdot sin(\theta)) \)</span>  and complex number
+represented by the point  <span class="math notranslate nohighlight">\( (a,b) \)</span>  on the Argand plane is:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
@@ -1433,7 +1468,7 @@ z &amp;= a+bi\\
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">7. </span>Introduction to Quantum Computing</p>
+        <p class="prev-next-title"><span class="section-number">8. </span>Introduction to Quantum Computing</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1452,6 +1487,7 @@ z &amp;= a+bi\\
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">6. Quantum Mechanics for Quantum Computing</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">6.1. Introduction</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-bit">6.2. Classical Bit</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bit-strings">6.2.1. Bit Strings</a></li>
@@ -1464,13 +1500,22 @@ z &amp;= a+bi\\
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#born-rule">6.3.4. Born Rule</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-points-on-a-2d-plane-or-as-points-on-a-circle">6.3.5. Qubits as Points on a 2D Plane (or as Points on a Circle)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operations-on-a-qubit">6.3.6. Operations on a Qubit</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-points-in-3d-space-or-as-points-on-a-sphere">6.3.7. Qubits as Points in 3D Space (or as Points on a Sphere)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-vectors">6.3.8. Qubits as Vectors</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-binary-trees">6.3.9. Qubits as Binary Trees</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complex-amplitudes">6.3.7. Complex Amplitudes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-points-in-space-or-as-points-on-a-sphere">6.3.8. Qubits as Points in $$ Space (or as Points on a Sphere)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-vectors">6.3.9. Qubits as Vectors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-binary-trees">6.3.10. Qubits as Binary Trees</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-states">6.4. Quantum States</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entanglement-of-qubits">6.5. Entanglement of Qubits</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#appendix">7. Appendix</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complex-numbers">7.1. Complex Numbers</a></li>
+</ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
