@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>10. Software Programming for Quantum Computation &#8212; Introduction to Quantum Computing</title>
+    <title>9. Software Programming for Quantum Computation &#8212; Introduction to Quantum Computing</title>
   
   
   
@@ -69,8 +69,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/fav.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="11. COARE and ASTI’s Quantum Circuit Simulation Project" href="../chapter_7/chapter_7-nb.html" />
-    <link rel="prev" title="9. Quantum Algorithms and Their Advantages Over Classical Counterparts" href="../chapter_5/chapter_5-nb.html" />
+    <link rel="next" title="10. COARE and ASTI’s Quantum Circuit Simulation Project" href="../chapter_7/chapter_7-nb.html" />
+    <link rel="prev" title="8. Quantum Algorithms and Their Advantages Over Classical Counterparts" href="../chapter_5/chapter_5-nb.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -170,13 +170,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../sample/sample-nb.html">3. Sample Commonmarkdown and MyST directives in Jupyter Notebook</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapter_1/chapter_1-nb.html">4. Introduction to Classical Computing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapter_2/chapter_2-nb.html">5. Mathematical Foundation of Quantum Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_3/chapter_3-nb.html">6. Quantum Mechanics for Quantum Computing</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="../chapter_4/chapter_4-nb.html">8. Introduction to Quantum Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_5/chapter_5-nb.html">9. Quantum Algorithms and Their Advantages Over Classical Counterparts</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">10. Software Programming for Quantum Computation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_7/chapter_7-nb.html">11. COARE and ASTI’s Quantum Circuit Simulation Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_8/chapter_8-nb.html">12. Current Use Cases for Quantum Computing in the Noisy Intermediate-Scale Quantum Era</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_3/chapter_3-nb.html">6. Quantum States for Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_4/chapter_4-nb.html">7. Introduction to Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_5/chapter_5-nb.html">8. Quantum Algorithms and Their Advantages Over Classical Counterparts</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">9. Software Programming for Quantum Computation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_7/chapter_7-nb.html">10. COARE and ASTI’s Quantum Circuit Simulation Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_8/chapter_8-nb.html">11. Current Use Cases for Quantum Computing in the Noisy Intermediate-Scale Quantum Era</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
 <ul class="nav bd-sidenav">
@@ -440,17 +439,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#technology-stack-for-quantum-computing">10.1. Technology Stack for Quantum Computing</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-for-using-quantum-processing-units-as-co-processor">10.2. Workflow for Using Quantum Processing Units as Co-processor</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-we-create-a-qubit">10.2.1. How do we create a qubit?</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#superconducting-quantum-computing">10.2.2. Superconducting quantum computing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#technology-stack-for-quantum-computing">9.1. Technology Stack for Quantum Computing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-for-using-quantum-processing-units-as-co-processor">9.2. Workflow for Using Quantum Processing Units as Co-processor</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-we-create-a-qubit">9.2.1. How do we create a qubit?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#superconducting-quantum-computing">9.2.2. Superconducting quantum computing</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-frameworks-for-quantum-programming">10.3. Software Frameworks for Quantum Programming</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ibm-s-qiskit-software-framework">10.4. IBM’s Qiskit Software Framework</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quimb-for-tensor-networks">10.5. Quimb for Tensor Networks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ddsim-for-decision-diagrams">10.6. DDSIM for Decision Diagrams</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">10.7. References</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-frameworks-for-quantum-programming">9.3. Software Frameworks for Quantum Programming</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ibm-s-qiskit-software-framework">9.4. IBM’s Qiskit Software Framework</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quimb-for-tensor-networks">9.5. Quimb for Tensor Networks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ddsim-for-decision-diagrams">9.6. DDSIM for Decision Diagrams</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">9.7. References</a></li>
 </ul>
             </nav>
         </div>
@@ -463,7 +462,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="software-programming-for-quantum-computation">
-<h1><a class="toc-backref" href="#id1" role="doc-backlink"><span class="section-number">10. </span>Software Programming for Quantum Computation</a><a class="headerlink" href="#software-programming-for-quantum-computation" title="Permalink to this heading">#</a></h1>
+<h1><a class="toc-backref" href="#id1" role="doc-backlink"><span class="section-number">9. </span>Software Programming for Quantum Computation</a><a class="headerlink" href="#software-programming-for-quantum-computation" title="Permalink to this heading">#</a></h1>
 <p><em>by Ross Mariano</em></p>
 <nav class="contents" id="contents">
 <p class="topic-title">Contents</p>
@@ -487,7 +486,7 @@ document.write(`
 </ul>
 </nav>
 <section id="technology-stack-for-quantum-computing">
-<h2><a class="toc-backref" href="#id2" role="doc-backlink"><span class="section-number">10.1. </span>Technology Stack for Quantum Computing</a><a class="headerlink" href="#technology-stack-for-quantum-computing" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink"><span class="section-number">9.1. </span>Technology Stack for Quantum Computing</a><a class="headerlink" href="#technology-stack-for-quantum-computing" title="Permalink to this heading">#</a></h2>
 <p>Technology stack refers to the set of technologies to develop an application, including programming languages, frameworks, databases, front-end and back-end tools, and APIs</p>
 <p>These include:</p>
 <ul class="simple">
@@ -500,12 +499,12 @@ document.write(`
 </ul>
 </section>
 <section id="workflow-for-using-quantum-processing-units-as-co-processor">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink"><span class="section-number">10.2. </span>Workflow for Using Quantum Processing Units as Co-processor</a><a class="headerlink" href="#workflow-for-using-quantum-processing-units-as-co-processor" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink"><span class="section-number">9.2. </span>Workflow for Using Quantum Processing Units as Co-processor</a><a class="headerlink" href="#workflow-for-using-quantum-processing-units-as-co-processor" title="Permalink to this heading">#</a></h2>
 <p>A quantum processing unit (QPU) is the brain of a quantum computer, similar to CPUs being the brain of a clsasical computer.</p>
 <p>Classical computers (CPUs, GPUs) uses transistors to manipulate electrical current, producing on and off states. These on and off states are interpreted as the classical bits being either 1 or 0.</p>
 <p>QPUs manipulate a <em>qubit</em>. These qubits are then represented using basis states <span class="math notranslate nohighlight">\(|0\rangle\)</span> and <span class="math notranslate nohighlight">\(|1\rangle\)</span>.</p>
 <section id="how-do-we-create-a-qubit">
-<h3><a class="toc-backref" href="#id4" role="doc-backlink"><span class="section-number">10.2.1. </span>How do we create a qubit?</a><a class="headerlink" href="#how-do-we-create-a-qubit" title="Permalink to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id4" role="doc-backlink"><span class="section-number">9.2.1. </span>How do we create a qubit?</a><a class="headerlink" href="#how-do-we-create-a-qubit" title="Permalink to this heading">#</a></h3>
 <p>There are numerous techniques on creating qubits</p>
 <ul class="simple">
 <li><p><strong>Neutral-atom qubits</strong> are atoms containing balanced amount of positive and negative charges. Highly focused laser beams called optical tweezers are used to manipulate the atoms</p></li>
@@ -517,7 +516,7 @@ document.write(`
 </ul>
 </section>
 <section id="superconducting-quantum-computing">
-<h3><a class="toc-backref" href="#id5" role="doc-backlink"><span class="section-number">10.2.2. </span>Superconducting quantum computing</a><a class="headerlink" href="#superconducting-quantum-computing" title="Permalink to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id5" role="doc-backlink"><span class="section-number">9.2.2. </span>Superconducting quantum computing</a><a class="headerlink" href="#superconducting-quantum-computing" title="Permalink to this heading">#</a></h3>
 <p>Superconducting quantum computers are used by well-known companies such as IBM and Google. Some of their quantum computers are IBM’s Eagle and Google’s Sycamore.</p>
 <p>Superconductivity happens when resistance of the material goes to zero, this also results in conductivity effectively becoming infinite. This is done by lowering the temperature of the material near absolute zero (0K).</p>
 <p>This is advantageous as there will be no loss of energy, which means that we can maintain a qubit’s state.</p>
@@ -542,7 +541,7 @@ document.write(`
 </section>
 </section>
 <section id="software-frameworks-for-quantum-programming">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink"><span class="section-number">10.3. </span>Software Frameworks for Quantum Programming</a><a class="headerlink" href="#software-frameworks-for-quantum-programming" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink"><span class="section-number">9.3. </span>Software Frameworks for Quantum Programming</a><a class="headerlink" href="#software-frameworks-for-quantum-programming" title="Permalink to this heading">#</a></h2>
 <p>This is where quantum circuit simulations come in.</p>
 <p>We know the theory, we know the math. We can try to simulate quantum computing on classical hardware.</p>
 <p>There are many available quantum software frameworks with different implementations and different philosophies. These are made by big tech companies, universities, and research institutes.</p>
@@ -551,7 +550,7 @@ document.write(`
 <p>We will show how to simulate the Bell state circuit using these three different software and representations.</p>
 </section>
 <section id="ibm-s-qiskit-software-framework">
-<h2><a class="toc-backref" href="#id7" role="doc-backlink"><span class="section-number">10.4. </span>IBM’s Qiskit Software Framework</a><a class="headerlink" href="#ibm-s-qiskit-software-framework" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink"><span class="section-number">9.4. </span>IBM’s Qiskit Software Framework</a><a class="headerlink" href="#ibm-s-qiskit-software-framework" title="Permalink to this heading">#</a></h2>
 <p>Qiskit is a quantum software programming framework developed by IBM using the quantum circuit model. It can be used to simulate quantum circuits and quantum algorithms. Qiskit is short for quantum information science kit.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -611,7 +610,7 @@ document.write(`
 </div>
 </section>
 <section id="quimb-for-tensor-networks">
-<h2><a class="toc-backref" href="#id8" role="doc-backlink"><span class="section-number">10.5. </span>Quimb for Tensor Networks</a><a class="headerlink" href="#quimb-for-tensor-networks" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id8" role="doc-backlink"><span class="section-number">9.5. </span>Quimb for Tensor Networks</a><a class="headerlink" href="#quimb-for-tensor-networks" title="Permalink to this heading">#</a></h2>
 <p>Quimb is a library for quantum information many-body calculation, focusing primarily on tensor networks.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -669,7 +668,7 @@ document.write(`
 </div>
 </section>
 <section id="ddsim-for-decision-diagrams">
-<h2><a class="toc-backref" href="#id9" role="doc-backlink"><span class="section-number">10.6. </span>DDSIM for Decision Diagrams</a><a class="headerlink" href="#ddsim-for-decision-diagrams" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id9" role="doc-backlink"><span class="section-number">9.6. </span>DDSIM for Decision Diagrams</a><a class="headerlink" href="#ddsim-for-decision-diagrams" title="Permalink to this heading">#</a></h2>
 <p>MQT DDSIM is a tool for simulating quantum circuits on classical computers by the Chair for Design Automation at the Technical University of Munich. It is free and open-source and can be downloaded from their github page.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -746,7 +745,7 @@ document.write(`
 </div>
 </section>
 <section id="references">
-<h2><a class="toc-backref" href="#id10" role="doc-backlink"><span class="section-number">10.7. </span>References</a><a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id10" role="doc-backlink"><span class="section-number">9.7. </span>References</a><a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>What is a Tech Stack: Examples, Components, and Diagrams. (n.d.). Heap. https://www.heap.io/topics/what-is-a-tech-stack</p></li>
 <li><p>Microsoft. Azure Quantum | Quantum computing stack. (n.d.). https://quantum.microsoft.com/en-us/explore/concepts/quantum-computing-stack</p></li>
@@ -800,7 +799,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">9. </span>Quantum Algorithms and Their Advantages Over Classical Counterparts</p>
+        <p class="prev-next-title"><span class="section-number">8. </span>Quantum Algorithms and Their Advantages Over Classical Counterparts</p>
       </div>
     </a>
     <a class="right-next"
@@ -808,7 +807,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">11. </span>COARE and ASTI’s Quantum Circuit Simulation Project</p>
+        <p class="prev-next-title"><span class="section-number">10. </span>COARE and ASTI’s Quantum Circuit Simulation Project</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -827,17 +826,17 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#technology-stack-for-quantum-computing">10.1. Technology Stack for Quantum Computing</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-for-using-quantum-processing-units-as-co-processor">10.2. Workflow for Using Quantum Processing Units as Co-processor</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-we-create-a-qubit">10.2.1. How do we create a qubit?</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#superconducting-quantum-computing">10.2.2. Superconducting quantum computing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#technology-stack-for-quantum-computing">9.1. Technology Stack for Quantum Computing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-for-using-quantum-processing-units-as-co-processor">9.2. Workflow for Using Quantum Processing Units as Co-processor</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-we-create-a-qubit">9.2.1. How do we create a qubit?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#superconducting-quantum-computing">9.2.2. Superconducting quantum computing</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-frameworks-for-quantum-programming">10.3. Software Frameworks for Quantum Programming</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ibm-s-qiskit-software-framework">10.4. IBM’s Qiskit Software Framework</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quimb-for-tensor-networks">10.5. Quimb for Tensor Networks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ddsim-for-decision-diagrams">10.6. DDSIM for Decision Diagrams</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">10.7. References</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-frameworks-for-quantum-programming">9.3. Software Frameworks for Quantum Programming</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ibm-s-qiskit-software-framework">9.4. IBM’s Qiskit Software Framework</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quimb-for-tensor-networks">9.5. Quimb for Tensor Networks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ddsim-for-decision-diagrams">9.6. DDSIM for Decision Diagrams</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">9.7. References</a></li>
 </ul>
   </nav></div>
 

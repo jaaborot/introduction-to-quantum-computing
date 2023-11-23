@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>8. Introduction to Quantum Computing &#8212; Introduction to Quantum Computing</title>
+    <title>7. Introduction to Quantum Computing &#8212; Introduction to Quantum Computing</title>
   
   
   
@@ -69,8 +69,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/fav.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="9. Quantum Algorithms and Their Advantages Over Classical Counterparts" href="../chapter_5/chapter_5-nb.html" />
-    <link rel="prev" title="6. Quantum Mechanics for Quantum Computing" href="../chapter_3/chapter_3-nb.html" />
+    <link rel="next" title="8. Quantum Algorithms and Their Advantages Over Classical Counterparts" href="../chapter_5/chapter_5-nb.html" />
+    <link rel="prev" title="6. Quantum States for Quantum Computing" href="../chapter_3/chapter_3-nb.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -170,13 +170,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../sample/sample-nb.html">3. Sample Commonmarkdown and MyST directives in Jupyter Notebook</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapter_1/chapter_1-nb.html">4. Introduction to Classical Computing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapter_2/chapter_2-nb.html">5. Mathematical Foundation of Quantum Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_3/chapter_3-nb.html">6. Quantum Mechanics for Quantum Computing</a></li>
-
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">8. Introduction to Quantum Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_5/chapter_5-nb.html">9. Quantum Algorithms and Their Advantages Over Classical Counterparts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_6/chapter_6-nb.html">10. Software Programming for Quantum Computation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_7/chapter_7-nb.html">11. COARE and ASTI’s Quantum Circuit Simulation Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter_8/chapter_8-nb.html">12. Current Use Cases for Quantum Computing in the Noisy Intermediate-Scale Quantum Era</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_3/chapter_3-nb.html">6. Quantum States for Quantum Computing</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">7. Introduction to Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_5/chapter_5-nb.html">8. Quantum Algorithms and Their Advantages Over Classical Counterparts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_6/chapter_6-nb.html">9. Software Programming for Quantum Computation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_7/chapter_7-nb.html">10. COARE and ASTI’s Quantum Circuit Simulation Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_8/chapter_8-nb.html">11. Current Use Cases for Quantum Computing in the Noisy Intermediate-Scale Quantum Era</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
 <ul class="nav bd-sidenav">
@@ -440,37 +439,37 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-computation">8.1. Quantum Computation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-gates">8.2. Quantum Gates</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#properties-of-quantum-gates">8.2.1. Properties of Quantum Gates</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#one-qubit-quantum-gates">8.2.2. One Qubit Quantum Gates</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identity-gate">8.2.3. Identity Gate</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pauli-x-gate">8.2.4. Pauli X Gate</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pauli-y-gate">8.2.5. Pauli Y Gate</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pauli-z-gate">8.2.6. Pauli Z Gate</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hadamard-gate">8.2.7. Hadamard Gate</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-calculation">8.2.8. Sample calculation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-computation">7.1. Quantum Computation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-gates">7.2. Quantum Gates</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#properties-of-quantum-gates">7.2.1. Properties of Quantum Gates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#one-qubit-quantum-gates">7.2.2. One Qubit Quantum Gates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identity-gate">7.2.3. Identity Gate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pauli-x-gate">7.2.4. Pauli X Gate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pauli-y-gate">7.2.5. Pauli Y Gate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pauli-z-gate">7.2.6. Pauli Z Gate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hadamard-gate">7.2.7. Hadamard Gate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-calculation">7.2.8. Sample calculation</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gates-in-series">8.3. Gates in <em>series</em></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gates-in-parallel">8.4. Gates in <em>parallel</em></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-circuit-model">8.5. Quantum Circuit Model</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circuit-diagram-single-qubit">8.5.1. Circuit diagram, single qubit</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circuit-diagram-multiple-qubits">8.5.2. Circuit diagram, multiple qubits</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multi-qubit-gates">8.5.3. Multi-qubit gates</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cnot-gate">8.5.4. CNOT gate</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#application">8.5.5. Application</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bell-state-entanglement">8.5.6. Bell state entanglement</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circuit-form-of-a-bell-state">8.5.7. Circuit form of a Bell state</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gates-in-series">7.3. Gates in <em>series</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gates-in-parallel">7.4. Gates in <em>parallel</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-circuit-model">7.5. Quantum Circuit Model</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circuit-diagram-single-qubit">7.5.1. Circuit diagram, single qubit</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circuit-diagram-multiple-qubits">7.5.2. Circuit diagram, multiple qubits</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multi-qubit-gates">7.5.3. Multi-qubit gates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cnot-gate">7.5.4. CNOT gate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#application">7.5.5. Application</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bell-state-entanglement">7.5.6. Bell state entanglement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circuit-form-of-a-bell-state">7.5.7. Circuit form of a Bell state</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-circuit-complexity">8.6. Quantum Circuit Complexity</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alternative-models-of-quantum-computation">8.7. Alternative Models of Quantum Computation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tensor-networks">8.7.1. Tensor Networks</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#decision-diagrams">8.7.2. Decision Diagrams</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-circuit-complexity">7.6. Quantum Circuit Complexity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alternative-models-of-quantum-computation">7.7. Alternative Models of Quantum Computation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tensor-networks">7.7.1. Tensor Networks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#decision-diagrams">7.7.2. Decision Diagrams</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">8.8. References</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">7.8. References</a></li>
 </ul>
             </nav>
         </div>
@@ -483,7 +482,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-quantum-computing">
-<h1><a class="toc-backref" href="#id1" role="doc-backlink"><span class="section-number">8. </span>Introduction to Quantum Computing</a><a class="headerlink" href="#introduction-to-quantum-computing" title="Permalink to this heading">#</a></h1>
+<h1><a class="toc-backref" href="#id1" role="doc-backlink"><span class="section-number">7. </span>Introduction to Quantum Computing</a><a class="headerlink" href="#introduction-to-quantum-computing" title="Permalink to this heading">#</a></h1>
 <p><em>by Ross Mariano</em></p>
 <nav class="contents" id="contents">
 <p class="topic-title">Contents</p>
@@ -529,7 +528,7 @@ document.write(`
 </ul>
 </nav>
 <section id="quantum-computation">
-<h2><a class="toc-backref" href="#id2" role="doc-backlink"><span class="section-number">8.1. </span>Quantum Computation</a><a class="headerlink" href="#quantum-computation" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink"><span class="section-number">7.1. </span>Quantum Computation</a><a class="headerlink" href="#quantum-computation" title="Permalink to this heading">#</a></h2>
 <p>Before we go to quantum information and quantum computing, let us review how things are done classically.</p>
 <p>Classically, we store information in a computer using a <em>bit</em> short for <em>binary digit</em>. A bit is either a 0 or 1, which you can think of as answering a question with yes or no. Due to this, we mathematically represent classical calculations in base 2 or <em>binary</em> numbers.</p>
 <p>How many bits do we need to represent some state? Suppose we have four numbers (0,1,2,3), we can represent it as follows.</p>
@@ -570,7 +569,7 @@ document.write(`
 <p>We often represent these vectors as vectors in the Bloch sphere. This is a useful tool for visualizing the state of a single qubit.</p>
 </section>
 <section id="quantum-gates">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink"><span class="section-number">8.2. </span>Quantum Gates</a><a class="headerlink" href="#quantum-gates" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink"><span class="section-number">7.2. </span>Quantum Gates</a><a class="headerlink" href="#quantum-gates" title="Permalink to this heading">#</a></h2>
 <p>Quantum logic gates or quantum gates are the quantum computing equivalents of the classical logic gates in classic computing. Similar to classical logic gates manipulating bits, quantum gates are used to manipulate qubits. These are the components used for creating quantum circuits.</p>
 <p>Mathematically speaking, a quantum gate <em>transforms</em> the quantum state of a qubit into another quantum state. For general quantum gates, we use <span class="math notranslate nohighlight">\(U\)</span>. These are represented as matrices.</p>
 <div class="math notranslate nohighlight">
@@ -579,7 +578,7 @@ U|0\rangle = |1\rangle\\
 U|1\rangle = |0\rangle
 \end{split}\]</div>
 <section id="properties-of-quantum-gates">
-<h3><a class="toc-backref" href="#id4" role="doc-backlink"><span class="section-number">8.2.1. </span>Properties of Quantum Gates</a><a class="headerlink" href="#properties-of-quantum-gates" title="Permalink to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id4" role="doc-backlink"><span class="section-number">7.2.1. </span>Properties of Quantum Gates</a><a class="headerlink" href="#properties-of-quantum-gates" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Linear property</p></li>
 </ul>
@@ -604,11 +603,11 @@ U^{-1}U = UU^{-1} = 1
 <p>This means that if we have an output state <span class="math notranslate nohighlight">\(| \phi \rangle = U |\psi\rangle\)</span>, we can determine the initial state with the conjugate transpose <span class="math notranslate nohighlight">\(U^{-1}|\phi\rangle = |\psi\rangle\)</span>.</p>
 </section>
 <section id="one-qubit-quantum-gates">
-<h3><a class="toc-backref" href="#id5" role="doc-backlink"><span class="section-number">8.2.2. </span>One Qubit Quantum Gates</a><a class="headerlink" href="#one-qubit-quantum-gates" title="Permalink to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id5" role="doc-backlink"><span class="section-number">7.2.2. </span>One Qubit Quantum Gates</a><a class="headerlink" href="#one-qubit-quantum-gates" title="Permalink to this heading">#</a></h3>
 <p>Here are the <em>basic</em> gates that we use in quantum computing.</p>
 </section>
 <section id="identity-gate">
-<h3><a class="toc-backref" href="#id6" role="doc-backlink"><span class="section-number">8.2.3. </span>Identity Gate</a><a class="headerlink" href="#identity-gate" title="Permalink to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id6" role="doc-backlink"><span class="section-number">7.2.3. </span>Identity Gate</a><a class="headerlink" href="#identity-gate" title="Permalink to this heading">#</a></h3>
 <p>This gate preserves the quantum state</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -621,7 +620,7 @@ I|1\rangle = |1\rangle
 \end{split}\]</div>
 </section>
 <section id="pauli-x-gate">
-<h3><a class="toc-backref" href="#id7" role="doc-backlink"><span class="section-number">8.2.4. </span>Pauli X Gate</a><a class="headerlink" href="#pauli-x-gate" title="Permalink to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id7" role="doc-backlink"><span class="section-number">7.2.4. </span>Pauli X Gate</a><a class="headerlink" href="#pauli-x-gate" title="Permalink to this heading">#</a></h3>
 <p>Also known as X, NOT, or <span class="math notranslate nohighlight">\(\sigma_x\)</span>. This performs a <em>bit flip</em> on the quantum state via a 180 degree rotation along the x-axis.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -637,7 +636,7 @@ X|1\rangle = |0\rangle
 <a class="reference internal image-reference" href="../../_images/chapter4-state-1.png"><img alt="../../_images/chapter4-state-1.png" src="../../_images/chapter4-state-1.png" style="height: 300px;" /></a>
 </section>
 <section id="pauli-y-gate">
-<h3><a class="toc-backref" href="#id8" role="doc-backlink"><span class="section-number">8.2.5. </span>Pauli Y Gate</a><a class="headerlink" href="#pauli-y-gate" title="Permalink to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id8" role="doc-backlink"><span class="section-number">7.2.5. </span>Pauli Y Gate</a><a class="headerlink" href="#pauli-y-gate" title="Permalink to this heading">#</a></h3>
 <p>Also known as Y, or <span class="math notranslate nohighlight">\(\sigma_y\)</span>. This performs a <em>bit flip</em> and <em>phase flip</em> on the quantum state via a 180 degree rotation along the y-axis.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -667,7 +666,7 @@ Y(\alpha|0\rangle + \beta|1\rangle) &amp;= \alpha Y|0\rangle + \beta Y|1\rangle\
 <a class="reference internal image-reference" href="../../_images/chapter4-state-y0.png"><img alt="../../_images/chapter4-state-y0.png" src="../../_images/chapter4-state-y0.png" style="height: 300px;" /></a>
 </section>
 <section id="pauli-z-gate">
-<h3><a class="toc-backref" href="#id9" role="doc-backlink"><span class="section-number">8.2.6. </span>Pauli Z Gate</a><a class="headerlink" href="#pauli-z-gate" title="Permalink to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id9" role="doc-backlink"><span class="section-number">7.2.6. </span>Pauli Z Gate</a><a class="headerlink" href="#pauli-z-gate" title="Permalink to this heading">#</a></h3>
 <p>Also known as Z, or <span class="math notranslate nohighlight">\(\sigma_z\)</span>. This performs a <em>phase flip</em> on the quantum state via a 180 degree rotation along the z-axis.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -683,7 +682,7 @@ Z|1\rangle = -|1\rangle
 <a class="reference internal image-reference" href="../../_images/chapter4-state-z1.png"><img alt="../../_images/chapter4-state-z1.png" src="../../_images/chapter4-state-z1.png" style="height: 300px;" /></a>
 </section>
 <section id="hadamard-gate">
-<h3><a class="toc-backref" href="#id10" role="doc-backlink"><span class="section-number">8.2.7. </span>Hadamard Gate</a><a class="headerlink" href="#hadamard-gate" title="Permalink to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id10" role="doc-backlink"><span class="section-number">7.2.7. </span>Hadamard Gate</a><a class="headerlink" href="#hadamard-gate" title="Permalink to this heading">#</a></h3>
 <p>Also known as <span class="math notranslate nohighlight">\(H\)</span>. This puts the qubit into a superposition.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -705,7 +704,7 @@ H|1\rangle = \frac{1}{\sqrt{2}}(|0\rangle - |1\rangle) = |-\rangle
 <p>In a quantum circuit, gates are usually shown as boxes with their respective labels.</p>
 </section>
 <section id="sample-calculation">
-<h3><a class="toc-backref" href="#id11" role="doc-backlink"><span class="section-number">8.2.8. </span>Sample calculation</a><a class="headerlink" href="#sample-calculation" title="Permalink to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id11" role="doc-backlink"><span class="section-number">7.2.8. </span>Sample calculation</a><a class="headerlink" href="#sample-calculation" title="Permalink to this heading">#</a></h3>
 <p>Verify <span class="math notranslate nohighlight">\(H|0\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle)\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -745,7 +744,7 @@ H|+\rangle &amp;= |0\rangle
 </section>
 </section>
 <section id="gates-in-series">
-<h2><a class="toc-backref" href="#id12" role="doc-backlink"><span class="section-number">8.3. </span>Gates in <em>series</em></a><a class="headerlink" href="#gates-in-series" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id12" role="doc-backlink"><span class="section-number">7.3. </span>Gates in <em>series</em></a><a class="headerlink" href="#gates-in-series" title="Permalink to this heading">#</a></h2>
 <p>Multiple single gates</p>
 <p>Try solving <em>without</em> calculating</p>
 <div class="math notranslate nohighlight">
@@ -790,7 +789,7 @@ HX|0\rangle &amp;= |-\rangle
 \end{split}\]</div>
 </section>
 <section id="gates-in-parallel">
-<h2><a class="toc-backref" href="#id13" role="doc-backlink"><span class="section-number">8.4. </span>Gates in <em>parallel</em></a><a class="headerlink" href="#gates-in-parallel" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id13" role="doc-backlink"><span class="section-number">7.4. </span>Gates in <em>parallel</em></a><a class="headerlink" href="#gates-in-parallel" title="Permalink to this heading">#</a></h2>
 <p>Gates in parallel is seen when calculating gates between multiple qubits. The primary operation is called the <em>tensor product</em>.</p>
 <p>Let us consider two qubits both initially in <span class="math notranslate nohighlight">\(|0\rangle\)</span>. The initial state of the whole system is determined via the tensor product.</p>
 <div class="math notranslate nohighlight">
@@ -822,9 +821,9 @@ HX|0\rangle &amp;= |-\rangle
 For multiqubit states, we will use <span class="math notranslate nohighlight">\(|q_0q_1\ldots q_n\rangle\)</span>, where <span class="math notranslate nohighlight">\(n\)</span> is the nth qubit.</p>
 </section>
 <section id="quantum-circuit-model">
-<h2><a class="toc-backref" href="#id14" role="doc-backlink"><span class="section-number">8.5. </span>Quantum Circuit Model</a><a class="headerlink" href="#quantum-circuit-model" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id14" role="doc-backlink"><span class="section-number">7.5. </span>Quantum Circuit Model</a><a class="headerlink" href="#quantum-circuit-model" title="Permalink to this heading">#</a></h2>
 <section id="circuit-diagram-single-qubit">
-<h3><a class="toc-backref" href="#id15" role="doc-backlink"><span class="section-number">8.5.1. </span>Circuit diagram, single qubit</a><a class="headerlink" href="#circuit-diagram-single-qubit" title="Permalink to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id15" role="doc-backlink"><span class="section-number">7.5.1. </span>Circuit diagram, single qubit</a><a class="headerlink" href="#circuit-diagram-single-qubit" title="Permalink to this heading">#</a></h3>
 <p>Sequence of quantum gates applied to the qubits. This is the quantum equivalent of a classical circuit.</p>
 <p>Suppose a qubit <span class="math notranslate nohighlight">\(q\)</span>, and we want to apply gates <span class="math notranslate nohighlight">\(X\)</span> then <span class="math notranslate nohighlight">\(Z\)</span> then <span class="math notranslate nohighlight">\(H\)</span>, i.e. <span class="math notranslate nohighlight">\(HZX|q\rangle\)</span>. The equivalent quantum circuit is as follows.</p>
 <p><img alt="qc1" src="../../_images/chapter4-qc1.png" /></p>
@@ -834,7 +833,7 @@ For multiqubit states, we will use <span class="math notranslate nohighlight">\(
 <p>Lastly, the quantum gates. As shown are the boxes with their respective labels corresponding to their operation.</p>
 </section>
 <section id="circuit-diagram-multiple-qubits">
-<h3><a class="toc-backref" href="#id16" role="doc-backlink"><span class="section-number">8.5.2. </span>Circuit diagram, multiple qubits</a><a class="headerlink" href="#circuit-diagram-multiple-qubits" title="Permalink to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id16" role="doc-backlink"><span class="section-number">7.5.2. </span>Circuit diagram, multiple qubits</a><a class="headerlink" href="#circuit-diagram-multiple-qubits" title="Permalink to this heading">#</a></h3>
 <p><img alt="qc2" src="../../_images/chapter4-qc2.png" /></p>
 <p>For multiple qubits, we label the qubits as <span class="math notranslate nohighlight">\(q_n\)</span> where <span class="math notranslate nohighlight">\(n\)</span> is the nth qubit.</p>
 <p>We can separate these via its timesteps. We see that <span class="math notranslate nohighlight">\(q_0, q_1\)</span> is the initial state or <span class="math notranslate nohighlight">\(t_0\)</span>. After one timestep, we apply <span class="math notranslate nohighlight">\(X \otimes Z\)</span>. And for the last timestep, we apply <span class="math notranslate nohighlight">\(H\)</span>.</p>
@@ -857,13 +856,13 @@ How do we fix this?</p>
 \]</div>
 </section>
 <section id="multi-qubit-gates">
-<h3><a class="toc-backref" href="#id17" role="doc-backlink"><span class="section-number">8.5.3. </span>Multi-qubit gates</a><a class="headerlink" href="#multi-qubit-gates" title="Permalink to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id17" role="doc-backlink"><span class="section-number">7.5.3. </span>Multi-qubit gates</a><a class="headerlink" href="#multi-qubit-gates" title="Permalink to this heading">#</a></h3>
 <p>These are quantum gates that act on multiple qubits <em>simultaneously</em>. Here, we introduce two qubit gates.</p>
 <p>An example of this is the Controlled-NOT gate(CNOT, CX). This gate acts on two qubits, named the <em>control qubit</em> and the <em>target qubit</em>.</p>
 <p>This gate performs an <em>if-else</em> like operation. The output of the target qubit is dependent on the control qubit.</p>
 </section>
 <section id="cnot-gate">
-<h3><a class="toc-backref" href="#id18" role="doc-backlink"><span class="section-number">8.5.4. </span>CNOT gate</a><a class="headerlink" href="#cnot-gate" title="Permalink to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id18" role="doc-backlink"><span class="section-number">7.5.4. </span>CNOT gate</a><a class="headerlink" href="#cnot-gate" title="Permalink to this heading">#</a></h3>
 <p>The control qubit is denoted as a small dot, the target qubit is denoted by an <span class="math notranslate nohighlight">\(X\)</span> gate. The line implies the control.</p>
 <p>The <span class="math notranslate nohighlight">\(X\)</span> gate shown here is an alternative symbol for the <span class="math notranslate nohighlight">\(X\)</span> gate, typically used for CNOT/CX gates.</p>
 <p><img alt="cnot" src="../../_images/chapter4-cnot.png" /></p>
@@ -900,7 +899,7 @@ CNOT = |00\rangle\langle00| + |01\rangle\langle01| + |10\rangle\langle11| + |11\
 <p>Toffoli or CCNOT for 3 qubits</p>
 </section>
 <section id="application">
-<h3><a class="toc-backref" href="#id19" role="doc-backlink"><span class="section-number">8.5.5. </span>Application</a><a class="headerlink" href="#application" title="Permalink to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id19" role="doc-backlink"><span class="section-number">7.5.5. </span>Application</a><a class="headerlink" href="#application" title="Permalink to this heading">#</a></h3>
 <p>Now that we can construct circuits with multiple qubits and multiqubits gates. Let us try creating a circuit that creates entanglement.</p>
 <p>A quantum state</p>
 <div class="math notranslate nohighlight">
@@ -920,7 +919,7 @@ ad=bc
 <p>This means that we can separate or factor a quantum state into its basis states.</p>
 </section>
 <section id="bell-state-entanglement">
-<h3><a class="toc-backref" href="#id20" role="doc-backlink"><span class="section-number">8.5.6. </span>Bell state entanglement</a><a class="headerlink" href="#bell-state-entanglement" title="Permalink to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id20" role="doc-backlink"><span class="section-number">7.5.6. </span>Bell state entanglement</a><a class="headerlink" href="#bell-state-entanglement" title="Permalink to this heading">#</a></h3>
 <p>A quantum state</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -989,7 +988,7 @@ ad &amp;= bc\\
 <p>If we set at least one coefficient to 0, then we won’t be able to get <span class="math notranslate nohighlight">\(\frac{1}{\sqrt{2}}\)</span>. Thus, the state is entangled. This specific state <span class="math notranslate nohighlight">\(|\Phi^+\rangle\)</span> is called a <strong>Bell state</strong>.</p>
 </section>
 <section id="circuit-form-of-a-bell-state">
-<h3><a class="toc-backref" href="#id21" role="doc-backlink"><span class="section-number">8.5.7. </span>Circuit form of a Bell state</a><a class="headerlink" href="#circuit-form-of-a-bell-state" title="Permalink to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id21" role="doc-backlink"><span class="section-number">7.5.7. </span>Circuit form of a Bell state</a><a class="headerlink" href="#circuit-form-of-a-bell-state" title="Permalink to this heading">#</a></h3>
 <p>Notice the states in <span class="math notranslate nohighlight">\(|\Phi^+\rangle\)</span>. There are two qubits <span class="math notranslate nohighlight">\((|00\rangle, |11\rangle)\)</span>. Thus, we will need <span class="math notranslate nohighlight">\(q_0, q_1\)</span>.</p>
 <p>Now, notice that we have a superposition of two states. We will use a Hadamard gate.</p>
 <p>Since we know that the state is entangled, we need an operation that entangles the two qubits. This operation will be the CNOT gate.</p>
@@ -998,7 +997,7 @@ ad &amp;= bc\\
 </section>
 </section>
 <section id="quantum-circuit-complexity">
-<h2><a class="toc-backref" href="#id22" role="doc-backlink"><span class="section-number">8.6. </span>Quantum Circuit Complexity</a><a class="headerlink" href="#quantum-circuit-complexity" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id22" role="doc-backlink"><span class="section-number">7.6. </span>Quantum Circuit Complexity</a><a class="headerlink" href="#quantum-circuit-complexity" title="Permalink to this heading">#</a></h2>
 <p><strong>Circuit complexity</strong> of a quantum circuit refers to the least number of quantum gates, relative to some universal set of quantum gates. Note that this is different from <strong>computational complexity</strong> discussed from a previous lecture.</p>
 <p>We say that a quantum algorithm is <em>efficient</em> if it has polynomial circuit complexity. We quantify this using the circuit’s <strong>size</strong>, which refers to the  number of gates a circuit contains.</p>
 <p>Why does this matter? There is a natural connection between circuit complexity and time complexity. Since gates are represented by matrices, and in quantum circuits we multiply matrices, then circuit complexity and time complexity are related.</p>
@@ -1034,9 +1033,9 @@ Z|1\rangle &amp;= -|1\rangle\\
 <p>To quantify this, we say an <em>efficient</em> quantum algorithm is one with a polynomial circuit complexity. Consider the quantum adder circuit. This circuit uses <span class="math notranslate nohighlight">\(4n-2\)</span> Toffoli gates and <span class="math notranslate nohighlight">\(4n\)</span> CNOT gates. Since we know we can express the Toffoli gates into 7 smaller one/two qubit gates, we get <span class="math notranslate nohighlight">\(7(4n-2)+4n=32n-14\)</span> qubit gates, which is polynomial (specifically linear) in <span class="math notranslate nohighlight">\(n\)</span>. Therefore, we can say that the quantum adder circuit is an <em>efficient</em> algorithm.</p>
 </section>
 <section id="alternative-models-of-quantum-computation">
-<h2><a class="toc-backref" href="#id23" role="doc-backlink"><span class="section-number">8.7. </span>Alternative Models of Quantum Computation</a><a class="headerlink" href="#alternative-models-of-quantum-computation" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id23" role="doc-backlink"><span class="section-number">7.7. </span>Alternative Models of Quantum Computation</a><a class="headerlink" href="#alternative-models-of-quantum-computation" title="Permalink to this heading">#</a></h2>
 <section id="tensor-networks">
-<h3><a class="toc-backref" href="#id24" role="doc-backlink"><span class="section-number">8.7.1. </span>Tensor Networks</a><a class="headerlink" href="#tensor-networks" title="Permalink to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id24" role="doc-backlink"><span class="section-number">7.7.1. </span>Tensor Networks</a><a class="headerlink" href="#tensor-networks" title="Permalink to this heading">#</a></h3>
 <p>Tensor networks are networks with tensors being reprsented by nodes. Tensors are a generalization of quantities such as scalars, vectors, and multilinear maps.</p>
 <img alt="book/chapter_4/images/chapter4-tn1.png" src="book/chapter_4/images/chapter4-tn1.png" />
 <p>Tensor networks is a method used in simulating quantum circuits. Instead of expressing quantum circuit operations as mathematical expressions, we use diagrammatic visualizations to represent the quantum circuit. This makes it advantageous as the operations can be expressed without the extra notation. The relevant mathematical operations that tensor networks perform are matrix multiplication and tensor product.</p>
@@ -1052,7 +1051,7 @@ Z|1\rangle &amp;= -|1\rangle\\
 <p>Tensor network methodologies work best if there is a topological structure that can be exploited.</p>
 </section>
 <section id="decision-diagrams">
-<h3><a class="toc-backref" href="#id25" role="doc-backlink"><span class="section-number">8.7.2. </span>Decision Diagrams</a><a class="headerlink" href="#decision-diagrams" title="Permalink to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id25" role="doc-backlink"><span class="section-number">7.7.2. </span>Decision Diagrams</a><a class="headerlink" href="#decision-diagrams" title="Permalink to this heading">#</a></h3>
 <p>A decision diagram is a data structure representing Boolean functions. Decision diagrams are used to simulate quantum circuits by exploiting redudancies found in quantum circuits effectively creating a more compact representation.</p>
 <p>Consider the a statevector of 3 qubits</p>
 <div class="math notranslate nohighlight">
@@ -1066,7 +1065,7 @@ Z|1\rangle &amp;= -|1\rangle\\
 </section>
 </section>
 <section id="references">
-<h2><a class="toc-backref" href="#id26" role="doc-backlink"><span class="section-number">8.8. </span>References</a><a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id26" role="doc-backlink"><span class="section-number">7.8. </span>References</a><a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>McMahon, D. (2007). Quantum Computing explained. Wiley-IEEE Computer Society Press.</p></li>
 <li><p>Nielsen, M. A., &amp; Chuang, I. L. (2010). Quantum computation and quantum information: 10th Anniversary Edition. Cambridge University Press.</p></li>
@@ -1114,7 +1113,7 @@ Z|1\rangle &amp;= -|1\rangle\\
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">6. </span>Quantum Mechanics for Quantum Computing</p>
+        <p class="prev-next-title"><span class="section-number">6. </span>Quantum States for Quantum Computing</p>
       </div>
     </a>
     <a class="right-next"
@@ -1122,7 +1121,7 @@ Z|1\rangle &amp;= -|1\rangle\\
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">9. </span>Quantum Algorithms and Their Advantages Over Classical Counterparts</p>
+        <p class="prev-next-title"><span class="section-number">8. </span>Quantum Algorithms and Their Advantages Over Classical Counterparts</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1141,37 +1140,37 @@ Z|1\rangle &amp;= -|1\rangle\\
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-computation">8.1. Quantum Computation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-gates">8.2. Quantum Gates</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#properties-of-quantum-gates">8.2.1. Properties of Quantum Gates</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#one-qubit-quantum-gates">8.2.2. One Qubit Quantum Gates</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identity-gate">8.2.3. Identity Gate</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pauli-x-gate">8.2.4. Pauli X Gate</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pauli-y-gate">8.2.5. Pauli Y Gate</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pauli-z-gate">8.2.6. Pauli Z Gate</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hadamard-gate">8.2.7. Hadamard Gate</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-calculation">8.2.8. Sample calculation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-computation">7.1. Quantum Computation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-gates">7.2. Quantum Gates</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#properties-of-quantum-gates">7.2.1. Properties of Quantum Gates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#one-qubit-quantum-gates">7.2.2. One Qubit Quantum Gates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identity-gate">7.2.3. Identity Gate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pauli-x-gate">7.2.4. Pauli X Gate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pauli-y-gate">7.2.5. Pauli Y Gate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pauli-z-gate">7.2.6. Pauli Z Gate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hadamard-gate">7.2.7. Hadamard Gate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-calculation">7.2.8. Sample calculation</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gates-in-series">8.3. Gates in <em>series</em></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gates-in-parallel">8.4. Gates in <em>parallel</em></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-circuit-model">8.5. Quantum Circuit Model</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circuit-diagram-single-qubit">8.5.1. Circuit diagram, single qubit</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circuit-diagram-multiple-qubits">8.5.2. Circuit diagram, multiple qubits</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multi-qubit-gates">8.5.3. Multi-qubit gates</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cnot-gate">8.5.4. CNOT gate</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#application">8.5.5. Application</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bell-state-entanglement">8.5.6. Bell state entanglement</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circuit-form-of-a-bell-state">8.5.7. Circuit form of a Bell state</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gates-in-series">7.3. Gates in <em>series</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gates-in-parallel">7.4. Gates in <em>parallel</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-circuit-model">7.5. Quantum Circuit Model</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circuit-diagram-single-qubit">7.5.1. Circuit diagram, single qubit</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circuit-diagram-multiple-qubits">7.5.2. Circuit diagram, multiple qubits</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multi-qubit-gates">7.5.3. Multi-qubit gates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cnot-gate">7.5.4. CNOT gate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#application">7.5.5. Application</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bell-state-entanglement">7.5.6. Bell state entanglement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circuit-form-of-a-bell-state">7.5.7. Circuit form of a Bell state</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-circuit-complexity">8.6. Quantum Circuit Complexity</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alternative-models-of-quantum-computation">8.7. Alternative Models of Quantum Computation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tensor-networks">8.7.1. Tensor Networks</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#decision-diagrams">8.7.2. Decision Diagrams</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-circuit-complexity">7.6. Quantum Circuit Complexity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alternative-models-of-quantum-computation">7.7. Alternative Models of Quantum Computation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tensor-networks">7.7.1. Tensor Networks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#decision-diagrams">7.7.2. Decision Diagrams</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">8.8. References</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">7.8. References</a></li>
 </ul>
   </nav></div>
 
